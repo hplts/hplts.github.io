@@ -16,6 +16,21 @@
       </tags>
   </entry>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2020/first/</url>
+    <content><![CDATA[<h2 id="测试用的文献"><a href="#测试用的文献" class="headerlink" title="测试用的文献"></a>测试用的文献</h2><pre><code>hello hexo</code></pre><hr>
+<h2 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h2><pre><code>武汉加油
+中国加油
+考研加油</code></pre>]]></content>
+      <categories>
+        <category>励志</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>兴趣</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的第二篇博客</title>
     <url>/2020/second/</url>
     <content><![CDATA[<p>我为啥要写这篇文章呢？其实也没啥，只是想测试一下我还有哪些功能没有完善而已，那我这篇文章到底是想介绍啥呢？</p>
@@ -30,23 +45,8 @@
         <category>学习</category>
       </categories>
       <tags>
+        <tag>学习</tag>
         <tag>生活</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2020/first/</url>
-    <content><![CDATA[<h2 id="测试用的文献"><a href="#测试用的文献" class="headerlink" title="测试用的文献"></a>测试用的文献</h2><pre><code>hello hexo</code></pre><hr>
-<h2 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h2><pre><code>武汉加油
-中国加油
-考研加油</code></pre>]]></content>
-      <categories>
-        <category>励志</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>兴趣</tag>
       </tags>
   </entry>
 </search>
