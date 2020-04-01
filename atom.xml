@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>海风</title>
+  
+  <subtitle>一起随风而去</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-01T10:52:29.589Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>hp</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>About Me</title>
+    <link href="http://yoursite.com/2020/id"/>
+    <id>http://yoursite.com/2020/id</id>
+    <published>2020-04-01T10:51:20.000Z</published>
+    <updated>2020-04-01T10:52:29.589Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;A university student, live in YiChun, JiangXi.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;姓名: 胡平&lt;br&gt;GitHub: &lt;a href=&quot;https://github.com/hplts&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的第一篇博客</title>
+    <link href="http://yoursite.com/2020/id"/>
+    <id>http://yoursite.com/2020/id</id>
+    <published>2020-04-01T04:23:13.000Z</published>
+    <updated>2020-04-01T04:29:20.700Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;测试用的文献&quot;&gt;&lt;a href=&quot;#测试用的文献&quot; class=&quot;headerlink&quot; title=&quot;测试用的文献&quot;&gt;&lt;/a&gt;测试用的文献&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;hello hexo&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;测试2&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/id"/>
+    <id>http://yoursite.com/2020/id</id>
+    <published>2020-04-01T04:15:16.763Z</published>
+    <updated>2020-04-01T04:15:16.763Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
