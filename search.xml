@@ -8,15 +8,45 @@
 </blockquote>
 <p>姓名: 胡平<br>GitHub: <a href="https://github.com/hplts" target="_blank" rel="noopener">hplts</a><br>QQ: 1453714437</p>
 ]]></content>
+      <categories>
+        <category>私人</category>
+      </categories>
       <tags>
         <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
+    <title>我的第二篇博客</title>
+    <url>/2020/second/</url>
+    <content><![CDATA[<p>我为啥要写这篇文章呢？其实也没啥，只是想测试一下我还有哪些功能没有完善而已，那我这篇文章到底是想介绍啥呢？</p>
+<a id="more"></a>
+
+<h2 id="句子1"><a href="#句子1" class="headerlink" title="句子1"></a>句子1</h2><p>生活是一位睿智的长者，生活是一位博学的老师，它常常春风化雨，润物无声地为我们指点迷津，给我们人生的启迪。</p>
+<h2 id="句子2"><a href="#句子2" class="headerlink" title="句子2"></a>句子2</h2><p>爱是一盏灯，黑暗中照亮前行的远方；爱是一首诗，冰冷中温暖渴求的心房；爱是夏日的风，是冬日的阳，是春日的雨，是秋日的果。</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>这是一张美丽的图片<br><img src="https://pic.downk.cc/item/5e84944d504f4bcb0432a5c7.jpg" alt="image.jpg"></p>
+<h2 id="句子3"><a href="#句子3" class="headerlink" title="句子3"></a>句子3</h2><p>真诚是美酒，年份越久越醇香浓型；真诚是焰火，在高处绽放才愈是美丽；真诚是鲜花，送之于人手有余香。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的第一篇博客</title>
-    <url>/2020/ck8h95wmr0002q8wt9xu3gkgh/</url>
+    <url>/2020/first/</url>
     <content><![CDATA[<h2 id="测试用的文献"><a href="#测试用的文献" class="headerlink" title="测试用的文献"></a>测试用的文献</h2><pre><code>hello hexo</code></pre><hr>
-<h2 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h2><pre><code>haha
-1111</code></pre>]]></content>
+<h2 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h2><pre><code>武汉加油
+中国加油
+考研加油</code></pre>]]></content>
+      <categories>
+        <category>励志</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>兴趣</tag>
+      </tags>
   </entry>
 </search>

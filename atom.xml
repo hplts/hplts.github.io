@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hplts.github.io/"/>
-  <updated>2020-04-01T10:52:29.589Z</updated>
+  <updated>2020-04-01T13:21:05.212Z</updated>
   <id>https://hplts.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>我的第二篇博客</title>
+    <link href="https://hplts.github.io/2020/second/"/>
+    <id>https://hplts.github.io/2020/second/</id>
+    <published>2020-04-01T12:54:24.000Z</published>
+    <updated>2020-04-01T13:21:05.212Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我为啥要写这篇文章呢？其实也没啥，只是想测试一下我还有哪些功能没有完善而已，那我这篇文章到底是想介绍啥呢？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="生活" scheme="https://hplts.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>About Me</title>
     <link href="https://hplts.github.io/2020/about_me/"/>
     <id>https://hplts.github.io/2020/about_me/</id>
     <published>2020-04-01T10:51:20.000Z</published>
-    <updated>2020-04-01T10:52:29.589Z</updated>
+    <updated>2020-04-01T13:06:15.936Z</updated>
     
     <summary type="html">
     
@@ -39,6 +62,8 @@
     </summary>
     
     
+      <category term="私人" scheme="https://hplts.github.io/categories/%E7%A7%81%E4%BA%BA/"/>
+    
     
       <category term="随笔" scheme="https://hplts.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
@@ -46,10 +71,10 @@
   
   <entry>
     <title>我的第一篇博客</title>
-    <link href="https://hplts.github.io/2020/ck8h95wmr0002q8wt9xu3gkgh/"/>
-    <id>https://hplts.github.io/2020/ck8h95wmr0002q8wt9xu3gkgh/</id>
+    <link href="https://hplts.github.io/2020/first/"/>
+    <id>https://hplts.github.io/2020/first/</id>
     <published>2020-04-01T04:23:13.000Z</published>
-    <updated>2020-04-01T04:29:20.700Z</updated>
+    <updated>2020-04-01T13:24:27.448Z</updated>
     
     <summary type="html">
     
@@ -65,6 +90,12 @@
     </summary>
     
     
+      <category term="励志" scheme="https://hplts.github.io/categories/%E5%8A%B1%E5%BF%97/"/>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="兴趣" scheme="https://hplts.github.io/tags/%E5%85%B4%E8%B6%A3/"/>
     
   </entry>
   
