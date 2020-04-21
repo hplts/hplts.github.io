@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>海风</title>
+  <title>风-个人博客</title>
   
   <subtitle>一起随风而去</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hplts.github.io/"/>
-  <updated>2020-04-01T13:21:05.212Z</updated>
+  <updated>2020-04-21T11:00:52.750Z</updated>
   <id>https://hplts.github.io/</id>
   
   <author>
@@ -17,15 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第二篇博客</title>
-    <link href="https://hplts.github.io/2020/second/"/>
-    <id>https://hplts.github.io/2020/second/</id>
-    <published>2020-04-01T12:54:24.000Z</published>
-    <updated>2020-04-01T13:21:05.212Z</updated>
+    <title>解决servlet的乱码问题</title>
+    <link href="https://hplts.github.io/2020/0421_second/"/>
+    <id>https://hplts.github.io/2020/0421_second/</id>
+    <published>2020-04-21T10:45:59.000Z</published>
+    <updated>2020-04-21T11:00:52.750Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;我为啥要写这篇文章呢？其实也没啥，只是想测试一下我还有哪些功能没有完善而已，那我这篇文章到底是想介绍啥呢？&lt;/p&gt;
+      
+      
+        
+        
+          &lt;h2 id=&quot;servlet中请求乱码问题解决&quot;&gt;&lt;a href=&quot;#servlet中请求乱码问题解决&quot; class=&quot;headerlink&quot; title=&quot;servlet中请求乱码问题解决:&quot;&gt;&lt;/a&gt;servlet中请求乱码问题解决:&lt;/h2&gt;&lt;h3
+        
+      
     
     </summary>
     
@@ -35,7 +41,32 @@
     
       <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="生活" scheme="https://hplts.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="记录" scheme="https://hplts.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown的用法</title>
+    <link href="https://hplts.github.io/2020/0421_first/"/>
+    <id>https://hplts.github.io/2020/0421_first/</id>
+    <published>2020-04-21T10:26:08.000Z</published>
+    <updated>2020-04-21T11:10:48.601Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、Markdown的标题&quot;&gt;&lt;a href=&quot;#一、Markdown的标题&quot; class=&quot;headerlink&quot; title=&quot;一、Markdown的标题&quot;&gt;&lt;/a&gt;一、Markdown的标题&lt;/h1&gt;&lt;h2 id=&quot;1-使用-标记一级标题&quot;&gt;&lt;a href=&quot;#1-使用-标记一级标题&quot; class=&quot;headerlink&quot; title=&quot;1.使用 = 标记一级标题&quot;&gt;&lt;/a&gt;1.使用 = 标记一级标题&lt;/h2&gt;&lt;p&gt;例如所示：&lt;/p&gt;
+&lt;h1 id=&quot;我展示的是一级标题&quot;&gt;&lt;a href=&quot;#我展示的是一级标题&quot; class=&quot;headerlink&quot; title=&quot;我展示的是一级标题&quot;&gt;&lt;/a&gt;我展示的是一级标题&lt;/h1&gt;&lt;h2 id=&quot;2-使用-标记二级标题&quot;&gt;&lt;a href=&quot;#2-使用-标记二级标题&quot; class=&quot;headerlink&quot; title=&quot;2.使用 - 标记二级标题&quot;&gt;&lt;/a&gt;2.使用 - 标记二级标题&lt;/h2&gt;&lt;p&gt;例如所示：&lt;/p&gt;
+&lt;h2 id=&quot;我展示的是二级标题&quot;&gt;&lt;a href=&quot;#我展示的是二级标题&quot; class=&quot;headerlink&quot; title=&quot;我展示的是二级标题&quot;&gt;&lt;/a&gt;我展示的是二级标题&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="随笔" scheme="https://hplts.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -66,36 +97,6 @@
     
     
       <category term="随笔" scheme="https://hplts.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的第一篇博客</title>
-    <link href="https://hplts.github.io/2020/first/"/>
-    <id>https://hplts.github.io/2020/first/</id>
-    <published>2020-04-01T04:23:13.000Z</published>
-    <updated>2020-04-01T13:24:27.448Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;测试用的文献&quot;&gt;&lt;a href=&quot;#测试用的文献&quot; class=&quot;headerlink&quot; title=&quot;测试用的文献&quot;&gt;&lt;/a&gt;测试用的文献&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;hello hexo&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;测试2&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="励志" scheme="https://hplts.github.io/categories/%E5%8A%B1%E5%BF%97/"/>
-    
-    
-      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="兴趣" scheme="https://hplts.github.io/tags/%E5%85%B4%E8%B6%A3/"/>
     
   </entry>
   
