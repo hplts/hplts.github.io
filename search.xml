@@ -16,28 +16,44 @@
       </tags>
   </entry>
   <entry>
+    <title>解决servlet的乱码问题</title>
+    <url>/2020/0421_second/</url>
+    <content><![CDATA[<h2 id="servlet中请求乱码问题解决"><a href="#servlet中请求乱码问题解决" class="headerlink" title="servlet中请求乱码问题解决:"></a>servlet中请求乱码问题解决:</h2><h3 id="1-最有效的办法："><a href="#1-最有效的办法：" class="headerlink" title="1.最有效的办法："></a>1.最有效的办法：</h3><pre><code>使用 String 进行重新编码： uname=new String(uname.getBytes(&quot;iso8859-1&quot;),&quot;utf-8&quot;); </code></pre><h3 id="2-Get-方式请求："><a href="#2-Get-方式请求：" class="headerlink" title="2.Get 方式请求："></a>2.Get 方式请求：</h3><pre><code>在 service 方法中使用: req.setCharacterEncoding(“utf-8”)； 
+在 tomcat 服务器目录下的 conf 文件下找到 server.xml 文件，打开进 行如下配置: </code></pre><p><img src="https://pic.downk.cc/item/5e9ebc7dc2a9a83be5786ced.png" alt="picture"></p>
+<h3 id="3-Post-方式请求："><a href="#3-Post-方式请求：" class="headerlink" title="3.Post 方式请求："></a>3.Post 方式请求：</h3><pre><code>在 service 方法中使用: req.setCharacterEncoding(“utf-8”)；</code></pre>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown的用法</title>
     <url>/2020/0421_first/</url>
-    <content><![CDATA[<h1 id="一、Markdown的标题"><a href="#一、Markdown的标题" class="headerlink" title="一、Markdown的标题"></a>一、Markdown的标题</h1><h2 id="1-使用-标记一级标题"><a href="#1-使用-标记一级标题" class="headerlink" title="1.使用 = 标记一级标题"></a>1.使用 = 标记一级标题</h2><p>例如所示：</p>
-<h1 id="我展示的是一级标题"><a href="#我展示的是一级标题" class="headerlink" title="我展示的是一级标题"></a>我展示的是一级标题</h1><h2 id="2-使用-标记二级标题"><a href="#2-使用-标记二级标题" class="headerlink" title="2.使用 - 标记二级标题"></a>2.使用 - 标记二级标题</h2><p>例如所示：</p>
-<h2 id="我展示的是二级标题"><a href="#我展示的是二级标题" class="headerlink" title="我展示的是二级标题"></a>我展示的是二级标题</h2><a id="more"></a>
+    <content><![CDATA[<h1 id="一、Markdown的标题"><a href="#一、Markdown的标题" class="headerlink" title="一、Markdown的标题"></a>一、Markdown的标题</h1><h2 id="1-使用-标记一级标题"><a href="#1-使用-标记一级标题" class="headerlink" title="1.使用 = 标记一级标题"></a>1.使用 = 标记一级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是一级标题</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-使用-标记二级标题"><a href="#2-使用-标记二级标题" class="headerlink" title="2.使用 - 标记二级标题"></a>2.使用 - 标记二级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是二级标题</span><br><span class="line">--------------------</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <h2 id="3-使用-号标记"><a href="#3-使用-号标记" class="headerlink" title="3.使用#号标记"></a>3.使用#号标记</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推</span><br></pre></td></tr></table></figure>
 <p>例如所示：</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<hr>
 <h1 id="二、Markdown的段落"><a href="#二、Markdown的段落" class="headerlink" title="二、Markdown的段落"></a>二、Markdown的段落</h1><h2 id="1-段落要求"><a href="#1-段落要求" class="headerlink" title="1.段落要求"></a>1.段落要求</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车或者也可以在段落后面使用一个空行来表示重新开始一个段落。</span><br></pre></td></tr></table></figure>
 
 <h2 id="2-Markdown的字体"><a href="#2-Markdown的字体" class="headerlink" title="2.Markdown的字体"></a>2.Markdown的字体</h2><p>Markdown主要有以下字体可以使用</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. *斜体文本*  或者  _斜体文本_</span><br><span class="line"></span><br><span class="line">2. **粗体文本**  或者  __粗体文本__</span><br><span class="line"></span><br><span class="line">3. ***粗斜体文本***   或者   ___粗斜体文本___</span><br></pre></td></tr></table></figure>
-<p>例如所示:</p>
-<p><em>斜体文本</em></p>
-<p><strong>粗体文本</strong></p>
-<p><strong><em>斜粗体文本</em></strong>  </p>
+
 <hr>
 <h2 id="3-分隔符"><a href="#3-分隔符" class="headerlink" title="3.分隔符"></a>3.分隔符</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。</span><br><span class="line"></span><br><span class="line">例如所示:</span><br><span class="line">****</span><br><span class="line">* * *</span><br><span class="line">----</span><br><span class="line">-     -     -</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可，实例如下：</span><br><span class="line">    RUNOOB.COM</span><br><span class="line">    GOOGLE.COM</span><br><span class="line">    ~~BAIDU.COM~~</span><br></pre></td></tr></table></figure>
+
 <p>例如所示：<br><del>BAIDU.COM</del></p>
 <h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">下划线可以通过 HTML 的 &lt;u&gt; 标签来实现：</span><br><span class="line"></span><br><span class="line">    &lt;u&gt;带下划线文本&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure>
 
@@ -113,11 +129,11 @@
 <p>这是一个链接 <a href="http://hplts.github.io">我的博客网址</a></p>
 <p>或者 直接输出链接</p>
 <p><a href="http://hplts.github.io">http://hplts.github.io</a></p>
-<h1 id="7、Markdown的图片"><a href="#7、Markdown的图片" class="headerlink" title="7、Markdown的图片"></a>7、Markdown的图片</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 图片语法格式如下：</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">开头一个感叹号 !</span><br><span class="line">接着一个方括号，里面放上图片的替代文字</span><br><span class="line">接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。</span><br></pre></td></tr></table></figure>
+<h1 id="七、Markdown的图片"><a href="#七、Markdown的图片" class="headerlink" title="七、Markdown的图片"></a>七、Markdown的图片</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 图片语法格式如下：</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">开头一个感叹号 !</span><br><span class="line">接着一个方括号，里面放上图片的替代文字</span><br><span class="line">接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://pic.downk.cc/item/5e9ecac3c2a9a83be585549a.jpg" alt="美女图片" title="如图所示"></p>
 <hr>
-<h1 id="7、Markdown的表格"><a href="#7、Markdown的表格" class="headerlink" title="7、Markdown的表格"></a>7、Markdown的表格</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</span><br><span class="line"></span><br><span class="line">语法格式如下：</span><br><span class="line"></span><br><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line"></span><br><span class="line">2.对齐方式</span><br><span class="line"></span><br><span class="line">我们可以设置表格的对齐方式：</span><br><span class="line"></span><br><span class="line">-: 设置内容和标题栏居右对齐。</span><br><span class="line">:- 设置内容和标题栏居左对齐。</span><br><span class="line">:-: 设置内容和标题栏居中对齐。</span><br><span class="line">实例如下：</span><br><span class="line"></span><br><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+<h1 id="八、Markdown的表格"><a href="#八、Markdown的表格" class="headerlink" title="八、Markdown的表格"></a>八、Markdown的表格</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</span><br><span class="line"></span><br><span class="line">语法格式如下：</span><br><span class="line"></span><br><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line"></span><br><span class="line">2.对齐方式</span><br><span class="line"></span><br><span class="line">我们可以设置表格的对齐方式：</span><br><span class="line"></span><br><span class="line">-: 设置内容和标题栏居右对齐。</span><br><span class="line">:- 设置内容和标题栏居左对齐。</span><br><span class="line">:-: 设置内容和标题栏居中对齐。</span><br><span class="line">实例如下：</span><br><span class="line"></span><br><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
 
 <p>例如所示：</p>
 <table>
@@ -139,7 +155,7 @@
 <td align="center">单元格</td>
 </tr>
 </tbody></table>
-<h1 id="8、Markdown的高级技巧"><a href="#8、Markdown的高级技巧" class="headerlink" title="8、Markdown的高级技巧"></a>8、Markdown的高级技巧</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.支持的 HTML 元素</span><br><span class="line">不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</span><br><span class="line"></span><br><span class="line">目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如：</span><br><span class="line"></span><br><span class="line">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</span><br><span class="line"></span><br><span class="line">2.转义：使用\进行转义</span><br><span class="line">Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</span><br><span class="line"></span><br><span class="line">**文本加粗** </span><br><span class="line">\*\* 正常显示星号 \*\*</span><br></pre></td></tr></table></figure>
+<h1 id="九、Markdown的高级技巧"><a href="#九、Markdown的高级技巧" class="headerlink" title="九、Markdown的高级技巧"></a>九、Markdown的高级技巧</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.支持的 HTML 元素</span><br><span class="line">不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</span><br><span class="line"></span><br><span class="line">目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如：</span><br><span class="line"></span><br><span class="line">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</span><br><span class="line"></span><br><span class="line">2.转义：使用\进行转义</span><br><span class="line">Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</span><br><span class="line"></span><br><span class="line">**文本加粗** </span><br><span class="line">\*\* 正常显示星号 \*\*</span><br></pre></td></tr></table></figure>
 <h2 id="typora-画流程图、时序图-顺序图-、甘特图"><a href="#typora-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="typora 画流程图、时序图(顺序图)、甘特图"></a>typora 画流程图、时序图(顺序图)、甘特图</h2><h3 id="1、横向流程图源码格式："><a href="#1、横向流程图源码格式：" class="headerlink" title="1、横向流程图源码格式："></a>1、横向流程图源码格式：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt;|a&#x3D;2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
 <p>2、竖向流程图源码格式：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt; |a&#x3D;2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
@@ -167,20 +183,6 @@
       <tags>
         <tag>随笔</tag>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决servlet的乱码问题</title>
-    <url>/2020/0421_second/</url>
-    <content><![CDATA[<h2 id="servlet中请求乱码问题解决"><a href="#servlet中请求乱码问题解决" class="headerlink" title="servlet中请求乱码问题解决:"></a>servlet中请求乱码问题解决:</h2><h3 id="1-最有效的办法："><a href="#1-最有效的办法：" class="headerlink" title="1.最有效的办法："></a>1.最有效的办法：</h3><pre><code>使用 String 进行重新编码： uname=new String(uname.getBytes(&quot;iso8859-1&quot;),&quot;utf-8&quot;); </code></pre><h3 id="2-Get-方式请求："><a href="#2-Get-方式请求：" class="headerlink" title="2.Get 方式请求："></a>2.Get 方式请求：</h3><pre><code>在 service 方法中使用: req.setCharacterEncoding(“utf-8”)； 
-在 tomcat 服务器目录下的 conf 文件下找到 server.xml 文件，打开进 行如下配置: </code></pre><p><img src="https://pic.downk.cc/item/5e9ebc7dc2a9a83be5786ced.png" alt="picture"></p>
-<h3 id="3-Post-方式请求："><a href="#3-Post-方式请求：" class="headerlink" title="3.Post 方式请求："></a>3.Post 方式请求：</h3><pre><code>在 service 方法中使用: req.setCharacterEncoding(“utf-8”)；</code></pre>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>记录</tag>
       </tags>
   </entry>
 </search>
