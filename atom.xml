@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>风-个人博客</title>
   
-  <subtitle>一起随风而去</subtitle>
+  <subtitle>学习*生活*记录</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hplts.github.io/"/>
@@ -64,9 +64,9 @@
       <category term="学习" scheme="https://hplts.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="随笔" scheme="https://hplts.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="随笔" scheme="https://hplts.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
