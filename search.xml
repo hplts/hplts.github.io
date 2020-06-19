@@ -16,6 +16,416 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown的用法</title>
+    <url>/2020/0421_first/</url>
+    <content><![CDATA[<h1 id="一、Markdown的标题"><a href="#一、Markdown的标题" class="headerlink" title="一、Markdown的标题"></a>一、Markdown的标题</h1><h2 id="1-使用-标记一级标题"><a href="#1-使用-标记一级标题" class="headerlink" title="1.使用 = 标记一级标题"></a>1.使用 = 标记一级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是一级标题</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-使用-标记二级标题"><a href="#2-使用-标记二级标题" class="headerlink" title="2.使用 - 标记二级标题"></a>2.使用 - 标记二级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是二级标题</span><br><span class="line">--------------------</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="3-使用-号标记"><a href="#3-使用-号标记" class="headerlink" title="3.使用#号标记"></a>3.使用#号标记</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推</span><br></pre></td></tr></table></figure>
+<p>例如所示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="二、Markdown的段落"><a href="#二、Markdown的段落" class="headerlink" title="二、Markdown的段落"></a>二、Markdown的段落</h1><h2 id="1-段落要求"><a href="#1-段落要求" class="headerlink" title="1.段落要求"></a>1.段落要求</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车或者也可以在段落后面使用一个空行来表示重新开始一个段落。</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-Markdown的字体"><a href="#2-Markdown的字体" class="headerlink" title="2.Markdown的字体"></a>2.Markdown的字体</h2><p>Markdown主要有以下字体可以使用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. *斜体文本*  或者  _斜体文本_</span><br><span class="line"></span><br><span class="line">2. **粗体文本**  或者  __粗体文本__</span><br><span class="line"></span><br><span class="line">3. ***粗斜体文本***   或者   ___粗斜体文本___</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="3-分隔符"><a href="#3-分隔符" class="headerlink" title="3.分隔符"></a>3.分隔符</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。</span><br><span class="line"></span><br><span class="line">例如所示:</span><br><span class="line">****</span><br><span class="line">* * *</span><br><span class="line">----</span><br><span class="line">-     -     -</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可，实例如下：</span><br><span class="line">    RUNOOB.COM</span><br><span class="line">    GOOGLE.COM</span><br><span class="line">    ~~BAIDU.COM~~</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：<br><del>BAIDU.COM</del></p>
+<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">下划线可以通过 HTML 的 &lt;u&gt; 标签来实现：</span><br><span class="line"></span><br><span class="line">    &lt;u&gt;带下划线文本&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：</p>
+<p><u>带下划线的文本</u></p>
+<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">脚注是对文本的补充说明。</span><br><span class="line"></span><br><span class="line">Markdown 脚注的格式如下:</span><br><span class="line"></span><br><span class="line">[^要注明的文本]</span><br><span class="line"></span><br><span class="line">以下实例演示了脚注的用法：</span><br><span class="line"></span><br><span class="line">创建脚注格式类似这样 </span><br><span class="line"></span><br><span class="line">[^码农]。</span><br><span class="line"></span><br><span class="line">[^码农]: 程序员 -- 学的越多，秃的越快！！！</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="三、Markdown列表"><a href="#三、Markdown列表" class="headerlink" title="三、Markdown列表"></a>三、Markdown列表</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 支持有序列表和无序列表。</span><br><span class="line"> </span><br><span class="line">无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</span><br><span class="line"></span><br><span class="line">* 第一项</span><br><span class="line">* 第二项</span><br><span class="line">* 第三项</span><br><span class="line"></span><br><span class="line">+ 第一项</span><br><span class="line">+ 第二项</span><br><span class="line">+ 第三项</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br><span class="line"></span><br><span class="line">有序列表使用数字并加上 . 号来表示，如：</span><br><span class="line"></span><br><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br><span class="line"></span><br><span class="line">列表嵌套只需在子列表中的选项添加四个空格即可：</span><br><span class="line"></span><br><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：</p>
+<ul>
+<li>第一项<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ol>
+<li>第一项   <ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项<ul>
+<li>第二项嵌套的第一个元素<ul>
+<li>第二项嵌套的第一项的第一个元素</li>
+</ul>
+</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第三项</li>
+</ol>
+<hr>
+<h1 id="四、Markdown区块"><a href="#四、Markdown区块" class="headerlink" title="四、Markdown区块"></a>四、Markdown区块</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</span><br><span class="line"></span><br><span class="line">&gt; 区块引用</span><br><span class="line">&gt; 学的不仅是技术更是梦想</span><br><span class="line"></span><br><span class="line">另外区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</span><br><span class="line">&gt; 最外层</span><br><span class="line">&gt; &gt; 第一层嵌套</span><br><span class="line">&gt; &gt; &gt; 第二层嵌套</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>区块引用<br>学习Markdown</p>
+</blockquote>
+<blockquote>
+<p>最外层  </p>
+<blockquote>
+<p>第一层嵌套  </p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注:区块可以和列表相互嵌套使用，例如：</span><br><span class="line">1. 第一项</span><br><span class="line">    &gt; 菜鸟教程</span><br><span class="line">    &gt; 学的不仅是技术更是梦想</span><br><span class="line">2. 第二项</span><br></pre></td></tr></table></figure>
+<ol>
+<li>第一项<blockquote>
+<p>菜鸟教程<br>学习Markdown</p>
+</blockquote>
+</li>
+<li>第二项<ul>
+<li>第二项的第一个元素</li>
+<li>第二项的第二个元素</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h1 id="五、Markdown的代码"><a href="#五、Markdown的代码" class="headerlink" title="五、Markdown的代码"></a>五、Markdown的代码</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.如果是段落上的一个函数或片段的代码可以用反引号把它包起来（&#96;），例如：</span><br><span class="line"></span><br><span class="line">&#96;printf()&#96; 函数</span><br><span class="line"></span><br><span class="line">2.代码区块</span><br><span class="line">代码区块使用 4 个空格或者一个制表符（Tab 键）</span><br><span class="line"></span><br><span class="line">3.可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定）：</span><br></pre></td></tr></table></figure>
+
+<p>例如所示:<br><code>printf()</code></p>
+<pre><code>&lt;?php
+    echo &quot;1111&quot;; 
+?&gt;</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">System.out.println(a);</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="六、Markdown的链接"><a href="#六、Markdown的链接" class="headerlink" title="六、Markdown的链接"></a>六、Markdown的链接</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">链接使用方法如下：</span><br><span class="line">[链接名称](链接地址)</span><br><span class="line">或者</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">[我的博客网址](http:&#x2F;&#x2F;hplts.github.io)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">高级链接</span><br><span class="line">我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：</span><br><span class="line"></span><br><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">这个链接用 runoob 作为网址变量 [Runoob][runoob]</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">  [1]: http:&#x2F;&#x2F;www.google.com&#x2F;</span><br><span class="line">  [runoob]: http:&#x2F;&#x2F;www.runoob.com&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>这是一个链接 <a href="http://hplts.github.io">我的博客网址</a></p>
+<p>或者 直接输出链接</p>
+<p><a href="http://hplts.github.io">http://hplts.github.io</a></p>
+<h1 id="七、Markdown的图片"><a href="#七、Markdown的图片" class="headerlink" title="七、Markdown的图片"></a>七、Markdown的图片</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 图片语法格式如下：</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">开头一个感叹号 !</span><br><span class="line">接着一个方括号，里面放上图片的替代文字</span><br><span class="line">接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic.downk.cc/item/5e9ecac3c2a9a83be585549a.jpg" alt="美女图片" title="如图所示"></p>
+<hr>
+<h1 id="八、Markdown的表格"><a href="#八、Markdown的表格" class="headerlink" title="八、Markdown的表格"></a>八、Markdown的表格</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</span><br><span class="line"></span><br><span class="line">语法格式如下：</span><br><span class="line"></span><br><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line"></span><br><span class="line">2.对齐方式</span><br><span class="line"></span><br><span class="line">我们可以设置表格的对齐方式：</span><br><span class="line"></span><br><span class="line">-: 设置内容和标题栏居右对齐。</span><br><span class="line">:- 设置内容和标题栏居左对齐。</span><br><span class="line">:-: 设置内容和标题栏居中对齐。</span><br><span class="line">实例如下：</span><br><span class="line"></span><br><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<h1 id="九、Markdown的高级技巧"><a href="#九、Markdown的高级技巧" class="headerlink" title="九、Markdown的高级技巧"></a>九、Markdown的高级技巧</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.支持的 HTML 元素</span><br><span class="line">不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</span><br><span class="line"></span><br><span class="line">目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如：</span><br><span class="line"></span><br><span class="line">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</span><br><span class="line"></span><br><span class="line">2.转义：使用\进行转义</span><br><span class="line">Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</span><br><span class="line"></span><br><span class="line">**文本加粗** </span><br><span class="line">\*\* 正常显示星号 \*\*</span><br></pre></td></tr></table></figure>
+<h2 id="typora-画流程图、时序图-顺序图-、甘特图"><a href="#typora-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="typora 画流程图、时序图(顺序图)、甘特图"></a>typora 画流程图、时序图(顺序图)、甘特图</h2><h3 id="1、横向流程图源码格式："><a href="#1、横向流程图源码格式：" class="headerlink" title="1、横向流程图源码格式："></a>1、横向流程图源码格式：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt;|a&#x3D;2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
+<p>2、竖向流程图源码格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt; |a&#x3D;2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
+
+<p>3、标准流程图源码格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<p>4、标准流程图源码格式（横向）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st(right)-&gt;op(right)-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(bottom)-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<p>5、UML时序图源码样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br></pre></td></tr></table></figure>
+
+<p>6、UML时序图源码复杂样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br></pre></td></tr></table></figure>
+
+<p>7、UML标准时序图样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br&#x2F;&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br></pre></td></tr></table></figure>
+
+<p>8、甘特图样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java中集合框架的总结</title>
+    <url>/2020/04020_first/</url>
+    <content><![CDATA[<h1 id="剖析面试最常见问题之-Java-集合框架"><a href="#剖析面试最常见问题之-Java-集合框架" class="headerlink" title="剖析面试最常见问题之 Java 集合框架"></a>剖析面试最常见问题之 Java 集合框架</h1><h2 id="集合概述"><a href="#集合概述" class="headerlink" title="集合概述"></a>集合概述</h2><h3 id="Java-集合概览"><a href="#Java-集合概览" class="headerlink" title="Java 集合概览"></a>Java 集合概览</h3><p>从下图可以看出，在 Java 中除了以 Map 结尾的类之外， 其他类都实现了 <code>Collection</code> 接口。</p>
+<p>并且，以 <code>Map</code> 结尾的类都实现了 <code>Map</code> 接口。</p>
+<a id="more"></a>
+
+<p><img src="https://i.loli.net/2020/06/19/JvCHs5BS34ZkO1l.png" alt="85101047-1646be80-b234-11ea-90ee-f4be604b0183.png"></p>
+<h3 id="说说-List-Set-Map-三者的区别？"><a href="#说说-List-Set-Map-三者的区别？" class="headerlink" title="说说 List,Set,Map 三者的区别？"></a>说说 List,Set,Map 三者的区别？</h3><ul>
+<li><code>List</code>(对付顺序的好帮手)： 存储的元素是有序的、可重复的。</li>
+<li><code>Set</code>(注重独一无二的性质): 存储的元素是无序的、不可重复的。</li>
+<li><code>Map</code>(用 Key 来搜索的专家): 使用键值对（kye-value）存储，类似于数学上的函数 y=f(x)，“x”代表 key，”y”代表 value，Key 是无序的、不可重复的，value 是无序的、可重复的，每个键最多映射到一个值。</li>
+</ul>
+<h3 id="集合框架底层数据结构总结"><a href="#集合框架底层数据结构总结" class="headerlink" title="集合框架底层数据结构总结"></a>集合框架底层数据结构总结</h3><p>先来看一下 <code>Collection</code> 接口下面的集合。</p>
+<h4 id="List"><a href="#List" class="headerlink" title="List"></a>List</h4><ul>
+<li><code>Arraylist</code>： <code>Object[]</code>数组</li>
+<li><code>Vector</code>：<code>Object[]</code>数组</li>
+<li><code>LinkedList</code>： 双向链表(JDK1.6 之前为循环链表，JDK1.7 取消了循环)</li>
+</ul>
+<h4 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h4><ul>
+<li><code>HashSet</code>（无序，唯一）: 基于 <code>HashMap</code> 实现的，底层采用 <code>HashMap</code> 来保存元素</li>
+<li><code>LinkedHashSet</code>：<code>LinkedHashSet</code> 是 <code>HashSet</code> 的子类，并且其内部是通过 <code>LinkedHashMap</code> 来实现的。有点类似于我们之前说的 <code>LinkedHashMap</code> 其内部是基于 <code>HashMap</code> 实现一样，不过还是有一点点区别的</li>
+<li><code>TreeSet</code>（有序，唯一）： 红黑树(自平衡的排序二叉树)</li>
+</ul>
+<p>再来看看 <code>Map</code> 接口下面的集合。</p>
+<h4 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h4><ul>
+<li><code>HashMap</code>： JDK1.8 之前 HashMap 由数组+链表组成的，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的（“拉链法”解决冲突）。JDK1.8 以后在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间</li>
+<li><code>LinkedHashMap</code>： <code>LinkedHashMap</code> 继承自 <code>HashMap</code>，所以它的底层仍然是基于拉链式散列结构即由数组和链表或红黑树组成。另外，<code>LinkedHashMap</code> 在上面结构的基础上，增加了一条双向链表，使得上面的结构可以保持键值对的插入顺序。同时通过对链表进行相应的操作，实现了访问顺序相关逻辑。详细可以查看：<a href="https://www.imooc.com/article/22931" target="_blank" rel="noopener">《LinkedHashMap 源码详细分析（JDK1.8）》</a></li>
+<li><code>Hashtable</code>： 数组+链表组成的，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的</li>
+<li><code>TreeMap</code>： 红黑树（自平衡的排序二叉树）</li>
+</ul>
+<h3 id="如何选用集合"><a href="#如何选用集合" class="headerlink" title="如何选用集合?"></a>如何选用集合?</h3><p>主要根据集合的特点来选用，比如我们需要根据键值获取到元素值时就选用 Map 接口下的集合，需要排序时选择 TreeMap,不需要排序时就选择 HashMap,需要保证线程安全就选用 ConcurrentHashMap。</p>
+<p>当我们只需要存放元素值时，就选择实现 Collection 接口的集合，需要保证元素唯一时选择实现 Set 接口的集合比如 TreeSet 或 HashSet，不需要就选择实现 List 接口的比如 ArrayList 或 LinkedList，然后再根据实现这些接口的集合的特点来选用。</p>
+<h3 id="为什么要使用集合？"><a href="#为什么要使用集合？" class="headerlink" title="为什么要使用集合？"></a>为什么要使用集合？</h3><p>当我们需要保存一组类型相同的数据的时候，我们应该是用一个容器来保存，这个容器就是数组，但是，使用数组存储对象具有一定的弊端， 因为我们在实际开发中，存储的数据的类型是多种多样的，于是，就出现了“集合”，集合同样也是用来存储多个数据的。</p>
+<p>数组的缺点是一旦声明之后，长度就不可变了；同时，声明数组时的数据类型也决定了该数组存储的数据的类型；而且，数组存储的数据是有序的、可重复的，特点单一。 但是集合提高了数据存储的灵活性，Java 集合不仅可以用来存储不同类型不同数量的对象，还可以保存具有映射关系的数据</p>
+<h3 id="Iterator-迭代器"><a href="#Iterator-迭代器" class="headerlink" title="Iterator 迭代器"></a>Iterator 迭代器</h3><h4 id="迭代器-Iterator-是什么？"><a href="#迭代器-Iterator-是什么？" class="headerlink" title="迭代器 Iterator 是什么？"></a>迭代器 Iterator 是什么？</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public interface Iterator&lt;E&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F;集合中是否还有元素</span><br><span class="line">    boolean hasNext();</span><br><span class="line">    &#x2F;&#x2F;获得集合中的下一个元素</span><br><span class="line">    E next();</span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>Iterator</code> 对象称为迭代器（设计模式的一种），迭代器可以对集合进行遍历，但每一个集合内部的数据结构可能是不尽相同的，所以每一个集合存和取都很可能是不一样的，虽然我们可以人为地在每一个类中定义 <code>hasNext()</code> 和 <code>next()</code> 方法，但这样做会让整个集合体系过于臃肿。于是就有了迭代器。</p>
+<p>迭代器是将这样的方法抽取出接口，然后在每个类的内部，定义自己迭代方式，这样做就规定了整个集合体系的遍历方式都是 <code>hasNext()</code>和<code>next()</code>方法，使用者不用管怎么实现的，会用即可。迭代器的定义为：提供一种方法访问一个容器对象中各个元素，而又不需要暴露该对象的内部细节。</p>
+<h4 id="迭代器-Iterator-有啥用？"><a href="#迭代器-Iterator-有啥用？" class="headerlink" title="迭代器 Iterator 有啥用？"></a>迭代器 Iterator 有啥用？</h4><p><code>Iterator</code> 主要是用来遍历集合用的，它的特点是更加安全，因为它可以确保，在当前遍历的集合元素被更改的时候，就会抛出 <code>ConcurrentModificationException</code> 异常。</p>
+<h4 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h4><p>我们通过使用迭代器来遍历 <code>HashMap</code>，演示一下 迭代器 Iterator 的使用。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Map&lt;Integer, String&gt; map &#x3D; new HashMap();</span><br><span class="line">map.put(1, &quot;Java&quot;);</span><br><span class="line">map.put(2, &quot;C++&quot;);</span><br><span class="line">map.put(3, &quot;PHP&quot;);</span><br><span class="line">Iterator&lt;Map.Entry&lt;Integer, String&gt;&gt; iterator &#x3D; map.entrySet().iterator();</span><br><span class="line">while (iterator.hasNext()) &#123;</span><br><span class="line">  Map.Entry&lt;Integer, String&gt; entry &#x3D; iterator.next();</span><br><span class="line">  System.out.println(entry.getKey() + entry.getValue());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="有哪些集合是线程不安全的？怎么解决呢？"><a href="#有哪些集合是线程不安全的？怎么解决呢？" class="headerlink" title="有哪些集合是线程不安全的？怎么解决呢？"></a>有哪些集合是线程不安全的？怎么解决呢？</h3><p>我们常用的 <code>Arraylist</code> ,<code>LinkedList</code>,<code>Hashmap</code>,<code>HashSet</code>,<code>TreeSet</code>,<code>TreeMap</code>，<code>PriorityQueue</code> 都不是线程安全的。解决办法很简单，可以使用线程安全的集合来代替。</p>
+<p>如果你要使用线程安全的集合的话， <code>java.util.concurrent</code> 包中提供了很多并发容器供你使用：</p>
+<ol>
+<li><code>ConcurrentHashMap</code>: 可以看作是线程安全的 <code>HashMap</code></li>
+<li><code>CopyOnWriteArrayList</code>:可以看作是线程安全的 <code>ArrayList</code>，在读多写少的场合性能非常好，远远好于 <code>Vector</code>.</li>
+<li><code>ConcurrentLinkedQueue</code>:高效的并发队列，使用链表实现。可以看做一个线程安全的 <code>LinkedList</code>，这是一个非阻塞队列。</li>
+<li><code>BlockingQueue</code>: 这是一个接口，JDK 内部通过链表、数组等方式实现了这个接口。表示阻塞队列，非常适合用于作为数据共享的通道。</li>
+<li><code>ConcurrentSkipListMap</code> :跳表的实现。这是一个<code>Map</code>，使用跳表的数据结构进行快速查找。</li>
+</ol>
+<h2 id="Collection-子接口之-List"><a href="#Collection-子接口之-List" class="headerlink" title="Collection 子接口之 List"></a>Collection 子接口之 List</h2><h3 id="Arraylist-和-Vector-的区别"><a href="#Arraylist-和-Vector-的区别" class="headerlink" title="Arraylist 和 Vector 的区别?"></a>Arraylist 和 Vector 的区别?</h3><ol>
+<li>ArrayList 是 List 的主要实现类，底层使用 Object[ ]存储，适用于频繁的查找工作，线程不安全 ；</li>
+<li>Vector 是 List 的古老实现类，底层使用 Object[ ]存储，线程安全的。</li>
+</ol>
+<h3 id="Arraylist-与-LinkedList-区别"><a href="#Arraylist-与-LinkedList-区别" class="headerlink" title="Arraylist 与 LinkedList 区别?"></a>Arraylist 与 LinkedList 区别?</h3><ol>
+<li><strong>是否保证线程安全：</strong> <code>ArrayList</code> 和 <code>LinkedList</code> 都是不同步的，也就是不保证线程安全；</li>
+<li><strong>底层数据结构：</strong> <code>Arraylist</code> 底层使用的是 <strong>Object 数组</strong>；<code>LinkedList</code> 底层使用的是 <strong>双向链表</strong> 数据结构（JDK1.6 之前为循环链表，JDK1.7 取消了循环。注意双向链表和双向循环链表的区别，下面有介绍到！）</li>
+<li><strong>插入和删除是否受元素位置的影响：</strong> ① <strong>ArrayList 采用数组存储，所以插入和删除元素的时间复杂度受元素位置的影响。</strong> 比如：执行<code>add(E e)</code>方法的时候， <code>ArrayList</code> 会默认在将指定的元素追加到此列表的末尾，这种情况时间复杂度就是 O(1)。但是如果要在指定位置 i 插入和删除元素的话（<code>add(int index, E element)</code>）时间复杂度就为 O(n-i)。因为在进行上述操作的时候集合中第 i 和第 i 个元素之后的(n-i)个元素都要执行向后位/向前移一位的操作。 ② <strong>LinkedList 采用链表存储，所以对于add(E e)方法的插入，删除元素时间复杂度不受元素位置的影响，近似 O(1)，如果是要在指定位置i插入和删除元素的话（(add(int index, E element)） 时间复杂度近似为o(n))因为需要先移动到指定位置再插入。</strong></li>
+<li><strong>是否支持快速随机访问：</strong> <code>LinkedList</code> 不支持高效的随机元素访问，而 <code>ArrayList</code> 支持。快速随机访问就是通过元素的序号快速获取元素对象(对应于<code>get(int index)</code>方法)。</li>
+<li><strong>内存空间占用：</strong> ArrayList 的空 间浪费主要体现在在 list 列表的结尾会预留一定的容量空间，而 LinkedList 的空间花费则体现在它的每一个元素都需要消耗比 ArrayList 更多的空间（因为要存放直接后继和直接前驱以及数据）。</li>
+</ol>
+<h4 id="补充内容-双向链表和双向循环链表"><a href="#补充内容-双向链表和双向循环链表" class="headerlink" title="补充内容:双向链表和双向循环链表"></a>补充内容:双向链表和双向循环链表</h4><p><strong>双向链表：</strong> 包含两个指针，一个 prev 指向前一个节点，一个 next 指向后一个节点。</p>
+<blockquote>
+<p>另外推荐一篇把双向链表讲清楚的文章：<a href="https://juejin.im/post/5b5d1a9af265da0f47352f14" target="_blank" rel="noopener">https://juejin.im/post/5b5d1a9af265da0f47352f14</a></p>
+</blockquote>
+<p><a href="https://camo.githubusercontent.com/7d452b4b9f1402669f346c243b4777cb1b9e032c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545392539332542452545382541312541382e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/7d452b4b9f1402669f346c243b4777cb1b9e032c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545392539332542452545382541312541382e706e67" alt="双向链表"></a></p>
+<p><strong>双向循环链表：</strong> 最后一个节点的 next 指向 head，而 head 的 prev 指向最后一个节点，构成一个环。</p>
+<p><a href="https://camo.githubusercontent.com/cbb13185522a7d66d9419fada0715051778e867c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545352542452541412545372538452541462545392539332542452545382541312541382e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/cbb13185522a7d66d9419fada0715051778e867c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545352542452541412545372538452541462545392539332542452545382541312541382e706e67" alt="双向循环链表"></a></p>
+<h4 id="补充内容-RandomAccess-接口"><a href="#补充内容-RandomAccess-接口" class="headerlink" title="补充内容:RandomAccess 接口"></a>补充内容:RandomAccess 接口</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public interface RandomAccess &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>查看源码我们发现实际上 <code>RandomAccess</code> 接口中什么都没有定义。所以，在我看来 <code>RandomAccess</code> 接口不过是一个标识罢了。标识什么？ 标识实现这个接口的类具有随机访问功能。</p>
+<p>在 <code>binarySearch（)</code> 方法中，它要判断传入的 list 是否 <code>RamdomAccess</code> 的实例，如果是，调用<code>indexedBinarySearch()</code>方法，如果不是，那么调用<code>iteratorBinarySearch()</code>方法</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static &lt;T&gt;</span><br><span class="line">int binarySearch(List&lt;? extends Comparable&lt;? super T&gt;&gt; list, T key) &#123;</span><br><span class="line">    if (list instanceof RandomAccess || list.size()&lt;BINARYSEARCH_THRESHOLD)</span><br><span class="line">        return Collections.indexedBinarySearch(list, key);</span><br><span class="line">    else</span><br><span class="line">        return Collections.iteratorBinarySearch(list, key);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>ArrayList</code> 实现了 <code>RandomAccess</code> 接口， 而 <code>LinkedList</code> 没有实现。为什么呢？我觉得还是和底层数据结构有关！<code>ArrayList</code> 底层是数组，而 <code>LinkedList</code> 底层是链表。数组天然支持随机访问，时间复杂度为 O(1)，所以称为快速随机访问。链表需要遍历到特定位置才能访问特定位置的元素，时间复杂度为 O(n)，所以不支持快速随机访问。，<code>ArrayList</code> 实现了 <code>RandomAccess</code> 接口，就表明了他具有快速随机访问功能。 <code>RandomAccess</code> 接口只是标识，并不是说 <code>ArrayList</code> 实现 <code>RandomAccess</code> 接口才具有快速随机访问功能的！</p>
+<h3 id="说一说-ArrayList-的扩容机制吧"><a href="#说一说-ArrayList-的扩容机制吧" class="headerlink" title="说一说 ArrayList 的扩容机制吧"></a>说一说 ArrayList 的扩容机制吧</h3><p>详见笔主的这篇文章:<a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/collection/ArrayList-Grow.md" target="_blank" rel="noopener">通过源码一步一步分析 ArrayList 扩容机制</a></p>
+<h2 id="Collection-子接口之-Set"><a href="#Collection-子接口之-Set" class="headerlink" title="Collection 子接口之 Set"></a>Collection 子接口之 Set</h2><h3 id="comparable-和-Comparator-的区别"><a href="#comparable-和-Comparator-的区别" class="headerlink" title="comparable 和 Comparator 的区别"></a>comparable 和 Comparator 的区别</h3><ul>
+<li><code>comparable</code> 接口实际上是出自<code>java.lang</code>包 它有一个 <code>compareTo(Object obj)</code>方法用来排序</li>
+<li><code>comparator</code>接口实际上是出自 java.util 包它有一个<code>compare(Object obj1, Object obj2)</code>方法用来排序</li>
+</ul>
+<p>一般我们需要对一个集合使用自定义排序时，我们就要重写<code>compareTo()</code>方法或<code>compare()</code>方法，当我们需要对某一个集合实现两种排序方式，比如一个 song 对象中的歌名和歌手名分别采用一种排序方法的话，我们可以重写<code>compareTo()</code>方法和使用自制的<code>Comparator</code>方法或者以两个 Comparator 来实现歌名排序和歌星名排序，第二种代表我们只能使用两个参数版的 <code>Collections.sort()</code>.</p>
+<h4 id="Comparator-定制排序"><a href="#Comparator-定制排序" class="headerlink" title="Comparator 定制排序"></a>Comparator 定制排序</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;Integer&gt; arrayList &#x3D; new ArrayList&lt;Integer&gt;();</span><br><span class="line">arrayList.add(-1);</span><br><span class="line">arrayList.add(3);</span><br><span class="line">arrayList.add(3);</span><br><span class="line">arrayList.add(-5);</span><br><span class="line">arrayList.add(7);</span><br><span class="line">arrayList.add(4);</span><br><span class="line">arrayList.add(-9);</span><br><span class="line">arrayList.add(-7);</span><br><span class="line">System.out.println(&quot;原始数组:&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br><span class="line">&#x2F;&#x2F; void reverse(List list)：反转</span><br><span class="line">Collections.reverse(arrayList);</span><br><span class="line">System.out.println(&quot;Collections.reverse(arrayList):&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; void sort(List list),按自然排序的升序排序</span><br><span class="line">Collections.sort(arrayList);</span><br><span class="line">System.out.println(&quot;Collections.sort(arrayList):&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br><span class="line">&#x2F;&#x2F; 定制排序的用法</span><br><span class="line">Collections.sort(arrayList, new Comparator&lt;Integer&gt;() &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public int compare(Integer o1, Integer o2) &#123;</span><br><span class="line">        return o2.compareTo(o1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">System.out.println(&quot;定制排序后：&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br></pre></td></tr></table></figure>
+
+<p>Output:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">原始数组:</span><br><span class="line">[-1, 3, 3, -5, 7, 4, -9, -7]</span><br><span class="line">Collections.reverse(arrayList):</span><br><span class="line">[-7, -9, 4, 7, -5, 3, 3, -1]</span><br><span class="line">Collections.sort(arrayList):</span><br><span class="line">[-9, -7, -5, -1, 3, 3, 4, 7]</span><br><span class="line">定制排序后：</span><br><span class="line">[7, 4, 3, 3, -1, -5, -7, -9]</span><br></pre></td></tr></table></figure>
+
+<h4 id="重写-compareTo-方法实现按年龄来排序"><a href="#重写-compareTo-方法实现按年龄来排序" class="headerlink" title="重写 compareTo 方法实现按年龄来排序"></a>重写 compareTo 方法实现按年龄来排序</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; person对象没有实现Comparable接口，所以必须实现，这样才不会出错，才可以使treemap中的数据按顺序排列</span><br><span class="line">&#x2F;&#x2F; 前面一个例子的String类已经默认实现了Comparable接口，详细可以查看String类的API文档，另外其他</span><br><span class="line">&#x2F;&#x2F; 像Integer类等都已经实现了Comparable接口，所以不需要另外实现了</span><br><span class="line">public  class Person implements Comparable&lt;Person&gt; &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private int age;</span><br><span class="line"></span><br><span class="line">    public Person(String name, int age) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int getAge() &#123;</span><br><span class="line">        return age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setAge(int age) &#123;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * T重写compareTo方法实现按年龄来排序</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Override</span><br><span class="line">    public int compareTo(Person o) &#123;</span><br><span class="line">        if (this.age &gt; o.getAge()) &#123;</span><br><span class="line">            return 1;</span><br><span class="line">        &#125;</span><br><span class="line">        if (this.age &lt; o.getAge()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        TreeMap&lt;Person, String&gt; pdata &#x3D; new TreeMap&lt;Person, String&gt;();</span><br><span class="line">        pdata.put(new Person(&quot;张三&quot;, 30), &quot;zhangsan&quot;);</span><br><span class="line">        pdata.put(new Person(&quot;李四&quot;, 20), &quot;lisi&quot;);</span><br><span class="line">        pdata.put(new Person(&quot;王五&quot;, 10), &quot;wangwu&quot;);</span><br><span class="line">        pdata.put(new Person(&quot;小红&quot;, 5), &quot;xiaohong&quot;);</span><br><span class="line">        &#x2F;&#x2F; 得到key的值的同时得到key所对应的值</span><br><span class="line">        Set&lt;Person&gt; keys &#x3D; pdata.keySet();</span><br><span class="line">        for (Person key : keys) &#123;</span><br><span class="line">            System.out.println(key.getAge() + &quot;-&quot; + key.getName());</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>Output：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">5-小红</span><br><span class="line">10-王五</span><br><span class="line">20-李四</span><br><span class="line">30-张三</span><br></pre></td></tr></table></figure>
+
+<h3 id="无序性和不可重复性的含义是什么"><a href="#无序性和不可重复性的含义是什么" class="headerlink" title="无序性和不可重复性的含义是什么"></a>无序性和不可重复性的含义是什么</h3><p>1、什么是无序性？无序性不等于随机性 ，无序性是指存储的数据在底层数组中并非按照数组索引的顺序添加 ，而是根据数据的哈希值决定的。</p>
+<p>2、什么是不可重复性？不可重复性是指添加的元素按照 equals()判断时 ，返回 false，需要同时重写 equals()方法和 HashCode()方法。</p>
+<h3 id="比较-HashSet、LinkedHashSet-和-TreeSet-三者的异同"><a href="#比较-HashSet、LinkedHashSet-和-TreeSet-三者的异同" class="headerlink" title="比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同"></a>比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同</h3><p>HashSet 是 Set 接口的主要实现类 ，HashSet 的底层是 HashMap，线程不安全的，可以存储 null 值；</p>
+<p>LinkedHashSet 是 HashSet 的子类，能够按照添加的顺序遍历；</p>
+<p>TreeSet 底层使用红黑树，能够按照添加元素的顺序进行遍历，排序的方式有自然排序和定制排序。</p>
+<h2 id="Map-接口"><a href="#Map-接口" class="headerlink" title="Map 接口"></a>Map 接口</h2><h3 id="HashMap-和-Hashtable-的区别"><a href="#HashMap-和-Hashtable-的区别" class="headerlink" title="HashMap 和 Hashtable 的区别"></a>HashMap 和 Hashtable 的区别</h3><ol>
+<li><strong>线程是否安全：</strong> HashMap 是非线程安全的，HashTable 是线程安全的,因为 HashTable 内部的方法基本都经过<code>synchronized</code> 修饰。（如果你要保证线程安全的话就使用 ConcurrentHashMap 吧！）；</li>
+<li><strong>效率：</strong> 因为线程安全的问题，HashMap 要比 HashTable 效率高一点。另外，HashTable 基本被淘汰，不要在代码中使用它；</li>
+<li><strong>对 Null key 和 Null value 的支持：</strong> HashMap 可以存储 null 的 key 和 value，但 null 作为键只能有一个，null 作为值可以有多个；HashTable 不允许有 null 键和 null 值，否则会抛出 NullPointerException。</li>
+<li><strong>初始容量大小和每次扩充容量大小的不同 ：</strong> ① 创建时如果不指定容量初始值，Hashtable 默认的初始大小为 11，之后每次扩充，容量变为原来的 2n+1。HashMap 默认的初始化大小为 16。之后每次扩充，容量变为原来的 2 倍。② 创建时如果给定了容量初始值，那么 Hashtable 会直接使用你给定的大小，而 HashMap 会将其扩充为 2 的幂次方大小（HashMap 中的<code>tableSizeFor()</code>方法保证，下面给出了源代码）。也就是说 HashMap 总是使用 2 的幂作为哈希表的大小,后面会介绍到为什么是 2 的幂次方。</li>
+<li><strong>底层数据结构：</strong> JDK1.8 以后的 HashMap 在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间。Hashtable 没有这样的机制。</li>
+</ol>
+<p><strong>HashMap 中带有初始容量的构造函数：</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public HashMap(int initialCapacity, float loadFactor) &#123;</span><br><span class="line">    if (initialCapacity &lt; 0)</span><br><span class="line">        throw new IllegalArgumentException(&quot;Illegal initial capacity: &quot; +</span><br><span class="line">                                           initialCapacity);</span><br><span class="line">    if (initialCapacity &gt; MAXIMUM_CAPACITY)</span><br><span class="line">        initialCapacity &#x3D; MAXIMUM_CAPACITY;</span><br><span class="line">    if (loadFactor &lt;&#x3D; 0 || Float.isNaN(loadFactor))</span><br><span class="line">        throw new IllegalArgumentException(&quot;Illegal load factor: &quot; +</span><br><span class="line">                                           loadFactor);</span><br><span class="line">    this.loadFactor &#x3D; loadFactor;</span><br><span class="line">    this.threshold &#x3D; tableSizeFor(initialCapacity);</span><br><span class="line">&#125;</span><br><span class="line"> public HashMap(int initialCapacity) &#123;</span><br><span class="line">    this(initialCapacity, DEFAULT_LOAD_FACTOR);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>下面这个方法保证了 HashMap 总是使用 2 的幂作为哈希表的大小。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Returns a power of two size for the given target capacity.</span><br><span class="line"> *&#x2F;</span><br><span class="line">static final int tableSizeFor(int cap) &#123;</span><br><span class="line">    int n &#x3D; cap - 1;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 1;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 2;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 4;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 8;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 16;</span><br><span class="line">    return (n &lt; 0) ? 1 : (n &gt;&#x3D; MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="HashMap-和-HashSet-区别"><a href="#HashMap-和-HashSet-区别" class="headerlink" title="HashMap 和 HashSet 区别"></a>HashMap 和 HashSet 区别</h3><p>如果你看过 <code>HashSet</code> 源码的话就应该知道：HashSet 底层就是基于 HashMap 实现的。（HashSet 的源码非常非常少，因为除了 <code>clone()</code>、<code>writeObject()</code>、<code>readObject()</code>是 HashSet 自己不得不实现之外，其他方法都是直接调用 HashMap 中的方法。</p>
+<table>
+<thead>
+<tr>
+<th>HashMap</th>
+<th>HashSet</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实现了 Map 接口</td>
+<td>实现 Set 接口</td>
+</tr>
+<tr>
+<td>存储键值对</td>
+<td>仅存储对象</td>
+</tr>
+<tr>
+<td>调用 <code>put()</code>向 map 中添加元素</td>
+<td>调用 <code>add()</code>方法向 Set 中添加元素</td>
+</tr>
+<tr>
+<td>HashMap 使用键（Key）计算 Hashcode</td>
+<td>HashSet 使用成员对象来计算 hashcode 值，对于两个对象来说 hashcode 可能相同，所以 equals()方法用来判断对象的相等性，</td>
+</tr>
+</tbody></table>
+<h3 id="HashMap-和-TreeMap-区别"><a href="#HashMap-和-TreeMap-区别" class="headerlink" title="HashMap 和 TreeMap 区别"></a>HashMap 和 TreeMap 区别</h3><p><code>TreeMap</code> 和<code>HashMap</code> 都继承自<code>AbstractMap</code> ，但是需要注意的是<code>TreeMap</code>它还实现了<code>NavigableMap</code>接口和<code>SortedMap</code> 接口。</p>
+<p>实现 <code>NavigableMap</code> 接口让 <code>TreeMap</code> 有了对集合内元素的搜索的能力。</p>
+<p>实现<code>SortMap</code>接口让 <code>TreeMap</code> 有了对集合中的元素根据键排序的能力。默认是按 key 的升序排序，不过我们也可以指定排序的比较器。示例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * @author shuang.kou</span><br><span class="line"> * @createTime 2020年06月15日 17:02:00</span><br><span class="line"> *&#x2F;</span><br><span class="line">public class Person &#123;</span><br><span class="line">    private Integer age;</span><br><span class="line"></span><br><span class="line">    public Person(Integer age) &#123;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Integer getAge() &#123;</span><br><span class="line">        return age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        TreeMap&lt;Person, String&gt; treeMap &#x3D; new TreeMap&lt;&gt;(new Comparator&lt;Person&gt;() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public int compare(Person person1, Person person2) &#123;</span><br><span class="line">                int num &#x3D; person1.getAge() - person2.getAge();</span><br><span class="line">                return Integer.compare(num, 0);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        treeMap.put(new Person(3), &quot;person1&quot;);</span><br><span class="line">        treeMap.put(new Person(18), &quot;person2&quot;);</span><br><span class="line">        treeMap.put(new Person(35), &quot;person3&quot;);</span><br><span class="line">        treeMap.put(new Person(16), &quot;person4&quot;);</span><br><span class="line">        treeMap.entrySet().stream().forEach(personStringEntry -&gt; &#123;</span><br><span class="line">            System.out.println(personStringEntry.getValue());</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">person1</span><br><span class="line">person4</span><br><span class="line">person2</span><br><span class="line">person3</span><br></pre></td></tr></table></figure>
+
+<p>可以看出，<code>TreeMap</code> 中的元素已经是按照 <code>Person</code> 的 age 字段的升序来排列了。</p>
+<p>上面，我们是通过传入匿名内部类的方式实现的，你可以将代码替换成 Lambda 表达式实现的方式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">TreeMap&lt;Person, String&gt; treeMap &#x3D; new TreeMap&lt;&gt;((person1, person2) -&gt; &#123;</span><br><span class="line">  int num &#x3D; person1.getAge() - person2.getAge();</span><br><span class="line">  return Integer.compare(num, 0);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>综上，相比于HashMap来说 TreeMap 主要多了对集合中的元素根据键排序的能力以及对集合内元素的搜索的能力。</strong></p>
+<h3 id="HashSet-如何检查重复"><a href="#HashSet-如何检查重复" class="headerlink" title="HashSet 如何检查重复"></a>HashSet 如何检查重复</h3><p>当你把对象加入<code>HashSet</code>时，HashSet 会先计算对象的<code>hashcode</code>值来判断对象加入的位置，同时也会与其他加入的对象的 hashcode 值作比较，如果没有相符的 hashcode，HashSet 会假设对象没有重复出现。但是如果发现有相同 hashcode 值的对象，这时会调用<code>equals()</code>方法来检查 hashcode 相等的对象是否真的相同。如果两者相同，HashSet 就不会让加入操作成功。（摘自我的 Java 启蒙书《Head fist java》第二版）</p>
+<p><strong>hashCode()与 equals()的相关规定：</strong></p>
+<ol>
+<li>如果两个对象相等，则 hashcode 一定也是相同的</li>
+<li>两个对象相等,对两个 equals 方法返回 true</li>
+<li>两个对象有相同的 hashcode 值，它们也不一定是相等的</li>
+<li>综上，equals 方法被覆盖过，则 hashCode 方法也必须被覆盖</li>
+<li>hashCode()的默认行为是对堆上的对象产生独特值。如果没有重写 hashCode()，则该 class 的两个对象无论如何都不会相等（即使这两个对象指向相同的数据）。</li>
+</ol>
+<p><strong>==与 equals 的区别</strong></p>
+<p>对于基本类型来说，== 比较的是值是否相等；</p>
+<p>对于引用类型来说，== 比较的是两个引用是否指向同一个对象地址（两者在内存中存放的地址（堆内存地址）是否指向同一个地方）；</p>
+<p>对于引用类型（包括包装类型）来说，equals 如果没有被重写，对比它们的地址是否相等；如果 equals()方法被重写（例如 String），则比较的是地址里的内容。</p>
+<h3 id="HashMap-的底层实现"><a href="#HashMap-的底层实现" class="headerlink" title="HashMap 的底层实现"></a>HashMap 的底层实现</h3><h4 id="JDK1-8-之前"><a href="#JDK1-8-之前" class="headerlink" title="JDK1.8 之前"></a>JDK1.8 之前</h4><p>JDK1.8 之前 <code>HashMap</code> 底层是 <strong>数组和链表</strong> 结合在一起使用也就是 <strong>链表散列</strong>。<strong>HashMap 通过 key 的 hashCode 经过扰动函数处理过后得到 hash 值，然后通过 (n - 1) &amp; hash 判断当前元素存放的位置（这里的 n 指的是数组的长度），如果当前位置存在元素的话，就判断该元素与要存入的元素的 hash 值以及 key 是否相同，如果相同的话，直接覆盖，不相同就通过拉链法解决冲突。</strong></p>
+<p><strong>所谓扰动函数指的就是 HashMap 的 hash 方法。使用 hash 方法也就是扰动函数是为了防止一些实现比较差的 hashCode() 方法 换句话说使用扰动函数之后可以减少碰撞。</strong></p>
+<p><strong>JDK 1.8 HashMap 的 hash 方法源码:</strong></p>
+<p>JDK 1.8 的 hash 方法 相比于 JDK 1.7 hash 方法更加简化，但是原理不变。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  static final int hash(Object key) &#123;</span><br><span class="line">    int h;</span><br><span class="line">    &#x2F;&#x2F; key.hashCode()：返回散列值也就是hashcode</span><br><span class="line">    &#x2F;&#x2F; ^ ：按位异或</span><br><span class="line">    &#x2F;&#x2F; &gt;&gt;&gt;:无符号右移，忽略符号位，空位都以0补齐</span><br><span class="line">    return (key &#x3D;&#x3D; null) ? 0 : (h &#x3D; key.hashCode()) ^ (h &gt;&gt;&gt; 16);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对比一下 JDK1.7 的 HashMap 的 hash 方法源码.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">static int hash(int h) &#123;</span><br><span class="line">    &#x2F;&#x2F; This function ensures that hashCodes that differ only by</span><br><span class="line">    &#x2F;&#x2F; constant multiples at each bit position have a bounded</span><br><span class="line">    &#x2F;&#x2F; number of collisions (approximately 8 at default load factor).</span><br><span class="line"></span><br><span class="line">    h ^&#x3D; (h &gt;&gt;&gt; 20) ^ (h &gt;&gt;&gt; 12);</span><br><span class="line">    return h ^ (h &gt;&gt;&gt; 7) ^ (h &gt;&gt;&gt; 4);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>相比于 JDK1.8 的 hash 方法 ，JDK 1.7 的 hash 方法的性能会稍差一点点，因为毕竟扰动了 4 次。</p>
+<p>所谓 <strong>“拉链法”</strong> 就是：将链表和数组相结合。也就是说创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。</p>
+<p><a href="https://camo.githubusercontent.com/04f7d7f070f31c50f3d09da26f9459fdea2a7b4a/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f6a646b312e382545342542392538422545352538392538442545372539412538342545352538362538352545392538332541382545372542422539332545362539452538342d486173684d61702e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/04f7d7f070f31c50f3d09da26f9459fdea2a7b4a/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f6a646b312e382545342542392538422545352538392538442545372539412538342545352538362538352545392538332541382545372542422539332545362539452538342d486173684d61702e6a7067" alt="jdk1.8之前的内部结构-HashMap"></a></p>
+<h4 id="JDK1-8-之后"><a href="#JDK1-8-之后" class="headerlink" title="JDK1.8 之后"></a>JDK1.8 之后</h4><p>相比于之前的版本， JDK1.8 之后在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间。</p>
+<p><a href="https://camo.githubusercontent.com/d166a0184320055811ed72e61ece4491b6d80af1/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e38254534254239253842254535253930253845254537253941253834486173684d61702545352542412539352545352542312538322545362539352542302545362538442541452545372542422539332545362539452538342e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/d166a0184320055811ed72e61ece4491b6d80af1/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e38254534254239253842254535253930253845254537253941253834486173684d61702545352542412539352545352542312538322545362539352542302545362538442541452545372542422539332545362539452538342e6a7067" alt="jdk1.8之后的内部结构-HashMap"></a></p>
+<blockquote>
+<p>TreeMap、TreeSet 以及 JDK1.8 之后的 HashMap 底层都用到了红黑树。红黑树就是为了解决二叉查找树的缺陷，因为二叉查找树在某些情况下会退化成一个线性结构。</p>
+</blockquote>
+<p><strong>推荐阅读：</strong></p>
+<ul>
+<li>《Java 8 系列之重新认识 HashMap》 ：<a href="https://zhuanlan.zhihu.com/p/21673805" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/21673805</a></li>
+</ul>
+<h3 id="HashMap-的长度为什么是-2-的幂次方"><a href="#HashMap-的长度为什么是-2-的幂次方" class="headerlink" title="HashMap 的长度为什么是 2 的幂次方"></a>HashMap 的长度为什么是 2 的幂次方</h3><p>为了能让 HashMap 存取高效，尽量较少碰撞，也就是要尽量把数据分配均匀。我们上面也讲到了过了，Hash 值的范围值-2147483648 到 2147483647，前后加起来大概 40 亿的映射空间，只要哈希函数映射得比较均匀松散，一般应用是很难出现碰撞的。但问题是一个 40 亿长度的数组，内存是放不下的。所以这个散列值是不能直接拿来用的。用之前还要先做对数组的长度取模运算，得到的余数才能用来要存放的位置也就是对应的数组下标。这个数组下标的计算方法是“ <code>(n - 1) &amp; hash</code>”。（n 代表数组长度）。这也就解释了 HashMap 的长度为什么是 2 的幂次方。</p>
+<p><strong>这个算法应该如何设计呢？</strong></p>
+<p>我们首先可能会想到采用%取余的操作来实现。但是，重点来了：<strong>“取余(%)操作中如果除数是 2 的幂次则等价于与其除数减一的与(&amp;)操作（也就是说 hash%length==hash&amp;(length-1)的前提是 length 是 2 的 n 次方；）。”</strong> 并且 <strong>采用二进制位操作 &amp;，相对于%能够提高运算效率，这就解释了 HashMap 的长度为什么是 2 的幂次方。</strong></p>
+<h3 id="HashMap-多线程操作导致死循环问题"><a href="#HashMap-多线程操作导致死循环问题" class="headerlink" title="HashMap 多线程操作导致死循环问题"></a>HashMap 多线程操作导致死循环问题</h3><p>主要原因在于并发下的 Rehash 会造成元素之间会形成一个循环链表。不过，jdk 1.8 后解决了这个问题，但是还是不建议在多线程下使用 HashMap,因为多线程下使用 HashMap 还是会存在其他问题比如数据丢失。并发环境下推荐使用 ConcurrentHashMap 。</p>
+<p>详情请查看：<a href="https://coolshell.cn/articles/9606.html" target="_blank" rel="noopener">https://coolshell.cn/articles/9606.html</a></p>
+<h3 id="HashMap-有哪几种常见的遍历方式"><a href="#HashMap-有哪几种常见的遍历方式" class="headerlink" title="HashMap 有哪几种常见的遍历方式?"></a>HashMap 有哪几种常见的遍历方式?</h3><p><a href="https://mp.weixin.qq.com/s/Zz6mofCtmYpABDL1ap04ow" target="_blank" rel="noopener">HashMap 的 7 种遍历方式与性能分析！(强烈推荐)</a></p>
+<h3 id="ConcurrentHashMap-和-Hashtable-的区别"><a href="#ConcurrentHashMap-和-Hashtable-的区别" class="headerlink" title="ConcurrentHashMap 和 Hashtable 的区别"></a>ConcurrentHashMap 和 Hashtable 的区别</h3><p>ConcurrentHashMap 和 Hashtable 的区别主要体现在实现线程安全的方式上不同。</p>
+<ul>
+<li><strong>底层数据结构：</strong> JDK1.7 的 ConcurrentHashMap 底层采用 <strong>分段的数组+链表</strong> 实现，JDK1.8 采用的数据结构跟 HashMap1.8 的结构一样，数组+链表/红黑二叉树。Hashtable 和 JDK1.8 之前的 HashMap 的底层数据结构类似都是采用 <strong>数组+链表</strong> 的形式，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的；</li>
+<li><strong>实现线程安全的方式（重要）：</strong> ① <strong>在 JDK1.7 的时候，ConcurrentHashMap（分段锁）</strong> 对整个桶数组进行了分割分段(Segment)，每一把锁只锁容器其中一部分数据，多线程访问容器里不同数据段的数据，就不会存在锁竞争，提高并发访问率。 <strong>到了 JDK1.8 的时候已经摒弃了 Segment 的概念，而是直接用 Node 数组+链表+红黑树的数据结构来实现，并发控制使用 synchronized 和 CAS 来操作。（JDK1.6 以后 对 synchronized 锁做了很多优化）</strong> 整个看起来就像是优化过且线程安全的 HashMap，虽然在 JDK1.8 中还能看到 Segment 的数据结构，但是已经简化了属性，只是为了兼容旧版本；② <strong>Hashtable(同一把锁)</strong> :使用 synchronized 来保证线程安全，效率非常低下。当一个线程访问同步方法时，其他线程也访问同步方法，可能会进入阻塞或轮询状态，如使用 put 添加元素，另一个线程不能使用 put 添加元素，也不能使用 get，竞争会越来越激烈效率越低。</li>
+</ul>
+<p><strong>两者的对比图：</strong></p>
+<p>图片来源：<a href="http://www.cnblogs.com/chengxiao/p/6842045.html" target="_blank" rel="noopener">http://www.cnblogs.com/chengxiao/p/6842045.html</a></p>
+<p><strong>HashTable:</strong></p>
+<p><a href="https://camo.githubusercontent.com/60920968c0e19878ca2a3a153cbe4872f950b571/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f486173685461626c652545352538352541382545382541312541382545392539342538312e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/60920968c0e19878ca2a3a153cbe4872f950b571/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f486173685461626c652545352538352541382545382541312541382545392539342538312e706e67" alt="HashTable全表锁"></a></p>
+<p><strong>JDK1.7 的 ConcurrentHashMap：</strong></p>
+<p><a href="https://camo.githubusercontent.com/092aae16c3a38854b4cea8b7e42dc6720df4441f/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f436f6e63757272656e74486173684d61702545352538382538362545362541452542352545392539342538312e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/092aae16c3a38854b4cea8b7e42dc6720df4441f/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f436f6e63757272656e74486173684d61702545352538382538362545362541452542352545392539342538312e6a7067" alt="JDK1.7的ConcurrentHashMap"></a></p>
+<p><strong>JDK1.8 的 ConcurrentHashMap（TreeBin: 红黑二叉树节点 Node: 链表节点）：</strong></p>
+<p><a href="https://camo.githubusercontent.com/b823c5f2cf18e7e27da70409d2b5e18fed820364/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e382d436f6e63757272656e74486173684d61702d5374727563747572652e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/b823c5f2cf18e7e27da70409d2b5e18fed820364/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e382d436f6e63757272656e74486173684d61702d5374727563747572652e6a7067" alt="JDK1.8的ConcurrentHashMap"></a></p>
+<h3 id="ConcurrentHashMap-线程安全的具体实现方式-底层具体实现"><a href="#ConcurrentHashMap-线程安全的具体实现方式-底层具体实现" class="headerlink" title="ConcurrentHashMap 线程安全的具体实现方式/底层具体实现"></a>ConcurrentHashMap 线程安全的具体实现方式/底层具体实现</h3><h4 id="JDK1-7（上面有示意图）"><a href="#JDK1-7（上面有示意图）" class="headerlink" title="JDK1.7（上面有示意图）"></a>JDK1.7（上面有示意图）</h4><p>首先将数据分为一段一段的存储，然后给每一段数据配一把锁，当一个线程占用锁访问其中一个段数据时，其他段的数据也能被其他线程访问。</p>
+<p><strong>ConcurrentHashMap 是由 Segment 数组结构和 HashEntry 数组结构组成</strong>。</p>
+<p>Segment 实现了 ReentrantLock,所以 Segment 是一种可重入锁，扮演锁的角色。HashEntry 用于存储键值对数据。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">static class Segment&lt;K,V&gt; extends ReentrantLock implements Serializable &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一个 ConcurrentHashMap 里包含一个 Segment 数组。Segment 的结构和 HashMap 类似，是一种数组和链表结构，一个 Segment 包含一个 HashEntry 数组，每个 HashEntry 是一个链表结构的元素，每个 Segment 守护着一个 HashEntry 数组里的元素，当对 HashEntry 数组的数据进行修改时，必须首先获得对应的 Segment 的锁。</p>
+<h4 id="JDK1-8-（上面有示意图）"><a href="#JDK1-8-（上面有示意图）" class="headerlink" title="JDK1.8 （上面有示意图）"></a>JDK1.8 （上面有示意图）</h4><p>ConcurrentHashMap 取消了 Segment 分段锁，采用 CAS 和 synchronized 来保证并发安全。数据结构跟 HashMap1.8 的结构类似，数组+链表/红黑二叉树。Java 8 在链表长度超过一定阈值（8）时将链表（寻址时间复杂度为 O(N)）转换为红黑树（寻址时间复杂度为 O(log(N))）</p>
+<p>synchronized 只锁定当前链表或红黑二叉树的首节点，这样只要 hash 不冲突，就不会产生并发，效率又提升 N 倍。</p>
+<h2 id="Collections-工具类"><a href="#Collections-工具类" class="headerlink" title="Collections 工具类"></a>Collections 工具类</h2><p>Collections 工具类常用方法:</p>
+<ol>
+<li>排序</li>
+<li>查找,替换操作</li>
+<li>同步控制(不推荐，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合)</li>
+</ol>
+<h3 id="排序操作"><a href="#排序操作" class="headerlink" title="排序操作"></a>排序操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">void reverse(List list)&#x2F;&#x2F;反转</span><br><span class="line">void shuffle(List list)&#x2F;&#x2F;随机排序</span><br><span class="line">void sort(List list)&#x2F;&#x2F;按自然排序的升序排序</span><br><span class="line">void sort(List list, Comparator c)&#x2F;&#x2F;定制排序，由Comparator控制排序逻辑</span><br><span class="line">void swap(List list, int i , int j)&#x2F;&#x2F;交换两个索引位置的元素</span><br><span class="line">void rotate(List list, int distance)&#x2F;&#x2F;旋转。当distance为正数时，将list后distance个元素整体移到前面。当distance为负数时，将 list的前distance个元素整体移到后面</span><br></pre></td></tr></table></figure>
+
+<h3 id="查找-替换操作"><a href="#查找-替换操作" class="headerlink" title="查找,替换操作"></a>查找,替换操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int binarySearch(List list, Object key)&#x2F;&#x2F;对List进行二分查找，返回索引，注意List必须是有序的</span><br><span class="line">int max(Collection coll)&#x2F;&#x2F;根据元素的自然顺序，返回最大的元素。 类比int min(Collection coll)</span><br><span class="line">int max(Collection coll, Comparator c)&#x2F;&#x2F;根据定制排序，返回最大元素，排序规则由Comparatator类控制。类比int min(Collection coll, Comparator c)</span><br><span class="line">void fill(List list, Object obj)&#x2F;&#x2F;用指定的元素代替指定list中的所有元素。</span><br><span class="line">int frequency(Collection c, Object o)&#x2F;&#x2F;统计元素出现次数</span><br><span class="line">int indexOfSubList(List list, List target)&#x2F;&#x2F;统计target在list中第一次出现的索引，找不到则返回-1，类比int lastIndexOfSubList(List source, list target).</span><br><span class="line">boolean replaceAll(List list, Object oldVal, Object newVal), 用新元素替换旧元素</span><br></pre></td></tr></table></figure>
+
+<h3 id="同步控制"><a href="#同步控制" class="headerlink" title="同步控制"></a>同步控制</h3><p><code>Collections</code> 提供了多个<code>synchronizedXxx()</code>方法·，该方法可以将指定集合包装成线程同步的集合，从而解决多线程并发访问集合时的线程安全问题。</p>
+<p>我们知道 <code>HashSet</code>，<code>TreeSet</code>，<code>ArrayList</code>,<code>LinkedList</code>,<code>HashMap</code>,<code>TreeMap</code> 都是线程不安全的。<code>Collections</code> 提供了多个静态方法可以把他们包装成线程同步的集合。</p>
+<p><strong>最好不要用下面这些方法，效率非常低，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合。</strong></p>
+<p>方法如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">synchronizedCollection(Collection&lt;T&gt;  c) &#x2F;&#x2F;返回指定 collection 支持的同步（线程安全的）collection。</span><br><span class="line">synchronizedList(List&lt;T&gt; list)&#x2F;&#x2F;返回指定列表支持的同步（线程安全的）List。</span><br><span class="line">synchronizedMap(Map&lt;K,V&gt; m) &#x2F;&#x2F;返回由指定映射支持的同步（线程安全的）Map。</span><br><span class="line">synchronizedSet(Set&lt;T&gt; s) &#x2F;&#x2F;返回指定 set 支持的同步（线程安全的）set。</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他重要问题"><a href="#其他重要问题" class="headerlink" title="其他重要问题"></a>其他重要问题</h2><h3 id="什么是快速失败-fail-fast-？"><a href="#什么是快速失败-fail-fast-？" class="headerlink" title="什么是快速失败(fail-fast)？"></a>什么是快速失败(fail-fast)？</h3><p><strong>快速失败(fail-fast)</strong> 是 Java 集合的一种错误检测机制。<strong>在使用迭代器对集合进行遍历的时候，我们在多线程下操作非安全失败(fail-safe)的集合类可能就会触发 fail-fast 机制，导致抛出 ConcurrentModificationException 异常。 另外，在单线程下，如果在遍历过程中对集合对象的内容进行了修改的话也会触发 fail-fast 机制。</strong></p>
+<blockquote>
+<p>注：增强 for 循环也是借助迭代器进行遍历。</p>
+</blockquote>
+<p>举个例子：多线程下，如果线程 1 正在对集合进行遍历，此时线程 2 对集合进行修改（增加、删除、修改），或者线程 1 在遍历过程中对集合进行修改，都会导致线程 1 抛出 <code>ConcurrentModificationException</code> 异常。</p>
+<p><strong>为什么呢？</strong></p>
+<p>每当迭代器使用 <code>hashNext()</code>/<code>next()</code>遍历下一个元素之前，都会检测 <code>modCount</code> 变量是否为 <code>expectedModCount</code> 值，是的话就返回遍历；否则抛出异常，终止遍历。</p>
+<p>如果我们在集合被遍历期间对其进行修改的话，就会改变 <code>modCount</code> 的值，进而导致 <code>modCount != expectedModCount</code> ，进而抛出 <code>ConcurrentModificationException</code> 异常。</p>
+<blockquote>
+<p>注：通过 <code>Iterator</code> 的方法修改集合的话会修改到 <code>expectedModCount</code> 的值，所以不会抛出异常。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">final void checkForComodification() &#123;</span><br><span class="line">    if (modCount !&#x3D; expectedModCount)</span><br><span class="line">        throw new ConcurrentModificationException();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>好吧！相信大家已经搞懂了快速失败(fail-fast)机制以及它的原理。</p>
+<p>我们再来趁热打铁，看一个阿里巴巴手册相关的规定：</p>
+<p><a href="https://camo.githubusercontent.com/ebdd43a8eaf371a62b90bce30d65e637acaa6118/68747470733a2f2f696d676b722e636e2d626a2e7566696c656f732e636f6d2f61643238653362612d653431392d343732342d383639632d3733383739653630346461312e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/ebdd43a8eaf371a62b90bce30d65e637acaa6118/68747470733a2f2f696d676b722e636e2d626a2e7566696c656f732e636f6d2f61643238653362612d653431392d343732342d383639632d3733383739653630346461312e706e67" alt="img"></a></p>
+<p>有了前面讲的基础，我们应该知道：使用 <code>Iterator</code> 提供的 <code>remove</code> 方法，可以修改到 <code>expectedModCount</code> 的值。所以，才不会再抛出<code>ConcurrentModificationException</code> 异常。</p>
+<h3 id="什么是安全失败-fail-safe-呢？"><a href="#什么是安全失败-fail-safe-呢？" class="headerlink" title="什么是安全失败(fail-safe)呢？"></a>什么是安全失败(fail-safe)呢？</h3><p>明白了快速失败(fail-fast)之后，安全失败(fail-safe)我们就很好理解了。</p>
+<p>采用安全失败机制的集合容器，在遍历时不是直接在集合内容上访问的，而是先复制原有集合内容，在拷贝的集合上进行遍历。所以，在遍历过程中对原集合所作的修改并不能被迭代器检测到，故不会抛 <code>ConcurrentModificationException</code> 异常</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java的一些基础知识总结</title>
     <url>/2020/0402_first/</url>
     <content><![CDATA[<h2 id="1-面向对象和面向过程的区别"><a href="#1-面向对象和面向过程的区别" class="headerlink" title="1. 面向对象和面向过程的区别"></a>1. 面向对象和面向过程的区别</h2><ul>
@@ -361,258 +771,6 @@
       </tags>
   </entry>
   <entry>
-    <title>java中集合框架的总结</title>
-    <url>/2020/04020_first/</url>
-    <content><![CDATA[<h1 id="剖析面试最常见问题之-Java-集合框架"><a href="#剖析面试最常见问题之-Java-集合框架" class="headerlink" title="剖析面试最常见问题之 Java 集合框架"></a>剖析面试最常见问题之 Java 集合框架</h1><h2 id="集合概述"><a href="#集合概述" class="headerlink" title="集合概述"></a>集合概述</h2><h3 id="Java-集合概览"><a href="#Java-集合概览" class="headerlink" title="Java 集合概览"></a>Java 集合概览</h3><p>从下图可以看出，在 Java 中除了以 Map 结尾的类之外， 其他类都实现了 <code>Collection</code> 接口。</p>
-<p>并且，以 <code>Map</code> 结尾的类都实现了 <code>Map</code> 接口。</p>
-<p><img src="https://i.loli.net/2020/06/19/JvCHs5BS34ZkO1l.png" alt="85101047-1646be80-b234-11ea-90ee-f4be604b0183.png"></p>
-<h3 id="说说-List-Set-Map-三者的区别？"><a href="#说说-List-Set-Map-三者的区别？" class="headerlink" title="说说 List,Set,Map 三者的区别？"></a>说说 List,Set,Map 三者的区别？</h3><ul>
-<li><code>List</code>(对付顺序的好帮手)： 存储的元素是有序的、可重复的。</li>
-<li><code>Set</code>(注重独一无二的性质): 存储的元素是无序的、不可重复的。</li>
-<li><code>Map</code>(用 Key 来搜索的专家): 使用键值对（kye-value）存储，类似于数学上的函数 y=f(x)，“x”代表 key，”y”代表 value，Key 是无序的、不可重复的，value 是无序的、可重复的，每个键最多映射到一个值。</li>
-</ul>
-<h3 id="集合框架底层数据结构总结"><a href="#集合框架底层数据结构总结" class="headerlink" title="集合框架底层数据结构总结"></a>集合框架底层数据结构总结</h3><p>先来看一下 <code>Collection</code> 接口下面的集合。</p>
-<h4 id="List"><a href="#List" class="headerlink" title="List"></a>List</h4><ul>
-<li><code>Arraylist</code>： <code>Object[]</code>数组</li>
-<li><code>Vector</code>：<code>Object[]</code>数组</li>
-<li><code>LinkedList</code>： 双向链表(JDK1.6 之前为循环链表，JDK1.7 取消了循环)</li>
-</ul>
-<h4 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h4><ul>
-<li><code>HashSet</code>（无序，唯一）: 基于 <code>HashMap</code> 实现的，底层采用 <code>HashMap</code> 来保存元素</li>
-<li><code>LinkedHashSet</code>：<code>LinkedHashSet</code> 是 <code>HashSet</code> 的子类，并且其内部是通过 <code>LinkedHashMap</code> 来实现的。有点类似于我们之前说的 <code>LinkedHashMap</code> 其内部是基于 <code>HashMap</code> 实现一样，不过还是有一点点区别的</li>
-<li><code>TreeSet</code>（有序，唯一）： 红黑树(自平衡的排序二叉树)</li>
-</ul>
-<p>再来看看 <code>Map</code> 接口下面的集合。</p>
-<h4 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h4><ul>
-<li><code>HashMap</code>： JDK1.8 之前 HashMap 由数组+链表组成的，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的（“拉链法”解决冲突）。JDK1.8 以后在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间</li>
-<li><code>LinkedHashMap</code>： <code>LinkedHashMap</code> 继承自 <code>HashMap</code>，所以它的底层仍然是基于拉链式散列结构即由数组和链表或红黑树组成。另外，<code>LinkedHashMap</code> 在上面结构的基础上，增加了一条双向链表，使得上面的结构可以保持键值对的插入顺序。同时通过对链表进行相应的操作，实现了访问顺序相关逻辑。详细可以查看：<a href="https://www.imooc.com/article/22931" target="_blank" rel="noopener">《LinkedHashMap 源码详细分析（JDK1.8）》</a></li>
-<li><code>Hashtable</code>： 数组+链表组成的，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的</li>
-<li><code>TreeMap</code>： 红黑树（自平衡的排序二叉树）</li>
-</ul>
-<h3 id="如何选用集合"><a href="#如何选用集合" class="headerlink" title="如何选用集合?"></a>如何选用集合?</h3><p>主要根据集合的特点来选用，比如我们需要根据键值获取到元素值时就选用 Map 接口下的集合，需要排序时选择 TreeMap,不需要排序时就选择 HashMap,需要保证线程安全就选用 ConcurrentHashMap。</p>
-<p>当我们只需要存放元素值时，就选择实现 Collection 接口的集合，需要保证元素唯一时选择实现 Set 接口的集合比如 TreeSet 或 HashSet，不需要就选择实现 List 接口的比如 ArrayList 或 LinkedList，然后再根据实现这些接口的集合的特点来选用。</p>
-<h3 id="为什么要使用集合？"><a href="#为什么要使用集合？" class="headerlink" title="为什么要使用集合？"></a>为什么要使用集合？</h3><p>当我们需要保存一组类型相同的数据的时候，我们应该是用一个容器来保存，这个容器就是数组，但是，使用数组存储对象具有一定的弊端， 因为我们在实际开发中，存储的数据的类型是多种多样的，于是，就出现了“集合”，集合同样也是用来存储多个数据的。</p>
-<p>数组的缺点是一旦声明之后，长度就不可变了；同时，声明数组时的数据类型也决定了该数组存储的数据的类型；而且，数组存储的数据是有序的、可重复的，特点单一。 但是集合提高了数据存储的灵活性，Java 集合不仅可以用来存储不同类型不同数量的对象，还可以保存具有映射关系的数据</p>
-<h3 id="Iterator-迭代器"><a href="#Iterator-迭代器" class="headerlink" title="Iterator 迭代器"></a>Iterator 迭代器</h3><h4 id="迭代器-Iterator-是什么？"><a href="#迭代器-Iterator-是什么？" class="headerlink" title="迭代器 Iterator 是什么？"></a>迭代器 Iterator 是什么？</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public interface Iterator&lt;E&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F;集合中是否还有元素</span><br><span class="line">    boolean hasNext();</span><br><span class="line">    &#x2F;&#x2F;获得集合中的下一个元素</span><br><span class="line">    E next();</span><br><span class="line">    ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>Iterator</code> 对象称为迭代器（设计模式的一种），迭代器可以对集合进行遍历，但每一个集合内部的数据结构可能是不尽相同的，所以每一个集合存和取都很可能是不一样的，虽然我们可以人为地在每一个类中定义 <code>hasNext()</code> 和 <code>next()</code> 方法，但这样做会让整个集合体系过于臃肿。于是就有了迭代器。</p>
-<p>迭代器是将这样的方法抽取出接口，然后在每个类的内部，定义自己迭代方式，这样做就规定了整个集合体系的遍历方式都是 <code>hasNext()</code>和<code>next()</code>方法，使用者不用管怎么实现的，会用即可。迭代器的定义为：提供一种方法访问一个容器对象中各个元素，而又不需要暴露该对象的内部细节。</p>
-<h4 id="迭代器-Iterator-有啥用？"><a href="#迭代器-Iterator-有啥用？" class="headerlink" title="迭代器 Iterator 有啥用？"></a>迭代器 Iterator 有啥用？</h4><p><code>Iterator</code> 主要是用来遍历集合用的，它的特点是更加安全，因为它可以确保，在当前遍历的集合元素被更改的时候，就会抛出 <code>ConcurrentModificationException</code> 异常。</p>
-<h4 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h4><p>我们通过使用迭代器来遍历 <code>HashMap</code>，演示一下 迭代器 Iterator 的使用。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Map&lt;Integer, String&gt; map &#x3D; new HashMap();</span><br><span class="line">map.put(1, &quot;Java&quot;);</span><br><span class="line">map.put(2, &quot;C++&quot;);</span><br><span class="line">map.put(3, &quot;PHP&quot;);</span><br><span class="line">Iterator&lt;Map.Entry&lt;Integer, String&gt;&gt; iterator &#x3D; map.entrySet().iterator();</span><br><span class="line">while (iterator.hasNext()) &#123;</span><br><span class="line">  Map.Entry&lt;Integer, String&gt; entry &#x3D; iterator.next();</span><br><span class="line">  System.out.println(entry.getKey() + entry.getValue());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="有哪些集合是线程不安全的？怎么解决呢？"><a href="#有哪些集合是线程不安全的？怎么解决呢？" class="headerlink" title="有哪些集合是线程不安全的？怎么解决呢？"></a>有哪些集合是线程不安全的？怎么解决呢？</h3><p>我们常用的 <code>Arraylist</code> ,<code>LinkedList</code>,<code>Hashmap</code>,<code>HashSet</code>,<code>TreeSet</code>,<code>TreeMap</code>，<code>PriorityQueue</code> 都不是线程安全的。解决办法很简单，可以使用线程安全的集合来代替。</p>
-<p>如果你要使用线程安全的集合的话， <code>java.util.concurrent</code> 包中提供了很多并发容器供你使用：</p>
-<ol>
-<li><code>ConcurrentHashMap</code>: 可以看作是线程安全的 <code>HashMap</code></li>
-<li><code>CopyOnWriteArrayList</code>:可以看作是线程安全的 <code>ArrayList</code>，在读多写少的场合性能非常好，远远好于 <code>Vector</code>.</li>
-<li><code>ConcurrentLinkedQueue</code>:高效的并发队列，使用链表实现。可以看做一个线程安全的 <code>LinkedList</code>，这是一个非阻塞队列。</li>
-<li><code>BlockingQueue</code>: 这是一个接口，JDK 内部通过链表、数组等方式实现了这个接口。表示阻塞队列，非常适合用于作为数据共享的通道。</li>
-<li><code>ConcurrentSkipListMap</code> :跳表的实现。这是一个<code>Map</code>，使用跳表的数据结构进行快速查找。</li>
-</ol>
-<h2 id="Collection-子接口之-List"><a href="#Collection-子接口之-List" class="headerlink" title="Collection 子接口之 List"></a>Collection 子接口之 List</h2><h3 id="Arraylist-和-Vector-的区别"><a href="#Arraylist-和-Vector-的区别" class="headerlink" title="Arraylist 和 Vector 的区别?"></a>Arraylist 和 Vector 的区别?</h3><ol>
-<li>ArrayList 是 List 的主要实现类，底层使用 Object[ ]存储，适用于频繁的查找工作，线程不安全 ；</li>
-<li>Vector 是 List 的古老实现类，底层使用 Object[ ]存储，线程安全的。</li>
-</ol>
-<h3 id="Arraylist-与-LinkedList-区别"><a href="#Arraylist-与-LinkedList-区别" class="headerlink" title="Arraylist 与 LinkedList 区别?"></a>Arraylist 与 LinkedList 区别?</h3><ol>
-<li><strong>是否保证线程安全：</strong> <code>ArrayList</code> 和 <code>LinkedList</code> 都是不同步的，也就是不保证线程安全；</li>
-<li><strong>底层数据结构：</strong> <code>Arraylist</code> 底层使用的是 <strong>Object 数组</strong>；<code>LinkedList</code> 底层使用的是 <strong>双向链表</strong> 数据结构（JDK1.6 之前为循环链表，JDK1.7 取消了循环。注意双向链表和双向循环链表的区别，下面有介绍到！）</li>
-<li><strong>插入和删除是否受元素位置的影响：</strong> ① <strong>ArrayList 采用数组存储，所以插入和删除元素的时间复杂度受元素位置的影响。</strong> 比如：执行<code>add(E e)</code>方法的时候， <code>ArrayList</code> 会默认在将指定的元素追加到此列表的末尾，这种情况时间复杂度就是 O(1)。但是如果要在指定位置 i 插入和删除元素的话（<code>add(int index, E element)</code>）时间复杂度就为 O(n-i)。因为在进行上述操作的时候集合中第 i 和第 i 个元素之后的(n-i)个元素都要执行向后位/向前移一位的操作。 ② <strong>LinkedList 采用链表存储，所以对于add(E e)方法的插入，删除元素时间复杂度不受元素位置的影响，近似 O(1)，如果是要在指定位置i插入和删除元素的话（(add(int index, E element)） 时间复杂度近似为o(n))因为需要先移动到指定位置再插入。</strong></li>
-<li><strong>是否支持快速随机访问：</strong> <code>LinkedList</code> 不支持高效的随机元素访问，而 <code>ArrayList</code> 支持。快速随机访问就是通过元素的序号快速获取元素对象(对应于<code>get(int index)</code>方法)。</li>
-<li><strong>内存空间占用：</strong> ArrayList 的空 间浪费主要体现在在 list 列表的结尾会预留一定的容量空间，而 LinkedList 的空间花费则体现在它的每一个元素都需要消耗比 ArrayList 更多的空间（因为要存放直接后继和直接前驱以及数据）。</li>
-</ol>
-<h4 id="补充内容-双向链表和双向循环链表"><a href="#补充内容-双向链表和双向循环链表" class="headerlink" title="补充内容:双向链表和双向循环链表"></a>补充内容:双向链表和双向循环链表</h4><p><strong>双向链表：</strong> 包含两个指针，一个 prev 指向前一个节点，一个 next 指向后一个节点。</p>
-<blockquote>
-<p>另外推荐一篇把双向链表讲清楚的文章：<a href="https://juejin.im/post/5b5d1a9af265da0f47352f14" target="_blank" rel="noopener">https://juejin.im/post/5b5d1a9af265da0f47352f14</a></p>
-</blockquote>
-<p><a href="https://camo.githubusercontent.com/7d452b4b9f1402669f346c243b4777cb1b9e032c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545392539332542452545382541312541382e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/7d452b4b9f1402669f346c243b4777cb1b9e032c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545392539332542452545382541312541382e706e67" alt="双向链表"></a></p>
-<p><strong>双向循环链表：</strong> 最后一个节点的 next 指向 head，而 head 的 prev 指向最后一个节点，构成一个环。</p>
-<p><a href="https://camo.githubusercontent.com/cbb13185522a7d66d9419fada0715051778e867c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545352542452541412545372538452541462545392539332542452545382541312541382e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/cbb13185522a7d66d9419fada0715051778e867c/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f2545352538462538432545352539302539312545352542452541412545372538452541462545392539332542452545382541312541382e706e67" alt="双向循环链表"></a></p>
-<h4 id="补充内容-RandomAccess-接口"><a href="#补充内容-RandomAccess-接口" class="headerlink" title="补充内容:RandomAccess 接口"></a>补充内容:RandomAccess 接口</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public interface RandomAccess &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>查看源码我们发现实际上 <code>RandomAccess</code> 接口中什么都没有定义。所以，在我看来 <code>RandomAccess</code> 接口不过是一个标识罢了。标识什么？ 标识实现这个接口的类具有随机访问功能。</p>
-<p>在 <code>binarySearch（)</code> 方法中，它要判断传入的 list 是否 <code>RamdomAccess</code> 的实例，如果是，调用<code>indexedBinarySearch()</code>方法，如果不是，那么调用<code>iteratorBinarySearch()</code>方法</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static &lt;T&gt;</span><br><span class="line">int binarySearch(List&lt;? extends Comparable&lt;? super T&gt;&gt; list, T key) &#123;</span><br><span class="line">    if (list instanceof RandomAccess || list.size()&lt;BINARYSEARCH_THRESHOLD)</span><br><span class="line">        return Collections.indexedBinarySearch(list, key);</span><br><span class="line">    else</span><br><span class="line">        return Collections.iteratorBinarySearch(list, key);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>ArrayList</code> 实现了 <code>RandomAccess</code> 接口， 而 <code>LinkedList</code> 没有实现。为什么呢？我觉得还是和底层数据结构有关！<code>ArrayList</code> 底层是数组，而 <code>LinkedList</code> 底层是链表。数组天然支持随机访问，时间复杂度为 O(1)，所以称为快速随机访问。链表需要遍历到特定位置才能访问特定位置的元素，时间复杂度为 O(n)，所以不支持快速随机访问。，<code>ArrayList</code> 实现了 <code>RandomAccess</code> 接口，就表明了他具有快速随机访问功能。 <code>RandomAccess</code> 接口只是标识，并不是说 <code>ArrayList</code> 实现 <code>RandomAccess</code> 接口才具有快速随机访问功能的！</p>
-<h3 id="说一说-ArrayList-的扩容机制吧"><a href="#说一说-ArrayList-的扩容机制吧" class="headerlink" title="说一说 ArrayList 的扩容机制吧"></a>说一说 ArrayList 的扩容机制吧</h3><p>详见笔主的这篇文章:<a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/collection/ArrayList-Grow.md" target="_blank" rel="noopener">通过源码一步一步分析 ArrayList 扩容机制</a></p>
-<h2 id="Collection-子接口之-Set"><a href="#Collection-子接口之-Set" class="headerlink" title="Collection 子接口之 Set"></a>Collection 子接口之 Set</h2><h3 id="comparable-和-Comparator-的区别"><a href="#comparable-和-Comparator-的区别" class="headerlink" title="comparable 和 Comparator 的区别"></a>comparable 和 Comparator 的区别</h3><ul>
-<li><code>comparable</code> 接口实际上是出自<code>java.lang</code>包 它有一个 <code>compareTo(Object obj)</code>方法用来排序</li>
-<li><code>comparator</code>接口实际上是出自 java.util 包它有一个<code>compare(Object obj1, Object obj2)</code>方法用来排序</li>
-</ul>
-<p>一般我们需要对一个集合使用自定义排序时，我们就要重写<code>compareTo()</code>方法或<code>compare()</code>方法，当我们需要对某一个集合实现两种排序方式，比如一个 song 对象中的歌名和歌手名分别采用一种排序方法的话，我们可以重写<code>compareTo()</code>方法和使用自制的<code>Comparator</code>方法或者以两个 Comparator 来实现歌名排序和歌星名排序，第二种代表我们只能使用两个参数版的 <code>Collections.sort()</code>.</p>
-<h4 id="Comparator-定制排序"><a href="#Comparator-定制排序" class="headerlink" title="Comparator 定制排序"></a>Comparator 定制排序</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ArrayList&lt;Integer&gt; arrayList &#x3D; new ArrayList&lt;Integer&gt;();</span><br><span class="line">arrayList.add(-1);</span><br><span class="line">arrayList.add(3);</span><br><span class="line">arrayList.add(3);</span><br><span class="line">arrayList.add(-5);</span><br><span class="line">arrayList.add(7);</span><br><span class="line">arrayList.add(4);</span><br><span class="line">arrayList.add(-9);</span><br><span class="line">arrayList.add(-7);</span><br><span class="line">System.out.println(&quot;原始数组:&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br><span class="line">&#x2F;&#x2F; void reverse(List list)：反转</span><br><span class="line">Collections.reverse(arrayList);</span><br><span class="line">System.out.println(&quot;Collections.reverse(arrayList):&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; void sort(List list),按自然排序的升序排序</span><br><span class="line">Collections.sort(arrayList);</span><br><span class="line">System.out.println(&quot;Collections.sort(arrayList):&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br><span class="line">&#x2F;&#x2F; 定制排序的用法</span><br><span class="line">Collections.sort(arrayList, new Comparator&lt;Integer&gt;() &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public int compare(Integer o1, Integer o2) &#123;</span><br><span class="line">        return o2.compareTo(o1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">System.out.println(&quot;定制排序后：&quot;);</span><br><span class="line">System.out.println(arrayList);</span><br></pre></td></tr></table></figure>
-
-<p>Output:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">原始数组:</span><br><span class="line">[-1, 3, 3, -5, 7, 4, -9, -7]</span><br><span class="line">Collections.reverse(arrayList):</span><br><span class="line">[-7, -9, 4, 7, -5, 3, 3, -1]</span><br><span class="line">Collections.sort(arrayList):</span><br><span class="line">[-9, -7, -5, -1, 3, 3, 4, 7]</span><br><span class="line">定制排序后：</span><br><span class="line">[7, 4, 3, 3, -1, -5, -7, -9]</span><br></pre></td></tr></table></figure>
-
-<h4 id="重写-compareTo-方法实现按年龄来排序"><a href="#重写-compareTo-方法实现按年龄来排序" class="headerlink" title="重写 compareTo 方法实现按年龄来排序"></a>重写 compareTo 方法实现按年龄来排序</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; person对象没有实现Comparable接口，所以必须实现，这样才不会出错，才可以使treemap中的数据按顺序排列</span><br><span class="line">&#x2F;&#x2F; 前面一个例子的String类已经默认实现了Comparable接口，详细可以查看String类的API文档，另外其他</span><br><span class="line">&#x2F;&#x2F; 像Integer类等都已经实现了Comparable接口，所以不需要另外实现了</span><br><span class="line">public  class Person implements Comparable&lt;Person&gt; &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private int age;</span><br><span class="line"></span><br><span class="line">    public Person(String name, int age) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public int getAge() &#123;</span><br><span class="line">        return age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setAge(int age) &#123;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * T重写compareTo方法实现按年龄来排序</span><br><span class="line">     *&#x2F;</span><br><span class="line">    @Override</span><br><span class="line">    public int compareTo(Person o) &#123;</span><br><span class="line">        if (this.age &gt; o.getAge()) &#123;</span><br><span class="line">            return 1;</span><br><span class="line">        &#125;</span><br><span class="line">        if (this.age &lt; o.getAge()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        TreeMap&lt;Person, String&gt; pdata &#x3D; new TreeMap&lt;Person, String&gt;();</span><br><span class="line">        pdata.put(new Person(&quot;张三&quot;, 30), &quot;zhangsan&quot;);</span><br><span class="line">        pdata.put(new Person(&quot;李四&quot;, 20), &quot;lisi&quot;);</span><br><span class="line">        pdata.put(new Person(&quot;王五&quot;, 10), &quot;wangwu&quot;);</span><br><span class="line">        pdata.put(new Person(&quot;小红&quot;, 5), &quot;xiaohong&quot;);</span><br><span class="line">        &#x2F;&#x2F; 得到key的值的同时得到key所对应的值</span><br><span class="line">        Set&lt;Person&gt; keys &#x3D; pdata.keySet();</span><br><span class="line">        for (Person key : keys) &#123;</span><br><span class="line">            System.out.println(key.getAge() + &quot;-&quot; + key.getName());</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>Output：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">5-小红</span><br><span class="line">10-王五</span><br><span class="line">20-李四</span><br><span class="line">30-张三</span><br></pre></td></tr></table></figure>
-
-<h3 id="无序性和不可重复性的含义是什么"><a href="#无序性和不可重复性的含义是什么" class="headerlink" title="无序性和不可重复性的含义是什么"></a>无序性和不可重复性的含义是什么</h3><p>1、什么是无序性？无序性不等于随机性 ，无序性是指存储的数据在底层数组中并非按照数组索引的顺序添加 ，而是根据数据的哈希值决定的。</p>
-<p>2、什么是不可重复性？不可重复性是指添加的元素按照 equals()判断时 ，返回 false，需要同时重写 equals()方法和 HashCode()方法。</p>
-<h3 id="比较-HashSet、LinkedHashSet-和-TreeSet-三者的异同"><a href="#比较-HashSet、LinkedHashSet-和-TreeSet-三者的异同" class="headerlink" title="比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同"></a>比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同</h3><p>HashSet 是 Set 接口的主要实现类 ，HashSet 的底层是 HashMap，线程不安全的，可以存储 null 值；</p>
-<p>LinkedHashSet 是 HashSet 的子类，能够按照添加的顺序遍历；</p>
-<p>TreeSet 底层使用红黑树，能够按照添加元素的顺序进行遍历，排序的方式有自然排序和定制排序。</p>
-<h2 id="Map-接口"><a href="#Map-接口" class="headerlink" title="Map 接口"></a>Map 接口</h2><h3 id="HashMap-和-Hashtable-的区别"><a href="#HashMap-和-Hashtable-的区别" class="headerlink" title="HashMap 和 Hashtable 的区别"></a>HashMap 和 Hashtable 的区别</h3><ol>
-<li><strong>线程是否安全：</strong> HashMap 是非线程安全的，HashTable 是线程安全的,因为 HashTable 内部的方法基本都经过<code>synchronized</code> 修饰。（如果你要保证线程安全的话就使用 ConcurrentHashMap 吧！）；</li>
-<li><strong>效率：</strong> 因为线程安全的问题，HashMap 要比 HashTable 效率高一点。另外，HashTable 基本被淘汰，不要在代码中使用它；</li>
-<li><strong>对 Null key 和 Null value 的支持：</strong> HashMap 可以存储 null 的 key 和 value，但 null 作为键只能有一个，null 作为值可以有多个；HashTable 不允许有 null 键和 null 值，否则会抛出 NullPointerException。</li>
-<li><strong>初始容量大小和每次扩充容量大小的不同 ：</strong> ① 创建时如果不指定容量初始值，Hashtable 默认的初始大小为 11，之后每次扩充，容量变为原来的 2n+1。HashMap 默认的初始化大小为 16。之后每次扩充，容量变为原来的 2 倍。② 创建时如果给定了容量初始值，那么 Hashtable 会直接使用你给定的大小，而 HashMap 会将其扩充为 2 的幂次方大小（HashMap 中的<code>tableSizeFor()</code>方法保证，下面给出了源代码）。也就是说 HashMap 总是使用 2 的幂作为哈希表的大小,后面会介绍到为什么是 2 的幂次方。</li>
-<li><strong>底层数据结构：</strong> JDK1.8 以后的 HashMap 在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间。Hashtable 没有这样的机制。</li>
-</ol>
-<p><strong>HashMap 中带有初始容量的构造函数：</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public HashMap(int initialCapacity, float loadFactor) &#123;</span><br><span class="line">    if (initialCapacity &lt; 0)</span><br><span class="line">        throw new IllegalArgumentException(&quot;Illegal initial capacity: &quot; +</span><br><span class="line">                                           initialCapacity);</span><br><span class="line">    if (initialCapacity &gt; MAXIMUM_CAPACITY)</span><br><span class="line">        initialCapacity &#x3D; MAXIMUM_CAPACITY;</span><br><span class="line">    if (loadFactor &lt;&#x3D; 0 || Float.isNaN(loadFactor))</span><br><span class="line">        throw new IllegalArgumentException(&quot;Illegal load factor: &quot; +</span><br><span class="line">                                           loadFactor);</span><br><span class="line">    this.loadFactor &#x3D; loadFactor;</span><br><span class="line">    this.threshold &#x3D; tableSizeFor(initialCapacity);</span><br><span class="line">&#125;</span><br><span class="line"> public HashMap(int initialCapacity) &#123;</span><br><span class="line">    this(initialCapacity, DEFAULT_LOAD_FACTOR);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>下面这个方法保证了 HashMap 总是使用 2 的幂作为哈希表的大小。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Returns a power of two size for the given target capacity.</span><br><span class="line"> *&#x2F;</span><br><span class="line">static final int tableSizeFor(int cap) &#123;</span><br><span class="line">    int n &#x3D; cap - 1;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 1;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 2;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 4;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 8;</span><br><span class="line">    n |&#x3D; n &gt;&gt;&gt; 16;</span><br><span class="line">    return (n &lt; 0) ? 1 : (n &gt;&#x3D; MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="HashMap-和-HashSet-区别"><a href="#HashMap-和-HashSet-区别" class="headerlink" title="HashMap 和 HashSet 区别"></a>HashMap 和 HashSet 区别</h3><p>如果你看过 <code>HashSet</code> 源码的话就应该知道：HashSet 底层就是基于 HashMap 实现的。（HashSet 的源码非常非常少，因为除了 <code>clone()</code>、<code>writeObject()</code>、<code>readObject()</code>是 HashSet 自己不得不实现之外，其他方法都是直接调用 HashMap 中的方法。</p>
-<table>
-<thead>
-<tr>
-<th>HashMap</th>
-<th>HashSet</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>实现了 Map 接口</td>
-<td>实现 Set 接口</td>
-</tr>
-<tr>
-<td>存储键值对</td>
-<td>仅存储对象</td>
-</tr>
-<tr>
-<td>调用 <code>put()</code>向 map 中添加元素</td>
-<td>调用 <code>add()</code>方法向 Set 中添加元素</td>
-</tr>
-<tr>
-<td>HashMap 使用键（Key）计算 Hashcode</td>
-<td>HashSet 使用成员对象来计算 hashcode 值，对于两个对象来说 hashcode 可能相同，所以 equals()方法用来判断对象的相等性，</td>
-</tr>
-</tbody></table>
-<h3 id="HashMap-和-TreeMap-区别"><a href="#HashMap-和-TreeMap-区别" class="headerlink" title="HashMap 和 TreeMap 区别"></a>HashMap 和 TreeMap 区别</h3><p><code>TreeMap</code> 和<code>HashMap</code> 都继承自<code>AbstractMap</code> ，但是需要注意的是<code>TreeMap</code>它还实现了<code>NavigableMap</code>接口和<code>SortedMap</code> 接口。</p>
-<p>实现 <code>NavigableMap</code> 接口让 <code>TreeMap</code> 有了对集合内元素的搜索的能力。</p>
-<p>实现<code>SortMap</code>接口让 <code>TreeMap</code> 有了对集合中的元素根据键排序的能力。默认是按 key 的升序排序，不过我们也可以指定排序的比较器。示例代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * @author shuang.kou</span><br><span class="line"> * @createTime 2020年06月15日 17:02:00</span><br><span class="line"> *&#x2F;</span><br><span class="line">public class Person &#123;</span><br><span class="line">    private Integer age;</span><br><span class="line"></span><br><span class="line">    public Person(Integer age) &#123;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Integer getAge() &#123;</span><br><span class="line">        return age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        TreeMap&lt;Person, String&gt; treeMap &#x3D; new TreeMap&lt;&gt;(new Comparator&lt;Person&gt;() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public int compare(Person person1, Person person2) &#123;</span><br><span class="line">                int num &#x3D; person1.getAge() - person2.getAge();</span><br><span class="line">                return Integer.compare(num, 0);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        treeMap.put(new Person(3), &quot;person1&quot;);</span><br><span class="line">        treeMap.put(new Person(18), &quot;person2&quot;);</span><br><span class="line">        treeMap.put(new Person(35), &quot;person3&quot;);</span><br><span class="line">        treeMap.put(new Person(16), &quot;person4&quot;);</span><br><span class="line">        treeMap.entrySet().stream().forEach(personStringEntry -&gt; &#123;</span><br><span class="line">            System.out.println(personStringEntry.getValue());</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输出:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">person1</span><br><span class="line">person4</span><br><span class="line">person2</span><br><span class="line">person3</span><br></pre></td></tr></table></figure>
-
-<p>可以看出，<code>TreeMap</code> 中的元素已经是按照 <code>Person</code> 的 age 字段的升序来排列了。</p>
-<p>上面，我们是通过传入匿名内部类的方式实现的，你可以将代码替换成 Lambda 表达式实现的方式：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">TreeMap&lt;Person, String&gt; treeMap &#x3D; new TreeMap&lt;&gt;((person1, person2) -&gt; &#123;</span><br><span class="line">  int num &#x3D; person1.getAge() - person2.getAge();</span><br><span class="line">  return Integer.compare(num, 0);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p><strong>综上，相比于HashMap来说 TreeMap 主要多了对集合中的元素根据键排序的能力以及对集合内元素的搜索的能力。</strong></p>
-<h3 id="HashSet-如何检查重复"><a href="#HashSet-如何检查重复" class="headerlink" title="HashSet 如何检查重复"></a>HashSet 如何检查重复</h3><p>当你把对象加入<code>HashSet</code>时，HashSet 会先计算对象的<code>hashcode</code>值来判断对象加入的位置，同时也会与其他加入的对象的 hashcode 值作比较，如果没有相符的 hashcode，HashSet 会假设对象没有重复出现。但是如果发现有相同 hashcode 值的对象，这时会调用<code>equals()</code>方法来检查 hashcode 相等的对象是否真的相同。如果两者相同，HashSet 就不会让加入操作成功。（摘自我的 Java 启蒙书《Head fist java》第二版）</p>
-<p><strong>hashCode()与 equals()的相关规定：</strong></p>
-<ol>
-<li>如果两个对象相等，则 hashcode 一定也是相同的</li>
-<li>两个对象相等,对两个 equals 方法返回 true</li>
-<li>两个对象有相同的 hashcode 值，它们也不一定是相等的</li>
-<li>综上，equals 方法被覆盖过，则 hashCode 方法也必须被覆盖</li>
-<li>hashCode()的默认行为是对堆上的对象产生独特值。如果没有重写 hashCode()，则该 class 的两个对象无论如何都不会相等（即使这两个对象指向相同的数据）。</li>
-</ol>
-<p><strong>==与 equals 的区别</strong></p>
-<p>对于基本类型来说，== 比较的是值是否相等；</p>
-<p>对于引用类型来说，== 比较的是两个引用是否指向同一个对象地址（两者在内存中存放的地址（堆内存地址）是否指向同一个地方）；</p>
-<p>对于引用类型（包括包装类型）来说，equals 如果没有被重写，对比它们的地址是否相等；如果 equals()方法被重写（例如 String），则比较的是地址里的内容。</p>
-<h3 id="HashMap-的底层实现"><a href="#HashMap-的底层实现" class="headerlink" title="HashMap 的底层实现"></a>HashMap 的底层实现</h3><h4 id="JDK1-8-之前"><a href="#JDK1-8-之前" class="headerlink" title="JDK1.8 之前"></a>JDK1.8 之前</h4><p>JDK1.8 之前 <code>HashMap</code> 底层是 <strong>数组和链表</strong> 结合在一起使用也就是 <strong>链表散列</strong>。<strong>HashMap 通过 key 的 hashCode 经过扰动函数处理过后得到 hash 值，然后通过 (n - 1) &amp; hash 判断当前元素存放的位置（这里的 n 指的是数组的长度），如果当前位置存在元素的话，就判断该元素与要存入的元素的 hash 值以及 key 是否相同，如果相同的话，直接覆盖，不相同就通过拉链法解决冲突。</strong></p>
-<p><strong>所谓扰动函数指的就是 HashMap 的 hash 方法。使用 hash 方法也就是扰动函数是为了防止一些实现比较差的 hashCode() 方法 换句话说使用扰动函数之后可以减少碰撞。</strong></p>
-<p><strong>JDK 1.8 HashMap 的 hash 方法源码:</strong></p>
-<p>JDK 1.8 的 hash 方法 相比于 JDK 1.7 hash 方法更加简化，但是原理不变。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  static final int hash(Object key) &#123;</span><br><span class="line">    int h;</span><br><span class="line">    &#x2F;&#x2F; key.hashCode()：返回散列值也就是hashcode</span><br><span class="line">    &#x2F;&#x2F; ^ ：按位异或</span><br><span class="line">    &#x2F;&#x2F; &gt;&gt;&gt;:无符号右移，忽略符号位，空位都以0补齐</span><br><span class="line">    return (key &#x3D;&#x3D; null) ? 0 : (h &#x3D; key.hashCode()) ^ (h &gt;&gt;&gt; 16);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对比一下 JDK1.7 的 HashMap 的 hash 方法源码.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">static int hash(int h) &#123;</span><br><span class="line">    &#x2F;&#x2F; This function ensures that hashCodes that differ only by</span><br><span class="line">    &#x2F;&#x2F; constant multiples at each bit position have a bounded</span><br><span class="line">    &#x2F;&#x2F; number of collisions (approximately 8 at default load factor).</span><br><span class="line"></span><br><span class="line">    h ^&#x3D; (h &gt;&gt;&gt; 20) ^ (h &gt;&gt;&gt; 12);</span><br><span class="line">    return h ^ (h &gt;&gt;&gt; 7) ^ (h &gt;&gt;&gt; 4);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>相比于 JDK1.8 的 hash 方法 ，JDK 1.7 的 hash 方法的性能会稍差一点点，因为毕竟扰动了 4 次。</p>
-<p>所谓 <strong>“拉链法”</strong> 就是：将链表和数组相结合。也就是说创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。</p>
-<p><a href="https://camo.githubusercontent.com/04f7d7f070f31c50f3d09da26f9459fdea2a7b4a/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f6a646b312e382545342542392538422545352538392538442545372539412538342545352538362538352545392538332541382545372542422539332545362539452538342d486173684d61702e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/04f7d7f070f31c50f3d09da26f9459fdea2a7b4a/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f6a646b312e382545342542392538422545352538392538442545372539412538342545352538362538352545392538332541382545372542422539332545362539452538342d486173684d61702e6a7067" alt="jdk1.8之前的内部结构-HashMap"></a></p>
-<h4 id="JDK1-8-之后"><a href="#JDK1-8-之后" class="headerlink" title="JDK1.8 之后"></a>JDK1.8 之后</h4><p>相比于之前的版本， JDK1.8 之后在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间。</p>
-<p><a href="https://camo.githubusercontent.com/d166a0184320055811ed72e61ece4491b6d80af1/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e38254534254239253842254535253930253845254537253941253834486173684d61702545352542412539352545352542312538322545362539352542302545362538442541452545372542422539332545362539452538342e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/d166a0184320055811ed72e61ece4491b6d80af1/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e38254534254239253842254535253930253845254537253941253834486173684d61702545352542412539352545352542312538322545362539352542302545362538442541452545372542422539332545362539452538342e6a7067" alt="jdk1.8之后的内部结构-HashMap"></a></p>
-<blockquote>
-<p>TreeMap、TreeSet 以及 JDK1.8 之后的 HashMap 底层都用到了红黑树。红黑树就是为了解决二叉查找树的缺陷，因为二叉查找树在某些情况下会退化成一个线性结构。</p>
-</blockquote>
-<p><strong>推荐阅读：</strong></p>
-<ul>
-<li>《Java 8 系列之重新认识 HashMap》 ：<a href="https://zhuanlan.zhihu.com/p/21673805" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/21673805</a></li>
-</ul>
-<h3 id="HashMap-的长度为什么是-2-的幂次方"><a href="#HashMap-的长度为什么是-2-的幂次方" class="headerlink" title="HashMap 的长度为什么是 2 的幂次方"></a>HashMap 的长度为什么是 2 的幂次方</h3><p>为了能让 HashMap 存取高效，尽量较少碰撞，也就是要尽量把数据分配均匀。我们上面也讲到了过了，Hash 值的范围值-2147483648 到 2147483647，前后加起来大概 40 亿的映射空间，只要哈希函数映射得比较均匀松散，一般应用是很难出现碰撞的。但问题是一个 40 亿长度的数组，内存是放不下的。所以这个散列值是不能直接拿来用的。用之前还要先做对数组的长度取模运算，得到的余数才能用来要存放的位置也就是对应的数组下标。这个数组下标的计算方法是“ <code>(n - 1) &amp; hash</code>”。（n 代表数组长度）。这也就解释了 HashMap 的长度为什么是 2 的幂次方。</p>
-<p><strong>这个算法应该如何设计呢？</strong></p>
-<p>我们首先可能会想到采用%取余的操作来实现。但是，重点来了：<strong>“取余(%)操作中如果除数是 2 的幂次则等价于与其除数减一的与(&amp;)操作（也就是说 hash%length==hash&amp;(length-1)的前提是 length 是 2 的 n 次方；）。”</strong> 并且 <strong>采用二进制位操作 &amp;，相对于%能够提高运算效率，这就解释了 HashMap 的长度为什么是 2 的幂次方。</strong></p>
-<h3 id="HashMap-多线程操作导致死循环问题"><a href="#HashMap-多线程操作导致死循环问题" class="headerlink" title="HashMap 多线程操作导致死循环问题"></a>HashMap 多线程操作导致死循环问题</h3><p>主要原因在于并发下的 Rehash 会造成元素之间会形成一个循环链表。不过，jdk 1.8 后解决了这个问题，但是还是不建议在多线程下使用 HashMap,因为多线程下使用 HashMap 还是会存在其他问题比如数据丢失。并发环境下推荐使用 ConcurrentHashMap 。</p>
-<p>详情请查看：<a href="https://coolshell.cn/articles/9606.html" target="_blank" rel="noopener">https://coolshell.cn/articles/9606.html</a></p>
-<h3 id="HashMap-有哪几种常见的遍历方式"><a href="#HashMap-有哪几种常见的遍历方式" class="headerlink" title="HashMap 有哪几种常见的遍历方式?"></a>HashMap 有哪几种常见的遍历方式?</h3><p><a href="https://mp.weixin.qq.com/s/Zz6mofCtmYpABDL1ap04ow" target="_blank" rel="noopener">HashMap 的 7 种遍历方式与性能分析！(强烈推荐)</a></p>
-<h3 id="ConcurrentHashMap-和-Hashtable-的区别"><a href="#ConcurrentHashMap-和-Hashtable-的区别" class="headerlink" title="ConcurrentHashMap 和 Hashtable 的区别"></a>ConcurrentHashMap 和 Hashtable 的区别</h3><p>ConcurrentHashMap 和 Hashtable 的区别主要体现在实现线程安全的方式上不同。</p>
-<ul>
-<li><strong>底层数据结构：</strong> JDK1.7 的 ConcurrentHashMap 底层采用 <strong>分段的数组+链表</strong> 实现，JDK1.8 采用的数据结构跟 HashMap1.8 的结构一样，数组+链表/红黑二叉树。Hashtable 和 JDK1.8 之前的 HashMap 的底层数据结构类似都是采用 <strong>数组+链表</strong> 的形式，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的；</li>
-<li><strong>实现线程安全的方式（重要）：</strong> ① <strong>在 JDK1.7 的时候，ConcurrentHashMap（分段锁）</strong> 对整个桶数组进行了分割分段(Segment)，每一把锁只锁容器其中一部分数据，多线程访问容器里不同数据段的数据，就不会存在锁竞争，提高并发访问率。 <strong>到了 JDK1.8 的时候已经摒弃了 Segment 的概念，而是直接用 Node 数组+链表+红黑树的数据结构来实现，并发控制使用 synchronized 和 CAS 来操作。（JDK1.6 以后 对 synchronized 锁做了很多优化）</strong> 整个看起来就像是优化过且线程安全的 HashMap，虽然在 JDK1.8 中还能看到 Segment 的数据结构，但是已经简化了属性，只是为了兼容旧版本；② <strong>Hashtable(同一把锁)</strong> :使用 synchronized 来保证线程安全，效率非常低下。当一个线程访问同步方法时，其他线程也访问同步方法，可能会进入阻塞或轮询状态，如使用 put 添加元素，另一个线程不能使用 put 添加元素，也不能使用 get，竞争会越来越激烈效率越低。</li>
-</ul>
-<p><strong>两者的对比图：</strong></p>
-<p>图片来源：<a href="http://www.cnblogs.com/chengxiao/p/6842045.html" target="_blank" rel="noopener">http://www.cnblogs.com/chengxiao/p/6842045.html</a></p>
-<p><strong>HashTable:</strong></p>
-<p><a href="https://camo.githubusercontent.com/60920968c0e19878ca2a3a153cbe4872f950b571/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f486173685461626c652545352538352541382545382541312541382545392539342538312e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/60920968c0e19878ca2a3a153cbe4872f950b571/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f486173685461626c652545352538352541382545382541312541382545392539342538312e706e67" alt="HashTable全表锁"></a></p>
-<p><strong>JDK1.7 的 ConcurrentHashMap：</strong></p>
-<p><a href="https://camo.githubusercontent.com/092aae16c3a38854b4cea8b7e42dc6720df4441f/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f436f6e63757272656e74486173684d61702545352538382538362545362541452542352545392539342538312e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/092aae16c3a38854b4cea8b7e42dc6720df4441f/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f436f6e63757272656e74486173684d61702545352538382538362545362541452542352545392539342538312e6a7067" alt="JDK1.7的ConcurrentHashMap"></a></p>
-<p><strong>JDK1.8 的 ConcurrentHashMap（TreeBin: 红黑二叉树节点 Node: 链表节点）：</strong></p>
-<p><a href="https://camo.githubusercontent.com/b823c5f2cf18e7e27da70409d2b5e18fed820364/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e382d436f6e63757272656e74486173684d61702d5374727563747572652e6a7067" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/b823c5f2cf18e7e27da70409d2b5e18fed820364/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f4a444b312e382d436f6e63757272656e74486173684d61702d5374727563747572652e6a7067" alt="JDK1.8的ConcurrentHashMap"></a></p>
-<h3 id="ConcurrentHashMap-线程安全的具体实现方式-底层具体实现"><a href="#ConcurrentHashMap-线程安全的具体实现方式-底层具体实现" class="headerlink" title="ConcurrentHashMap 线程安全的具体实现方式/底层具体实现"></a>ConcurrentHashMap 线程安全的具体实现方式/底层具体实现</h3><h4 id="JDK1-7（上面有示意图）"><a href="#JDK1-7（上面有示意图）" class="headerlink" title="JDK1.7（上面有示意图）"></a>JDK1.7（上面有示意图）</h4><p>首先将数据分为一段一段的存储，然后给每一段数据配一把锁，当一个线程占用锁访问其中一个段数据时，其他段的数据也能被其他线程访问。</p>
-<p><strong>ConcurrentHashMap 是由 Segment 数组结构和 HashEntry 数组结构组成</strong>。</p>
-<p>Segment 实现了 ReentrantLock,所以 Segment 是一种可重入锁，扮演锁的角色。HashEntry 用于存储键值对数据。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">static class Segment&lt;K,V&gt; extends ReentrantLock implements Serializable &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一个 ConcurrentHashMap 里包含一个 Segment 数组。Segment 的结构和 HashMap 类似，是一种数组和链表结构，一个 Segment 包含一个 HashEntry 数组，每个 HashEntry 是一个链表结构的元素，每个 Segment 守护着一个 HashEntry 数组里的元素，当对 HashEntry 数组的数据进行修改时，必须首先获得对应的 Segment 的锁。</p>
-<h4 id="JDK1-8-（上面有示意图）"><a href="#JDK1-8-（上面有示意图）" class="headerlink" title="JDK1.8 （上面有示意图）"></a>JDK1.8 （上面有示意图）</h4><p>ConcurrentHashMap 取消了 Segment 分段锁，采用 CAS 和 synchronized 来保证并发安全。数据结构跟 HashMap1.8 的结构类似，数组+链表/红黑二叉树。Java 8 在链表长度超过一定阈值（8）时将链表（寻址时间复杂度为 O(N)）转换为红黑树（寻址时间复杂度为 O(log(N))）</p>
-<p>synchronized 只锁定当前链表或红黑二叉树的首节点，这样只要 hash 不冲突，就不会产生并发，效率又提升 N 倍。</p>
-<h2 id="Collections-工具类"><a href="#Collections-工具类" class="headerlink" title="Collections 工具类"></a>Collections 工具类</h2><p>Collections 工具类常用方法:</p>
-<ol>
-<li>排序</li>
-<li>查找,替换操作</li>
-<li>同步控制(不推荐，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合)</li>
-</ol>
-<h3 id="排序操作"><a href="#排序操作" class="headerlink" title="排序操作"></a>排序操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">void reverse(List list)&#x2F;&#x2F;反转</span><br><span class="line">void shuffle(List list)&#x2F;&#x2F;随机排序</span><br><span class="line">void sort(List list)&#x2F;&#x2F;按自然排序的升序排序</span><br><span class="line">void sort(List list, Comparator c)&#x2F;&#x2F;定制排序，由Comparator控制排序逻辑</span><br><span class="line">void swap(List list, int i , int j)&#x2F;&#x2F;交换两个索引位置的元素</span><br><span class="line">void rotate(List list, int distance)&#x2F;&#x2F;旋转。当distance为正数时，将list后distance个元素整体移到前面。当distance为负数时，将 list的前distance个元素整体移到后面</span><br></pre></td></tr></table></figure>
-
-<h3 id="查找-替换操作"><a href="#查找-替换操作" class="headerlink" title="查找,替换操作"></a>查找,替换操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int binarySearch(List list, Object key)&#x2F;&#x2F;对List进行二分查找，返回索引，注意List必须是有序的</span><br><span class="line">int max(Collection coll)&#x2F;&#x2F;根据元素的自然顺序，返回最大的元素。 类比int min(Collection coll)</span><br><span class="line">int max(Collection coll, Comparator c)&#x2F;&#x2F;根据定制排序，返回最大元素，排序规则由Comparatator类控制。类比int min(Collection coll, Comparator c)</span><br><span class="line">void fill(List list, Object obj)&#x2F;&#x2F;用指定的元素代替指定list中的所有元素。</span><br><span class="line">int frequency(Collection c, Object o)&#x2F;&#x2F;统计元素出现次数</span><br><span class="line">int indexOfSubList(List list, List target)&#x2F;&#x2F;统计target在list中第一次出现的索引，找不到则返回-1，类比int lastIndexOfSubList(List source, list target).</span><br><span class="line">boolean replaceAll(List list, Object oldVal, Object newVal), 用新元素替换旧元素</span><br></pre></td></tr></table></figure>
-
-<h3 id="同步控制"><a href="#同步控制" class="headerlink" title="同步控制"></a>同步控制</h3><p><code>Collections</code> 提供了多个<code>synchronizedXxx()</code>方法·，该方法可以将指定集合包装成线程同步的集合，从而解决多线程并发访问集合时的线程安全问题。</p>
-<p>我们知道 <code>HashSet</code>，<code>TreeSet</code>，<code>ArrayList</code>,<code>LinkedList</code>,<code>HashMap</code>,<code>TreeMap</code> 都是线程不安全的。<code>Collections</code> 提供了多个静态方法可以把他们包装成线程同步的集合。</p>
-<p><strong>最好不要用下面这些方法，效率非常低，需要线程安全的集合类型时请考虑使用 JUC 包下的并发集合。</strong></p>
-<p>方法如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">synchronizedCollection(Collection&lt;T&gt;  c) &#x2F;&#x2F;返回指定 collection 支持的同步（线程安全的）collection。</span><br><span class="line">synchronizedList(List&lt;T&gt; list)&#x2F;&#x2F;返回指定列表支持的同步（线程安全的）List。</span><br><span class="line">synchronizedMap(Map&lt;K,V&gt; m) &#x2F;&#x2F;返回由指定映射支持的同步（线程安全的）Map。</span><br><span class="line">synchronizedSet(Set&lt;T&gt; s) &#x2F;&#x2F;返回指定 set 支持的同步（线程安全的）set。</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他重要问题"><a href="#其他重要问题" class="headerlink" title="其他重要问题"></a>其他重要问题</h2><h3 id="什么是快速失败-fail-fast-？"><a href="#什么是快速失败-fail-fast-？" class="headerlink" title="什么是快速失败(fail-fast)？"></a>什么是快速失败(fail-fast)？</h3><p><strong>快速失败(fail-fast)</strong> 是 Java 集合的一种错误检测机制。<strong>在使用迭代器对集合进行遍历的时候，我们在多线程下操作非安全失败(fail-safe)的集合类可能就会触发 fail-fast 机制，导致抛出 ConcurrentModificationException 异常。 另外，在单线程下，如果在遍历过程中对集合对象的内容进行了修改的话也会触发 fail-fast 机制。</strong></p>
-<blockquote>
-<p>注：增强 for 循环也是借助迭代器进行遍历。</p>
-</blockquote>
-<p>举个例子：多线程下，如果线程 1 正在对集合进行遍历，此时线程 2 对集合进行修改（增加、删除、修改），或者线程 1 在遍历过程中对集合进行修改，都会导致线程 1 抛出 <code>ConcurrentModificationException</code> 异常。</p>
-<p><strong>为什么呢？</strong></p>
-<p>每当迭代器使用 <code>hashNext()</code>/<code>next()</code>遍历下一个元素之前，都会检测 <code>modCount</code> 变量是否为 <code>expectedModCount</code> 值，是的话就返回遍历；否则抛出异常，终止遍历。</p>
-<p>如果我们在集合被遍历期间对其进行修改的话，就会改变 <code>modCount</code> 的值，进而导致 <code>modCount != expectedModCount</code> ，进而抛出 <code>ConcurrentModificationException</code> 异常。</p>
-<blockquote>
-<p>注：通过 <code>Iterator</code> 的方法修改集合的话会修改到 <code>expectedModCount</code> 的值，所以不会抛出异常。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">final void checkForComodification() &#123;</span><br><span class="line">    if (modCount !&#x3D; expectedModCount)</span><br><span class="line">        throw new ConcurrentModificationException();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好吧！相信大家已经搞懂了快速失败(fail-fast)机制以及它的原理。</p>
-<p>我们再来趁热打铁，看一个阿里巴巴手册相关的规定：</p>
-<p><a href="https://camo.githubusercontent.com/ebdd43a8eaf371a62b90bce30d65e637acaa6118/68747470733a2f2f696d676b722e636e2d626a2e7566696c656f732e636f6d2f61643238653362612d653431392d343732342d383639632d3733383739653630346461312e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/ebdd43a8eaf371a62b90bce30d65e637acaa6118/68747470733a2f2f696d676b722e636e2d626a2e7566696c656f732e636f6d2f61643238653362612d653431392d343732342d383639632d3733383739653630346461312e706e67" alt="img"></a></p>
-<p>有了前面讲的基础，我们应该知道：使用 <code>Iterator</code> 提供的 <code>remove</code> 方法，可以修改到 <code>expectedModCount</code> 的值。所以，才不会再抛出<code>ConcurrentModificationException</code> 异常。</p>
-<h3 id="什么是安全失败-fail-safe-呢？"><a href="#什么是安全失败-fail-safe-呢？" class="headerlink" title="什么是安全失败(fail-safe)呢？"></a>什么是安全失败(fail-safe)呢？</h3><p>明白了快速失败(fail-fast)之后，安全失败(fail-safe)我们就很好理解了。</p>
-<p>采用安全失败机制的集合容器，在遍历时不是直接在集合内容上访问的，而是先复制原有集合内容，在拷贝的集合上进行遍历。所以，在遍历过程中对原集合所作的修改并不能被迭代器检测到，故不会抛 <code>ConcurrentModificationException</code> 异常</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>基础</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决servlet的乱码问题</title>
     <url>/2020/0421_second/</url>
     <content><![CDATA[<h2 id="servlet中请求乱码问题解决"><a href="#servlet中请求乱码问题解决" class="headerlink" title="servlet中请求乱码问题解决:"></a>servlet中请求乱码问题解决:</h2><h3 id="1-最有效的办法："><a href="#1-最有效的办法：" class="headerlink" title="1.最有效的办法："></a>1.最有效的办法：</h3><pre><code>使用 String 进行重新编码： uname=new String(uname.getBytes(&quot;iso8859-1&quot;),&quot;utf-8&quot;); </code></pre><h3 id="2-Get-方式请求："><a href="#2-Get-方式请求：" class="headerlink" title="2.Get 方式请求："></a>2.Get 方式请求：</h3><pre><code>在 service 方法中使用: req.setCharacterEncoding(“utf-8”)； 
@@ -624,162 +782,6 @@
       <tags>
         <tag>学习</tag>
         <tag>记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown的用法</title>
-    <url>/2020/0421_first/</url>
-    <content><![CDATA[<h1 id="一、Markdown的标题"><a href="#一、Markdown的标题" class="headerlink" title="一、Markdown的标题"></a>一、Markdown的标题</h1><h2 id="1-使用-标记一级标题"><a href="#1-使用-标记一级标题" class="headerlink" title="1.使用 = 标记一级标题"></a>1.使用 = 标记一级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是一级标题</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-使用-标记二级标题"><a href="#2-使用-标记二级标题" class="headerlink" title="2.使用 - 标记二级标题"></a>2.使用 - 标记二级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是二级标题</span><br><span class="line">--------------------</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="3-使用-号标记"><a href="#3-使用-号标记" class="headerlink" title="3.使用#号标记"></a>3.使用#号标记</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推</span><br></pre></td></tr></table></figure>
-<p>例如所示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="二、Markdown的段落"><a href="#二、Markdown的段落" class="headerlink" title="二、Markdown的段落"></a>二、Markdown的段落</h1><h2 id="1-段落要求"><a href="#1-段落要求" class="headerlink" title="1.段落要求"></a>1.段落要求</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车或者也可以在段落后面使用一个空行来表示重新开始一个段落。</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-Markdown的字体"><a href="#2-Markdown的字体" class="headerlink" title="2.Markdown的字体"></a>2.Markdown的字体</h2><p>Markdown主要有以下字体可以使用</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. *斜体文本*  或者  _斜体文本_</span><br><span class="line"></span><br><span class="line">2. **粗体文本**  或者  __粗体文本__</span><br><span class="line"></span><br><span class="line">3. ***粗斜体文本***   或者   ___粗斜体文本___</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="3-分隔符"><a href="#3-分隔符" class="headerlink" title="3.分隔符"></a>3.分隔符</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。</span><br><span class="line"></span><br><span class="line">例如所示:</span><br><span class="line">****</span><br><span class="line">* * *</span><br><span class="line">----</span><br><span class="line">-     -     -</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可，实例如下：</span><br><span class="line">    RUNOOB.COM</span><br><span class="line">    GOOGLE.COM</span><br><span class="line">    ~~BAIDU.COM~~</span><br></pre></td></tr></table></figure>
-
-<p>例如所示：<br><del>BAIDU.COM</del></p>
-<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">下划线可以通过 HTML 的 &lt;u&gt; 标签来实现：</span><br><span class="line"></span><br><span class="line">    &lt;u&gt;带下划线文本&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure>
-
-<p>例如所示：</p>
-<p><u>带下划线的文本</u></p>
-<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">脚注是对文本的补充说明。</span><br><span class="line"></span><br><span class="line">Markdown 脚注的格式如下:</span><br><span class="line"></span><br><span class="line">[^要注明的文本]</span><br><span class="line"></span><br><span class="line">以下实例演示了脚注的用法：</span><br><span class="line"></span><br><span class="line">创建脚注格式类似这样 </span><br><span class="line"></span><br><span class="line">[^码农]。</span><br><span class="line"></span><br><span class="line">[^码农]: 程序员 -- 学的越多，秃的越快！！！</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="三、Markdown列表"><a href="#三、Markdown列表" class="headerlink" title="三、Markdown列表"></a>三、Markdown列表</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 支持有序列表和无序列表。</span><br><span class="line"> </span><br><span class="line">无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</span><br><span class="line"></span><br><span class="line">* 第一项</span><br><span class="line">* 第二项</span><br><span class="line">* 第三项</span><br><span class="line"></span><br><span class="line">+ 第一项</span><br><span class="line">+ 第二项</span><br><span class="line">+ 第三项</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br><span class="line"></span><br><span class="line">有序列表使用数字并加上 . 号来表示，如：</span><br><span class="line"></span><br><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br><span class="line"></span><br><span class="line">列表嵌套只需在子列表中的选项添加四个空格即可：</span><br><span class="line"></span><br><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
-
-<p>例如所示：</p>
-<ul>
-<li>第一项<ul>
-<li>第一项嵌套的第一个元素</li>
-<li>第一项嵌套的第二个元素</li>
-</ul>
-</li>
-<li>第二项</li>
-<li>第三项</li>
-</ul>
-<ol>
-<li>第一项   <ul>
-<li>第一项嵌套的第一个元素</li>
-<li>第一项嵌套的第二个元素</li>
-</ul>
-</li>
-<li>第二项<ul>
-<li>第二项嵌套的第一个元素<ul>
-<li>第二项嵌套的第一项的第一个元素</li>
-</ul>
-</li>
-<li>第二项嵌套的第二个元素</li>
-</ul>
-</li>
-<li>第三项</li>
-</ol>
-<hr>
-<h1 id="四、Markdown区块"><a href="#四、Markdown区块" class="headerlink" title="四、Markdown区块"></a>四、Markdown区块</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</span><br><span class="line"></span><br><span class="line">&gt; 区块引用</span><br><span class="line">&gt; 学的不仅是技术更是梦想</span><br><span class="line"></span><br><span class="line">另外区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</span><br><span class="line">&gt; 最外层</span><br><span class="line">&gt; &gt; 第一层嵌套</span><br><span class="line">&gt; &gt; &gt; 第二层嵌套</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>区块引用<br>学习Markdown</p>
-</blockquote>
-<blockquote>
-<p>最外层  </p>
-<blockquote>
-<p>第一层嵌套  </p>
-<blockquote>
-<p>第二层嵌套</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注:区块可以和列表相互嵌套使用，例如：</span><br><span class="line">1. 第一项</span><br><span class="line">    &gt; 菜鸟教程</span><br><span class="line">    &gt; 学的不仅是技术更是梦想</span><br><span class="line">2. 第二项</span><br></pre></td></tr></table></figure>
-<ol>
-<li>第一项<blockquote>
-<p>菜鸟教程<br>学习Markdown</p>
-</blockquote>
-</li>
-<li>第二项<ul>
-<li>第二项的第一个元素</li>
-<li>第二项的第二个元素</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h1 id="五、Markdown的代码"><a href="#五、Markdown的代码" class="headerlink" title="五、Markdown的代码"></a>五、Markdown的代码</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.如果是段落上的一个函数或片段的代码可以用反引号把它包起来（&#96;），例如：</span><br><span class="line"></span><br><span class="line">&#96;printf()&#96; 函数</span><br><span class="line"></span><br><span class="line">2.代码区块</span><br><span class="line">代码区块使用 4 个空格或者一个制表符（Tab 键）</span><br><span class="line"></span><br><span class="line">3.可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定）：</span><br></pre></td></tr></table></figure>
-
-<p>例如所示:<br><code>printf()</code></p>
-<pre><code>&lt;?php
-    echo &quot;1111&quot;; 
-?&gt;</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">System.out.println(a);</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="六、Markdown的链接"><a href="#六、Markdown的链接" class="headerlink" title="六、Markdown的链接"></a>六、Markdown的链接</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">链接使用方法如下：</span><br><span class="line">[链接名称](链接地址)</span><br><span class="line">或者</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">[我的博客网址](http:&#x2F;&#x2F;hplts.github.io)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">高级链接</span><br><span class="line">我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：</span><br><span class="line"></span><br><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">这个链接用 runoob 作为网址变量 [Runoob][runoob]</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">  [1]: http:&#x2F;&#x2F;www.google.com&#x2F;</span><br><span class="line">  [runoob]: http:&#x2F;&#x2F;www.runoob.com&#x2F;</span><br></pre></td></tr></table></figure>
-
-<p>这是一个链接 <a href="http://hplts.github.io">我的博客网址</a></p>
-<p>或者 直接输出链接</p>
-<p><a href="http://hplts.github.io">http://hplts.github.io</a></p>
-<h1 id="七、Markdown的图片"><a href="#七、Markdown的图片" class="headerlink" title="七、Markdown的图片"></a>七、Markdown的图片</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 图片语法格式如下：</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">开头一个感叹号 !</span><br><span class="line">接着一个方括号，里面放上图片的替代文字</span><br><span class="line">接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://pic.downk.cc/item/5e9ecac3c2a9a83be585549a.jpg" alt="美女图片" title="如图所示"></p>
-<hr>
-<h1 id="八、Markdown的表格"><a href="#八、Markdown的表格" class="headerlink" title="八、Markdown的表格"></a>八、Markdown的表格</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</span><br><span class="line"></span><br><span class="line">语法格式如下：</span><br><span class="line"></span><br><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line"></span><br><span class="line">2.对齐方式</span><br><span class="line"></span><br><span class="line">我们可以设置表格的对齐方式：</span><br><span class="line"></span><br><span class="line">-: 设置内容和标题栏居右对齐。</span><br><span class="line">:- 设置内容和标题栏居左对齐。</span><br><span class="line">:-: 设置内容和标题栏居中对齐。</span><br><span class="line">实例如下：</span><br><span class="line"></span><br><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
-
-<p>例如所示：</p>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-</tbody></table>
-<h1 id="九、Markdown的高级技巧"><a href="#九、Markdown的高级技巧" class="headerlink" title="九、Markdown的高级技巧"></a>九、Markdown的高级技巧</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.支持的 HTML 元素</span><br><span class="line">不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</span><br><span class="line"></span><br><span class="line">目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如：</span><br><span class="line"></span><br><span class="line">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</span><br><span class="line"></span><br><span class="line">2.转义：使用\进行转义</span><br><span class="line">Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</span><br><span class="line"></span><br><span class="line">**文本加粗** </span><br><span class="line">\*\* 正常显示星号 \*\*</span><br></pre></td></tr></table></figure>
-<h2 id="typora-画流程图、时序图-顺序图-、甘特图"><a href="#typora-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="typora 画流程图、时序图(顺序图)、甘特图"></a>typora 画流程图、时序图(顺序图)、甘特图</h2><h3 id="1、横向流程图源码格式："><a href="#1、横向流程图源码格式：" class="headerlink" title="1、横向流程图源码格式："></a>1、横向流程图源码格式：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt;|a&#x3D;2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
-<p>2、竖向流程图源码格式：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt; |a&#x3D;2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
-
-<p>3、标准流程图源码格式：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
-
-<p>4、标准流程图源码格式（横向）：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st(right)-&gt;op(right)-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(bottom)-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
-
-<p>5、UML时序图源码样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br></pre></td></tr></table></figure>
-
-<p>6、UML时序图源码复杂样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br></pre></td></tr></table></figure>
-
-<p>7、UML标准时序图样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br&#x2F;&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br></pre></td></tr></table></figure>
-
-<p>8、甘特图样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-        <tag>学习</tag>
       </tags>
   </entry>
 </search>
