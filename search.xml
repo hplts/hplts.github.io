@@ -16,159 +16,166 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown的用法</title>
-    <url>/2020/0421_first/</url>
-    <content><![CDATA[<h1 id="一、Markdown的标题"><a href="#一、Markdown的标题" class="headerlink" title="一、Markdown的标题"></a>一、Markdown的标题</h1><h2 id="1-使用-标记一级标题"><a href="#1-使用-标记一级标题" class="headerlink" title="1.使用 = 标记一级标题"></a>1.使用 = 标记一级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是一级标题</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-使用-标记二级标题"><a href="#2-使用-标记二级标题" class="headerlink" title="2.使用 - 标记二级标题"></a>2.使用 - 标记二级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是二级标题</span><br><span class="line">--------------------</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="3-使用-号标记"><a href="#3-使用-号标记" class="headerlink" title="3.使用#号标记"></a>3.使用#号标记</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推</span><br></pre></td></tr></table></figure>
-<p>例如所示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="二、Markdown的段落"><a href="#二、Markdown的段落" class="headerlink" title="二、Markdown的段落"></a>二、Markdown的段落</h1><h2 id="1-段落要求"><a href="#1-段落要求" class="headerlink" title="1.段落要求"></a>1.段落要求</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车或者也可以在段落后面使用一个空行来表示重新开始一个段落。</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-Markdown的字体"><a href="#2-Markdown的字体" class="headerlink" title="2.Markdown的字体"></a>2.Markdown的字体</h2><p>Markdown主要有以下字体可以使用</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. *斜体文本*  或者  _斜体文本_</span><br><span class="line"></span><br><span class="line">2. **粗体文本**  或者  __粗体文本__</span><br><span class="line"></span><br><span class="line">3. ***粗斜体文本***   或者   ___粗斜体文本___</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="3-分隔符"><a href="#3-分隔符" class="headerlink" title="3.分隔符"></a>3.分隔符</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。</span><br><span class="line"></span><br><span class="line">例如所示:</span><br><span class="line">****</span><br><span class="line">* * *</span><br><span class="line">----</span><br><span class="line">-     -     -</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可，实例如下：</span><br><span class="line">    RUNOOB.COM</span><br><span class="line">    GOOGLE.COM</span><br><span class="line">    ~~BAIDU.COM~~</span><br></pre></td></tr></table></figure>
-
-<p>例如所示：<br><del>BAIDU.COM</del></p>
-<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">下划线可以通过 HTML 的 &lt;u&gt; 标签来实现：</span><br><span class="line"></span><br><span class="line">    &lt;u&gt;带下划线文本&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure>
-
-<p>例如所示：</p>
-<p><u>带下划线的文本</u></p>
-<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">脚注是对文本的补充说明。</span><br><span class="line"></span><br><span class="line">Markdown 脚注的格式如下:</span><br><span class="line"></span><br><span class="line">[^要注明的文本]</span><br><span class="line"></span><br><span class="line">以下实例演示了脚注的用法：</span><br><span class="line"></span><br><span class="line">创建脚注格式类似这样 </span><br><span class="line"></span><br><span class="line">[^码农]。</span><br><span class="line"></span><br><span class="line">[^码农]: 程序员 -- 学的越多，秃的越快！！！</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="三、Markdown列表"><a href="#三、Markdown列表" class="headerlink" title="三、Markdown列表"></a>三、Markdown列表</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 支持有序列表和无序列表。</span><br><span class="line"> </span><br><span class="line">无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</span><br><span class="line"></span><br><span class="line">* 第一项</span><br><span class="line">* 第二项</span><br><span class="line">* 第三项</span><br><span class="line"></span><br><span class="line">+ 第一项</span><br><span class="line">+ 第二项</span><br><span class="line">+ 第三项</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br><span class="line"></span><br><span class="line">有序列表使用数字并加上 . 号来表示，如：</span><br><span class="line"></span><br><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br><span class="line"></span><br><span class="line">列表嵌套只需在子列表中的选项添加四个空格即可：</span><br><span class="line"></span><br><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
-
-<p>例如所示：</p>
+    <title>J2EE基础知识总结</title>
+    <url>/2020/0507_first/</url>
+    <content><![CDATA[<h2 id="Servlet总结"><a href="#Servlet总结" class="headerlink" title="Servlet总结"></a>Servlet总结</h2><p>在Java Web程序中，<strong>Servlet</strong>主要负责接收用户请求 <code>HttpServletRequest</code>,在<code>doGet()</code>,<code>doPost()</code>中做相应的处理，并将回应<code>HttpServletResponse</code>反馈给用户。<strong>Servlet</strong> 可以设置初始化参数，供Servlet内部使用。一个Servlet类只会有一个实例，在它初始化时调用<code>init()</code>方法，销毁时调用<code>destroy()</code>方法<strong>。</strong>Servlet需要在web.xml中配置（MyEclipse中创建Servlet会自动配置），<strong>一个Servlet可以设置多个URL访问</strong>。<strong>Servlet不是线程安全</strong>，因此要谨慎使用类变量。</p>
+<h2 id="阐述Servlet和CGI的区别"><a href="#阐述Servlet和CGI的区别" class="headerlink" title="阐述Servlet和CGI的区别?"></a>阐述Servlet和CGI的区别?</h2><h3 id="CGI的不足之处"><a href="#CGI的不足之处" class="headerlink" title="CGI的不足之处:"></a>CGI的不足之处:</h3><p>1，需要为每个请求启动一个操作CGI程序的系统进程。如果请求频繁，这将会带来很大的开销。</p>
+<p>2，需要为每个请求加载和运行一个CGI程序，这将带来很大的开销</p>
+<p>3，需要重复编写处理网络协议的代码以及编码，这些工作都是非常耗时的。</p>
+<h3 id="Servlet的优点"><a href="#Servlet的优点" class="headerlink" title="Servlet的优点:"></a>Servlet的优点:</h3><p>1，只需要启动一个操作系统进程以及加载一个JVM，大大降低了系统的开销</p>
+<p>2，如果多个请求需要做同样处理的时候，这时候只需要加载一个类，这也大大降低了开销</p>
+<p>3，所有动态加载的类可以实现对网络协议以及请求解码的共享，大大降低了工作量。</p>
+<p>4，Servlet能直接和Web服务器交互，而普通的CGI程序不能。Servlet还能在各个程序之间共享数据，使数据库连接池之类的功能很容易实现。</p>
+<p>补充：Sun Microsystems公司在1996年发布Servlet技术就是为了和CGI进行竞争，Servlet是一个特殊的Java程序，一个基于Java的Web应用通常包含一个或多个Servlet类。Servlet不能够自行创建并执行，它是在Servlet容器中运行的，容器将用户的请求传递给Servlet程序，并将Servlet的响应回传给用户。通常一个Servlet会关联一个或多个JSP页面。以前CGI经常因为性能开销上的问题被诟病，然而Fast CGI早就已经解决了CGI效率上的问题，所以面试的时候大可不必信口开河的诟病CGI，事实上有很多你熟悉的网站都使用了CGI技术。</p>
+<p>参考：《javaweb整合开发王者归来》P7</p>
+<h2 id="Servlet接口中有哪些方法及Servlet生命周期探秘"><a href="#Servlet接口中有哪些方法及Servlet生命周期探秘" class="headerlink" title="Servlet接口中有哪些方法及Servlet生命周期探秘"></a>Servlet接口中有哪些方法及Servlet生命周期探秘</h2><p>Servlet接口定义了5个方法，其中<strong>前三个方法与Servlet生命周期相关</strong>：</p>
 <ul>
-<li>第一项<ul>
-<li>第一项嵌套的第一个元素</li>
-<li>第一项嵌套的第二个元素</li>
+<li><code>void init(ServletConfig config) throws ServletException</code></li>
+<li><code>void service(ServletRequest req, ServletResponse resp) throws ServletException, java.io.IOException</code></li>
+<li><code>void destroy()</code></li>
+<li><code>java.lang.String getServletInfo()</code></li>
+<li><code>ServletConfig getServletConfig()</code></li>
 </ul>
-</li>
-<li>第二项</li>
-<li>第三项</li>
+<p><strong>生命周期：</strong> <strong>Web容器加载Servlet并将其实例化后，Servlet生命周期开始</strong>，容器运行其<strong>init()方法</strong>进行Servlet的初始化；请求到达时调用Servlet的<strong>service()方法</strong>，service()方法会根据需要调用与请求对应的<strong>doGet或doPost</strong>等方法；当服务器关闭或项目被卸载时服务器会将Servlet实例销毁，此时会调用Servlet的<strong>destroy()方法</strong>。<strong>init方法和destroy方法只会执行一次，service方法客户端每次请求Servlet都会执行</strong>。Servlet中有时会用到一些需要初始化与销毁的资源，因此可以把初始化资源的代码放入init方法中，销毁资源的代码放入destroy方法中，这样就不需要每次处理客户端的请求都要初始化与销毁资源。</p>
+<p>参考：《javaweb整合开发王者归来》P81</p>
+<h2 id="get和post请求的区别"><a href="#get和post请求的区别" class="headerlink" title="get和post请求的区别"></a>get和post请求的区别</h2><p>get和post请求实际上是没有区别，大家可以自行查询相关文章（参考文章：<a href="https://www.cnblogs.com/logsharing/p/8448446.html" target="_blank" rel="noopener">https://www.cnblogs.com/logsharing/p/8448446.html</a>，知乎对应的问题链接：<a href="https://www.zhihu.com/question/28586791" target="_blank" rel="noopener">get和post区别？</a>）！</p>
+<p>可以把 get 和 post 当作两个不同的行为，两者并没有什么本质区别，底层都是 TCP 连接。 get请求用来从服务器上获得资源，而post是用来向服务器提交数据。比如你要获取人员列表可以用 get 请求，你需要创建一个人员可以用 post 。这也是 Restful API 最基本的一个要求。</p>
+<p>推荐阅读：</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/28586791" target="_blank" rel="noopener">https://www.zhihu.com/question/28586791</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzI3NzIzMzg3Mw==&amp;mid=100000054&amp;idx=1&amp;sn=71f6c214f3833d9ca20b9f7dcd9d33e4#rd" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MzI3NzIzMzg3Mw==&amp;mid=100000054&amp;idx=1&amp;sn=71f6c214f3833d9ca20b9f7dcd9d33e4#rd</a></li>
 </ul>
+<h2 id="什么情况下调用doGet-和doPost"><a href="#什么情况下调用doGet-和doPost" class="headerlink" title="什么情况下调用doGet()和doPost()"></a>什么情况下调用doGet()和doPost()</h2><p>Form标签里的method的属性为get时调用doGet()，为post时调用doPost()。</p>
+<h2 id="转发-Forward-和重定向-Redirect-的区别"><a href="#转发-Forward-和重定向-Redirect-的区别" class="headerlink" title="转发(Forward)和重定向(Redirect)的区别"></a>转发(Forward)和重定向(Redirect)的区别</h2><p><strong>转发是服务器行为，重定向是客户端行为。</strong></p>
+<p><strong>转发（Forward）</strong> 通过RequestDispatcher对象的forward（HttpServletRequest request,HttpServletResponse response）方法实现的。RequestDispatcher可以通过HttpServletRequest 的getRequestDispatcher()方法获得。例如下面的代码就是跳转到login_success.jsp页面。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">request.getRequestDispatcher(&quot;login_success.jsp&quot;).forward(request, response);</span><br></pre></td></tr></table></figure>
+
+<p><strong>重定向（Redirect）</strong> 是利用服务器返回的状态码来实现的。客户端浏览器请求服务器的时候，服务器会返回一个状态码。服务器通过 <code>HttpServletResponse</code> 的 <code>setStatus(int status)</code> 方法设置状态码。如果服务器返回301或者302，则浏览器会到新的网址重新请求该资源。</p>
 <ol>
-<li>第一项   <ul>
-<li>第一项嵌套的第一个元素</li>
-<li>第一项嵌套的第二个元素</li>
-</ul>
-</li>
-<li>第二项<ul>
-<li>第二项嵌套的第一个元素<ul>
-<li>第二项嵌套的第一项的第一个元素</li>
-</ul>
-</li>
-<li>第二项嵌套的第二个元素</li>
-</ul>
-</li>
-<li>第三项</li>
+<li><strong>从地址栏显示来说</strong></li>
 </ol>
-<hr>
-<h1 id="四、Markdown区块"><a href="#四、Markdown区块" class="headerlink" title="四、Markdown区块"></a>四、Markdown区块</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</span><br><span class="line"></span><br><span class="line">&gt; 区块引用</span><br><span class="line">&gt; 学的不仅是技术更是梦想</span><br><span class="line"></span><br><span class="line">另外区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</span><br><span class="line">&gt; 最外层</span><br><span class="line">&gt; &gt; 第一层嵌套</span><br><span class="line">&gt; &gt; &gt; 第二层嵌套</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>区块引用<br>学习Markdown</p>
-</blockquote>
-<blockquote>
-<p>最外层  </p>
-<blockquote>
-<p>第一层嵌套  </p>
-<blockquote>
-<p>第二层嵌套</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注:区块可以和列表相互嵌套使用，例如：</span><br><span class="line">1. 第一项</span><br><span class="line">    &gt; 菜鸟教程</span><br><span class="line">    &gt; 学的不仅是技术更是梦想</span><br><span class="line">2. 第二项</span><br></pre></td></tr></table></figure>
+<p>forward是服务器请求资源,服务器直接访问目标地址的URL,把那个URL的响应内容读取过来,然后把这些内容再发给浏览器.浏览器根本不知道服务器发送的内容从哪里来的,所以它的地址栏还是原来的地址. redirect是服务端根据逻辑,发送一个状态码,告诉浏览器重新去请求那个地址.所以地址栏显示的是新的URL.</p>
 <ol>
-<li>第一项<blockquote>
-<p>菜鸟教程<br>学习Markdown</p>
-</blockquote>
-</li>
-<li>第二项<ul>
-<li>第二项的第一个元素</li>
-<li>第二项的第二个元素</li>
-</ul>
-</li>
+<li><strong>从数据共享来说</strong></li>
 </ol>
-<hr>
-<h1 id="五、Markdown的代码"><a href="#五、Markdown的代码" class="headerlink" title="五、Markdown的代码"></a>五、Markdown的代码</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.如果是段落上的一个函数或片段的代码可以用反引号把它包起来（&#96;），例如：</span><br><span class="line"></span><br><span class="line">&#96;printf()&#96; 函数</span><br><span class="line"></span><br><span class="line">2.代码区块</span><br><span class="line">代码区块使用 4 个空格或者一个制表符（Tab 键）</span><br><span class="line"></span><br><span class="line">3.可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定）：</span><br></pre></td></tr></table></figure>
+<p>forward:转发页面和转发到的页面可以共享request里面的数据. redirect:不能共享数据.</p>
+<ol>
+<li><strong>从运用地方来说</strong></li>
+</ol>
+<p>forward:一般用于用户登陆的时候,根据角色转发到相应的模块. redirect:一般用于用户注销登陆时返回主页面和跳转到其它的网站等</p>
+<ol>
+<li>从效率来说</li>
+</ol>
+<p>forward:高. redirect:低.</p>
+<h2 id="自动刷新-Refresh"><a href="#自动刷新-Refresh" class="headerlink" title="自动刷新(Refresh)"></a>自动刷新(Refresh)</h2><p>自动刷新不仅可以实现一段时间之后自动跳转到另一个页面，还可以实现一段时间之后自动刷新本页面。Servlet中通过HttpServletResponse对象设置Header属性实现自动刷新例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Response.setHeader(&quot;Refresh&quot;,&quot;5;URL&#x3D;http:&#x2F;&#x2F;localhost:8080&#x2F;servlet&#x2F;example.htm&quot;);</span><br></pre></td></tr></table></figure>
 
-<p>例如所示:<br><code>printf()</code></p>
-<pre><code>&lt;?php
-    echo &quot;1111&quot;; 
-?&gt;</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">System.out.println(a);</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="六、Markdown的链接"><a href="#六、Markdown的链接" class="headerlink" title="六、Markdown的链接"></a>六、Markdown的链接</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">链接使用方法如下：</span><br><span class="line">[链接名称](链接地址)</span><br><span class="line">或者</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">[我的博客网址](http:&#x2F;&#x2F;hplts.github.io)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">高级链接</span><br><span class="line">我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：</span><br><span class="line"></span><br><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">这个链接用 runoob 作为网址变量 [Runoob][runoob]</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">  [1]: http:&#x2F;&#x2F;www.google.com&#x2F;</span><br><span class="line">  [runoob]: http:&#x2F;&#x2F;www.runoob.com&#x2F;</span><br></pre></td></tr></table></figure>
+<p>其中5为时间，单位为秒。URL指定就是要跳转的页面（如果设置自己的路径，就会实现每过5秒自动刷新本页面一次）</p>
+<h2 id="Servlet与线程安全"><a href="#Servlet与线程安全" class="headerlink" title="Servlet与线程安全"></a>Servlet与线程安全</h2><p><strong>Servlet不是线程安全的，多线程并发的读写会导致数据不同步的问题。</strong> 解决的办法是尽量不要定义name属性，而是要把name变量分别定义在doGet()和doPost()方法内。虽然使用synchronized(name){}语句块可以解决问题，但是会造成线程的等待，不是很科学的办法。 注意：多线程的并发的读写Servlet类属性会导致数据不同步。但是如果只是并发地读取属性而不写入，则不存在数据不同步的问题。因此Servlet里的只读属性最好定义为final类型的。</p>
+<p>参考：《javaweb整合开发王者归来》P92</p>
+<h2 id="JSP和Servlet是什么关系"><a href="#JSP和Servlet是什么关系" class="headerlink" title="JSP和Servlet是什么关系"></a>JSP和Servlet是什么关系</h2><p>其实这个问题在上面已经阐述过了，Servlet是一个特殊的Java程序，它运行于服务器的JVM中，能够依靠服务器的支持向浏览器提供显示内容。JSP本质上是Servlet的一种简易形式，JSP会被服务器处理成一个类似于Servlet的Java程序，可以简化页面内容的生成。Servlet和JSP最主要的不同点在于，Servlet的应用逻辑是在Java文件中，并且完全从表示层中的HTML分离开来。而JSP的情况是Java和HTML可以组合成一个扩展名为.jsp的文件。有人说，Servlet就是在Java中写HTML，而JSP就是在HTML中写Java代码，当然这个说法是很片面且不够准确的。JSP侧重于视图，Servlet更侧重于控制逻辑，在MVC架构模式中，JSP适合充当视图（view）而Servlet适合充当控制器（controller）。</p>
+<h2 id="JSP工作原理"><a href="#JSP工作原理" class="headerlink" title="JSP工作原理"></a>JSP工作原理</h2><p>JSP是一种Servlet，但是与HttpServlet的工作方式不太一样。HttpServlet是先由源代码编译为class文件后部署到服务器下，为先编译后部署。而JSP则是先部署后编译。JSP会在客户端第一次请求JSP文件时被编译为HttpJspPage类（接口Servlet的一个子类）。该类会被服务器临时存放在服务器工作目录里面。下面通过实例给大家介绍。 工程JspLoginDemo下有一个名为login.jsp的Jsp文件，把工程第一次部署到服务器上后访问这个Jsp文件，我们发现这个目录下多了下图这两个东东。 .class文件便是JSP对应的Servlet。编译完毕后再运行class文件来响应客户端请求。以后客户端访问login.jsp的时候，Tomcat将不再重新编译JSP文件，而是直接调用class文件来响应客户端请求</p>
+<p> <a href="https://camo.githubusercontent.com/5b077d70058831d1e226f188c245f262684fc434/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f312e706e67" target="_blank" rel="noopener"><img src="https://camo.githubusercontent.com/5b077d70058831d1e226f188c245f262684fc434/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f312e706e67" alt="JSP工作原理"></a> </p>
+<p>由于JSP只会在客户端第一次请求的时候被编译 ，因此第一次请求JSP时会感觉比较慢，之后就会感觉快很多。如果把服务器保存的class文件删除，服务器也会重新编译JSP。</p>
+<p>开发Web程序时经常需要修改JSP。Tomcat能够自动检测到JSP程序的改动。如果检测到JSP源代码发生了改动。Tomcat会在下次客户端请求JSP时重新编译JSP，而不需要重启Tomcat。这种自动检测功能是默认开启的，检测改动会消耗少量的时间，在部署Web应用的时候可以在web.xml中将它关掉。</p>
+<p>参考：《javaweb整合开发王者归来》P97</p>
+<h2 id="JSP有哪些内置对象、作用分别是什么"><a href="#JSP有哪些内置对象、作用分别是什么" class="headerlink" title="JSP有哪些内置对象、作用分别是什么"></a>JSP有哪些内置对象、作用分别是什么</h2><p><a href="http://blog.csdn.net/qq_34337272/article/details/64310849" target="_blank" rel="noopener">JSP内置对象 - CSDN博客</a></p>
+<p>JSP有9个内置对象：</p>
+<ul>
+<li>request：封装客户端的请求，其中包含来自GET或POST请求的参数；</li>
+<li>response：封装服务器对客户端的响应；</li>
+<li>pageContext：通过该对象可以获取其他对象；</li>
+<li>session：封装用户会话的对象；</li>
+<li>application：封装服务器运行环境的对象；</li>
+<li>out：输出服务器响应的输出流对象；</li>
+<li>config：Web应用的配置对象；</li>
+<li>page：JSP页面本身（相当于Java程序中的this）；</li>
+<li>exception：封装页面抛出异常的对象。</li>
+</ul>
+<h2 id="Request对象的主要方法有哪些"><a href="#Request对象的主要方法有哪些" class="headerlink" title="Request对象的主要方法有哪些"></a>Request对象的主要方法有哪些</h2><ul>
+<li>setAttribute(String name,Object)：设置名字为name的request 的参数值</li>
+<li>getAttribute(String name)：返回由name指定的属性值</li>
+<li>getAttributeNames()：返回request 对象所有属性的名字集合，结果是一个枚举的实例</li>
+<li>getCookies()：返回客户端的所有 Cookie 对象，结果是一个Cookie 数组</li>
+<li>getCharacterEncoding() ：返回请求中的字符编码方式 = getContentLength() ：返回请求的 Body的长度</li>
+<li>getHeader(String name) ：获得HTTP协议定义的文件头信息</li>
+<li>getHeaders(String name) ：返回指定名字的request Header 的所有值，结果是一个枚举的实例</li>
+<li>getHeaderNames() ：返回所以request Header 的名字，结果是一个枚举的实例</li>
+<li>getInputStream() ：返回请求的输入流，用于获得请求中的数据</li>
+<li>getMethod() ：获得客户端向服务器端传送数据的方法</li>
+<li>getParameter(String name) ：获得客户端传送给服务器端的有 name指定的参数值</li>
+<li>getParameterNames() ：获得客户端传送给服务器端的所有参数的名字，结果是一个枚举的实例</li>
+<li>getParameterValues(String name)：获得有name指定的参数的所有值</li>
+<li>getProtocol()：获取客户端向服务器端传送数据所依据的协议名称</li>
+<li>getQueryString() ：获得查询字符串</li>
+<li>getRequestURI() ：获取发出请求字符串的客户端地址</li>
+<li>getRemoteAddr()：获取客户端的 IP 地址</li>
+<li>getRemoteHost() ：获取客户端的名字</li>
+<li>getSession([Boolean create]) ：返回和请求相关 Session</li>
+<li>getServerName() ：获取服务器的名字</li>
+<li>getServletPath()：获取客户端所请求的脚本文件的路径</li>
+<li>getServerPort()：获取服务器的端口号</li>
+<li>removeAttribute(String name)：删除请求中的一个属性</li>
+</ul>
+<h2 id="request-getAttribute-和-request-getParameter-有何区别"><a href="#request-getAttribute-和-request-getParameter-有何区别" class="headerlink" title="request.getAttribute()和 request.getParameter()有何区别"></a>request.getAttribute()和 request.getParameter()有何区别</h2><p><strong>从获取方向来看：</strong></p>
+<p><code>getParameter()</code>是获取 POST/GET 传递的参数值；</p>
+<p><code>getAttribute()</code>是获取对象容器中的数据值；</p>
+<p><strong>从用途来看：</strong></p>
+<p><code>getParameter()</code>用于客户端重定向时，即点击了链接或提交按扭时传值用，即用于在用表单或url重定向传值时接收数据用。</p>
+<p><code>getAttribute()</code> 用于服务器端重定向时，即在 sevlet 中使用了 forward 函数,或 struts 中使用了 mapping.findForward。 getAttribute 只能收到程序用 setAttribute 传过来的值。</p>
+<p>另外，可以用 <code>setAttribute()</code>,<code>getAttribute()</code> 发送接收对象.而 <code>getParameter()</code> 显然只能传字符串。 <code>setAttribute()</code> 是应用服务器把这个对象放在该页面所对应的一块内存中去，当你的页面服务器重定向到另一个页面时，应用服务器会把这块内存拷贝另一个页面所对应的内存中。这样<code>getAttribute()</code>就能取得你所设下的值，当然这种方法可以传对象。session也一样，只是对象在内存中的生命周期不一样而已。<code>getParameter()</code>只是应用服务器在分析你送上来的 request页面的文本时，取得你设在表单或 url 重定向时的值。</p>
+<p><strong>总结：</strong></p>
+<p><code>getParameter()</code>返回的是String,用于读取提交的表单中的值;（获取之后会根据实际需要转换为自己需要的相应类型，比如整型，日期类型啊等等）</p>
+<p><code>getAttribute()</code>返回的是Object，需进行转换,可用<code>setAttribute()</code>设置成任意对象，使用很灵活，可随时用</p>
+<h2 id="include指令include的行为的区别"><a href="#include指令include的行为的区别" class="headerlink" title="include指令include的行为的区别"></a>include指令include的行为的区别</h2><p><strong>include指令：</strong> JSP可以通过include指令来包含其他文件。被包含的文件可以是JSP文件、HTML文件或文本文件。包含的文件就好像是该JSP文件的一部分，会被同时编译执行。 语法格式如下： &lt;%@ include file=”文件相对 url 地址” %&gt;</p>
+<p>i<strong>nclude动作：</strong> <code>&lt;jsp:include&gt;</code>动作元素用来包含静态和动态的文件。该动作把指定文件插入正在生成的页面。语法格式如下： &lt;jsp:include page=”相对 URL 地址” flush=”true” /&gt;</p>
+<h2 id="JSP九大内置对象，七大动作，三大指令"><a href="#JSP九大内置对象，七大动作，三大指令" class="headerlink" title="JSP九大内置对象，七大动作，三大指令"></a>JSP九大内置对象，七大动作，三大指令</h2><p><a href="http://blog.csdn.net/qq_34337272/article/details/64310849" target="_blank" rel="noopener">JSP九大内置对象，七大动作，三大指令总结</a></p>
+<h2 id="讲解JSP中的四种作用域"><a href="#讲解JSP中的四种作用域" class="headerlink" title="讲解JSP中的四种作用域"></a>讲解JSP中的四种作用域</h2><p>JSP中的四种作用域包括page、request、session和application，具体来说：</p>
+<ul>
+<li><strong>page</strong>代表与一个页面相关的对象和属性。</li>
+<li><strong>request</strong>代表与Web客户机发出的一个请求相关的对象和属性。一个请求可能跨越多个页面，涉及多个Web组件；需要在页面显示的临时数据可以置于此作用域。</li>
+<li><strong>session</strong>代表与某个用户与服务器建立的一次会话相关的对象和属性。跟某个用户相关的数据应该放在用户自己的session中。</li>
+<li><strong>application</strong>代表与整个Web应用程序相关的对象和属性，它实质上是跨越整个Web应用程序，包括多个页面、请求和会话的一个全局作用域。</li>
+</ul>
+<h2 id="如何实现JSP或Servlet的单线程模式"><a href="#如何实现JSP或Servlet的单线程模式" class="headerlink" title="如何实现JSP或Servlet的单线程模式"></a>如何实现JSP或Servlet的单线程模式</h2><p>对于JSP页面，可以通过page指令进行设置。 <code>&lt;%@page isThreadSafe=&quot;false&quot;%&gt;</code></p>
+<p>对于Servlet，可以让自定义的Servlet实现SingleThreadModel标识接口。</p>
+<p>说明：如果将JSP或Servlet设置成单线程工作模式，会导致每个请求创建一个Servlet实例，这种实践将导致严重的性能问题（服务器的内存压力很大，还会导致频繁的垃圾回收），所以通常情况下并不会这么做。</p>
+<h2 id="实现会话跟踪的技术有哪些"><a href="#实现会话跟踪的技术有哪些" class="headerlink" title="实现会话跟踪的技术有哪些"></a>实现会话跟踪的技术有哪些</h2><ol>
+<li><strong>使用Cookie</strong></li>
+</ol>
+<p>向客户端发送Cookie</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Cookie c &#x3D;new Cookie(&quot;name&quot;,&quot;value&quot;); &#x2F;&#x2F;创建Cookie </span><br><span class="line">c.setMaxAge(60*60*24); &#x2F;&#x2F;设置最大时效，此处设置的最大时效为一天</span><br><span class="line">response.addCookie(c); &#x2F;&#x2F;把Cookie放入到HTTP响应中</span><br></pre></td></tr></table></figure>
 
-<p>这是一个链接 <a href="http://hplts.github.io">我的博客网址</a></p>
-<p>或者 直接输出链接</p>
-<p><a href="http://hplts.github.io">http://hplts.github.io</a></p>
-<h1 id="七、Markdown的图片"><a href="#七、Markdown的图片" class="headerlink" title="七、Markdown的图片"></a>七、Markdown的图片</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 图片语法格式如下：</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">开头一个感叹号 !</span><br><span class="line">接着一个方括号，里面放上图片的替代文字</span><br><span class="line">接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。</span><br></pre></td></tr></table></figure>
+<p>从客户端读取Cookie</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String name &#x3D;&quot;name&quot;; </span><br><span class="line">Cookie[]cookies &#x3D;request.getCookies(); </span><br><span class="line">if(cookies !&#x3D;null)&#123; </span><br><span class="line">   for(int i&#x3D; 0;i&lt;cookies.length;i++)&#123; </span><br><span class="line">    Cookie cookie &#x3D;cookies[i]; </span><br><span class="line">    if(name.equals(cookis.getName())) </span><br><span class="line">    &#x2F;&#x2F;something is here. </span><br><span class="line">    &#x2F;&#x2F;you can get the value </span><br><span class="line">    cookie.getValue(); </span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://pic.downk.cc/item/5e9ecac3c2a9a83be585549a.jpg" alt="美女图片" title="如图所示"></p>
-<hr>
-<h1 id="八、Markdown的表格"><a href="#八、Markdown的表格" class="headerlink" title="八、Markdown的表格"></a>八、Markdown的表格</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</span><br><span class="line"></span><br><span class="line">语法格式如下：</span><br><span class="line"></span><br><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line"></span><br><span class="line">2.对齐方式</span><br><span class="line"></span><br><span class="line">我们可以设置表格的对齐方式：</span><br><span class="line"></span><br><span class="line">-: 设置内容和标题栏居右对齐。</span><br><span class="line">:- 设置内容和标题栏居左对齐。</span><br><span class="line">:-: 设置内容和标题栏居中对齐。</span><br><span class="line">实例如下：</span><br><span class="line"></span><br><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+<p><strong>优点:</strong> 数据可以持久保存，不需要服务器资源，简单，基于文本的Key-Value</p>
+<p><strong>缺点:</strong> 大小受到限制，用户可以禁用Cookie功能，由于保存在本地，有一定的安全风险。</p>
+<ol>
+<li>URL 重写</li>
+</ol>
+<p>在URL中添加用户会话的信息作为请求的参数，或者将唯一的会话ID添加到URL结尾以标识一个会话。</p>
+<p><strong>优点：</strong> 在Cookie被禁用的时候依然可以使用</p>
+<p><strong>缺点：</strong> 必须对网站的URL进行编码，所有页面必须动态生成，不能用预先记录下来的URL进行访问。</p>
+<p>3.隐藏的表单域</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;input type&#x3D;&quot;hidden&quot; name &#x3D;&quot;session&quot; value&#x3D;&quot;...&quot;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
 
-<p>例如所示：</p>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-</tbody></table>
-<h1 id="九、Markdown的高级技巧"><a href="#九、Markdown的高级技巧" class="headerlink" title="九、Markdown的高级技巧"></a>九、Markdown的高级技巧</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.支持的 HTML 元素</span><br><span class="line">不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</span><br><span class="line"></span><br><span class="line">目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如：</span><br><span class="line"></span><br><span class="line">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</span><br><span class="line"></span><br><span class="line">2.转义：使用\进行转义</span><br><span class="line">Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</span><br><span class="line"></span><br><span class="line">**文本加粗** </span><br><span class="line">\*\* 正常显示星号 \*\*</span><br></pre></td></tr></table></figure>
-<h2 id="typora-画流程图、时序图-顺序图-、甘特图"><a href="#typora-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="typora 画流程图、时序图(顺序图)、甘特图"></a>typora 画流程图、时序图(顺序图)、甘特图</h2><h3 id="1、横向流程图源码格式："><a href="#1、横向流程图源码格式：" class="headerlink" title="1、横向流程图源码格式："></a>1、横向流程图源码格式：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt;|a&#x3D;2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
-<p>2、竖向流程图源码格式：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt; |a&#x3D;2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
-
-<p>3、标准流程图源码格式：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
-
-<p>4、标准流程图源码格式（横向）：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st(right)-&gt;op(right)-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(bottom)-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
-
-<p>5、UML时序图源码样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br></pre></td></tr></table></figure>
-
-<p>6、UML时序图源码复杂样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br></pre></td></tr></table></figure>
-
-<p>7、UML标准时序图样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br&#x2F;&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br></pre></td></tr></table></figure>
-
-<p>8、甘特图样例：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br></pre></td></tr></table></figure>]]></content>
+<p><strong>优点：</strong> Cookie被禁时可以使用</p>
+<p><strong>缺点：</strong> 所有页面必须是表单提交之后的结果。</p>
+<ol>
+<li>HttpSession</li>
+</ol>
+<p>在所有会话跟踪技术中，HttpSession对象是最强大也是功能最多的。当一个用户第一次访问某个网站时会自动创建 HttpSession，每个用户可以访问他自己的HttpSession。可以通过HttpServletRequest对象的getSession方 法获得HttpSession，通过HttpSession的setAttribute方法可以将一个值放在HttpSession中，通过调用 HttpSession对象的getAttribute方法，同时传入属性名就可以获取保存在HttpSession中的对象。与上面三种方式不同的 是，HttpSession放在服务器的内存中，因此不要将过大的对象放在里面，即使目前的Servlet容器可以在内存将满时将HttpSession 中的对象移到其他存储设备中，但是这样势必影响性能。添加到HttpSession中的值可以是任意Java对象，这个对象最好实现了 Serializable接口，这样Servlet容器在必要的时候可以将其序列化到文件中，否则在序列化时就会出现异常。</p>
+<h2 id="Cookie和Session的的区别"><a href="#Cookie和Session的的区别" class="headerlink" title="Cookie和Session的的区别"></a>Cookie和Session的的区别</h2><p>Cookie 和 Session都是用来跟踪浏览器用户身份的会话方式，但是两者的应用场景不太一样。</p>
+<p><strong>Cookie 一般用来保存用户信息</strong> 比如①我们在 Cookie 中保存已经登录过得用户信息，下次访问网站的时候页面可以自动帮你登录的一些基本信息给填了；②一般的网站都会有保持登录也就是说下次你再访问网站的时候就不需要重新登录了，这是因为用户登录的时候我们可以存放了一个 Token 在 Cookie 中，下次登录的时候只需要根据 Token 值来查找用户即可(为了安全考虑，重新登录一般要将 Token 重写)；③登录一次网站后访问网站其他页面不需要重新登录。<strong>Session 的主要作用就是通过服务端记录用户的状态。</strong> 典型的场景是购物车，当你要添加商品到购物车的时候，系统不知道是哪个用户操作的，因为 HTTP 协议是无状态的。服务端给特定的用户创建特定的 Session 之后就可以标识这个用户并且跟踪这个用户了。</p>
+<p>Cookie 数据保存在客户端(浏览器端)，Session 数据保存在服务器端。</p>
+<p>Cookie 存储在客户端中，而Session存储在服务器上，相对来说 Session 安全性更高。如果使用 Cookie 的一些敏感信息不要写入 Cookie 中，最好能将 Cookie 信息加密然后使用到的时候再去服务器端解密。</p>
+]]></content>
       <categories>
-        <category>学习</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>随笔</tag>
-        <tag>学习</tag>
+        <tag>-学习 -基础</tag>
       </tags>
   </entry>
   <entry>
@@ -422,101 +429,8 @@
       </categories>
       <tags>
         <tag>学习</tag>
-        <tag>基础</tag>
+        <tag>面试</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot01：HelloWorld</title>
-    <url>/2020/ckd4i1xfz000lsgjm81yn1eue/</url>
-    <content><![CDATA[<p>title: 解决servlet的乱码问题<br>date: 2020-05-20 18:45:50<br>tags:<br>    - 学习<br>        - 记录<br>id: 0520_first<br>categories: 学习</p>
-<h1 id="一、SpringBoot简介"><a href="#一、SpringBoot简介" class="headerlink" title="一、SpringBoot简介"></a>一、SpringBoot简介</h1><h2 id="回顾什么是Spring"><a href="#回顾什么是Spring" class="headerlink" title="回顾什么是Spring"></a>回顾什么是Spring</h2><p>Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson  。</p>
-<p><strong>Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。</strong></p>
-<h2 id="Spring是如何简化Java开发的"><a href="#Spring是如何简化Java开发的" class="headerlink" title="Spring是如何简化Java开发的"></a>Spring是如何简化Java开发的</h2><p>为了降低Java开发的复杂性，Spring采用了以下4种关键策略：</p>
-<p>1、基于POJO的轻量级和最小侵入性编程，所有东西都是bean；</p>
-<p>2、通过IOC，依赖注入（DI）和面向接口实现松耦合；</p>
-<p>3、基于切面（AOP）和惯例进行声明式编程；</p>
-<p>4、通过切面和模版减少样式代码，RedisTemplate，xxxTemplate；</p>
-<h2 id="什么是SpringBoot"><a href="#什么是SpringBoot" class="headerlink" title="什么是SpringBoot"></a>什么是SpringBoot</h2><p>学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤；后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；你们有经历过框架不断的演进，然后自己开发项目所有的技术也在不断的变化、改造吗？建议都可以去经历一遍；</p>
-<p>言归正传，什么是SpringBoot呢，就是一个javaweb的开发框架，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置，  you can “just run”，能迅速的开发web应用，几行代码开发一个http接口。</p>
-<p>所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。</p>
-<p>是的这就是Java企业级应用-&gt;J2EE-&gt;spring-&gt;springboot的过程。</p>
-<a id="more"></a>
-
-<p>随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；</p>
-<p>Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以<strong>约定大于配置的核心思想</strong>，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用。</p>
-<p>简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。</p>
-<p>Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。</p>
-<p><strong>Spring Boot的主要优点：</strong></p>
-<ul>
-<li>为所有Spring开发者更快的入门</li>
-<li><strong>开箱即用</strong>，提供各种默认配置来简化项目配置</li>
-<li>内嵌式容器简化Web项目</li>
-<li>没有冗余代码生成和XML配置的要求</li>
-</ul>
-<p>真的很爽，我们快速去体验开发个接口的感觉吧！</p>
-<h1 id="二、Hello，World"><a href="#二、Hello，World" class="headerlink" title="二、Hello，World"></a>二、Hello，World</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>我们将学习如何快速的创建一个Spring Boot应用，并且实现一个简单的Http请求处理。通过这个例子对Spring Boot有一个初步的了解，并体验其结构简单、开发快速的特性。</p>
-<p>我的环境准备：</p>
-<ul>
-<li>java version “1.8.0_181”</li>
-<li>Maven-3.6.1</li>
-<li>SpringBoot 2.x 最新版</li>
-</ul>
-<p>开发工具：</p>
-<ul>
-<li>IDEA</li>
-</ul>
-<h2 id="创建基础项目说明"><a href="#创建基础项目说明" class="headerlink" title="创建基础项目说明"></a>创建基础项目说明</h2><p>Spring官方提供了非常方便的工具让我们快速构建应用</p>
-<p>Spring Initializr：<a href="https://start.spring.io/" target="_blank" rel="noopener">https://start.spring.io/</a></p>
-<p><strong>项目创建方式一：</strong>使用Spring Initializr 的 Web页面创建项目</p>
-<p>1、打开  <a href="https://start.spring.io/" target="_blank" rel="noopener">https://start.spring.io/</a></p>
-<p>2、填写项目信息</p>
-<p>3、点击”Generate Project“按钮生成项目；下载此项目</p>
-<p>4、解压项目包，并用IDEA以Maven项目导入，一路下一步即可，直到项目导入完毕。</p>
-<p>5、如果是第一次使用，可能速度会比较慢，包比较多、需要耐心等待一切就绪。</p>
-<p><strong>项目创建方式二：</strong>使用 IDEA 直接创建项目</p>
-<p>1、创建一个新项目</p>
-<p>2、选择spring initalizr ， 可以看到默认就是去官网的快速构建工具那里实现</p>
-<p>3、填写项目信息</p>
-<p>4、选择初始化的组件（初学勾选 Web 即可）</p>
-<p>5、填写项目路径</p>
-<p>6、等待项目构建成功</p>
-<p><strong>项目结构分析：</strong></p>
-<p>通过上面步骤完成了基础项目的创建。就会自动生成以下文件。</p>
-<p>1、程序的主启动类</p>
-<p>2、一个 application.properties 配置文件</p>
-<p>3、一个 测试类</p>
-<p>4、一个 pom.xml</p>
-<h2 id="pom-xml-分析"><a href="#pom-xml-分析" class="headerlink" title="pom.xml 分析"></a>pom.xml 分析</h2><p>打开pom.xml，看看Spring Boot项目的依赖：</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!-- 父依赖 --&gt;</span><br><span class="line">&lt;parent&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.2.5.RELEASE&lt;/version&gt;</span><br><span class="line">    &lt;relativePath/&gt;</span><br><span class="line">&lt;/parent&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;!-- web场景启动器 --&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;!-- springboot单元测试 --&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;</span><br><span class="line">        &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">        &lt;!-- 剔除依赖 --&gt;</span><br><span class="line">        &lt;exclusions&gt;</span><br><span class="line">            &lt;exclusion&gt;</span><br><span class="line">                &lt;groupId&gt;org.junit.vintage&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;junit-vintage-engine&lt;/artifactId&gt;</span><br><span class="line">            &lt;/exclusion&gt;</span><br><span class="line">        &lt;/exclusions&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">&lt;/dependencies&gt;</span><br><span class="line"></span><br><span class="line">&lt;build&gt;</span><br><span class="line">    &lt;plugins&gt;</span><br><span class="line">        &lt;!-- 打包插件 --&gt;</span><br><span class="line">        &lt;plugin&gt;</span><br><span class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">        &lt;/plugin&gt;</span><br><span class="line">    &lt;/plugins&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h2 id="编写一个http接口"><a href="#编写一个http接口" class="headerlink" title="编写一个http接口"></a>编写一个http接口</h2><p>1、在主程序的同级目录下，新建一个controller包，一定要在同级目录下，否则识别不到</p>
-<p>2、在包中新建一个HelloController类</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Hello World"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>3、编写完毕后，从主程序启动项目，浏览器发起请求，看页面返回；控制台输出了 Tomcat 访问的端口号！</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7L1vFQMnaRIJSmeZ58T2eZic3WmhvicMATPwQLpTwLtWWE0aQs32iaEKyFnVViacPQbtEdCjBXm5yZf0A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>简单几步，就完成了一个web接口的开发，SpringBoot就是这么简单。所以我们常用它来建立我们的微服务项目！</p>
-<h2 id="将项目打成jar包，点击-maven的-package"><a href="#将项目打成jar包，点击-maven的-package" class="headerlink" title="将项目打成jar包，点击 maven的 package"></a>将项目打成jar包，点击 maven的 package</h2><p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7L1vFQMnaRIJSmeZ58T2eZiczfno2TOQbfItia25xQzicMFnkicKh5pVD7IrHrUicb03y381CicrLFKXNMw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>如果遇到以上错误，可以配置打包时 跳过项目运行测试用例</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">    在工作中,很多情况下我们打包是不想执行测试用例的</span><br><span class="line">    可能是测试用例不完事,或是测试用例会影响数据库数据</span><br><span class="line">    跳过测试用例执</span><br><span class="line">    --&gt;</span><br><span class="line">&lt;plugin&gt;</span><br><span class="line">    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;</span><br><span class="line">    &lt;configuration&gt;</span><br><span class="line">        &lt;!--跳过项目运行测试用例--&gt;</span><br><span class="line">        &lt;skipTests&gt;true&lt;/skipTests&gt;</span><br><span class="line">    &lt;/configuration&gt;</span><br><span class="line">&lt;/plugin&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>如果打包成功，则会在target目录下生成一个 jar 包</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7L1vFQMnaRIJSmeZ58T2eZic03vupvIqMbibWh4aIKyjiaQfwuvDWKo033g9kRvj6aXnJO4brKTdwnvA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>打成了jar包后，就可以在任何地方运行了！OK</p>
-<p><strong>彩蛋</strong></p>
-<p>如何更改启动时显示的字符拼成的字母，SpringBoot呢？也就是 banner 图案；</p>
-<p>只需一步：到项目下的 resources 目录下新建一个banner.txt 即可。</p>
-<p>图案可以到：<a href="https://www.bootschool.net/ascii" target="_blank" rel="noopener">https://www.bootschool.net/ascii</a> 这个网站生成，然后拷贝到文件中即可！</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7L1vFQMnaRIJSmeZ58T2eZicDRbeN90LEmYYxoxkr55ic6RaCrbs16z0kS78s9RpHUZdZyOJ2BegGKg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-]]></content>
   </entry>
   <entry>
     <title>java的一些基础知识总结</title>
@@ -861,6 +775,162 @@
       <tags>
         <tag>学习</tag>
         <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown的用法</title>
+    <url>/2020/0421_first/</url>
+    <content><![CDATA[<h1 id="一、Markdown的标题"><a href="#一、Markdown的标题" class="headerlink" title="一、Markdown的标题"></a>一、Markdown的标题</h1><h2 id="1-使用-标记一级标题"><a href="#1-使用-标记一级标题" class="headerlink" title="1.使用 = 标记一级标题"></a>1.使用 = 标记一级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是一级标题</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-使用-标记二级标题"><a href="#2-使用-标记二级标题" class="headerlink" title="2.使用 - 标记二级标题"></a>2.使用 - 标记二级标题</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例如所示：</span><br><span class="line"></span><br><span class="line">我展示的是二级标题</span><br><span class="line">--------------------</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="3-使用-号标记"><a href="#3-使用-号标记" class="headerlink" title="3.使用#号标记"></a>3.使用#号标记</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推</span><br></pre></td></tr></table></figure>
+<p>例如所示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="二、Markdown的段落"><a href="#二、Markdown的段落" class="headerlink" title="二、Markdown的段落"></a>二、Markdown的段落</h1><h2 id="1-段落要求"><a href="#1-段落要求" class="headerlink" title="1.段落要求"></a>1.段落要求</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车或者也可以在段落后面使用一个空行来表示重新开始一个段落。</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-Markdown的字体"><a href="#2-Markdown的字体" class="headerlink" title="2.Markdown的字体"></a>2.Markdown的字体</h2><p>Markdown主要有以下字体可以使用</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. *斜体文本*  或者  _斜体文本_</span><br><span class="line"></span><br><span class="line">2. **粗体文本**  或者  __粗体文本__</span><br><span class="line"></span><br><span class="line">3. ***粗斜体文本***   或者   ___粗斜体文本___</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="3-分隔符"><a href="#3-分隔符" class="headerlink" title="3.分隔符"></a>3.分隔符</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。</span><br><span class="line"></span><br><span class="line">例如所示:</span><br><span class="line">****</span><br><span class="line">* * *</span><br><span class="line">----</span><br><span class="line">-     -     -</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 ~~ 即可，实例如下：</span><br><span class="line">    RUNOOB.COM</span><br><span class="line">    GOOGLE.COM</span><br><span class="line">    ~~BAIDU.COM~~</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：<br><del>BAIDU.COM</del></p>
+<h2 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">下划线可以通过 HTML 的 &lt;u&gt; 标签来实现：</span><br><span class="line"></span><br><span class="line">    &lt;u&gt;带下划线文本&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：</p>
+<p><u>带下划线的文本</u></p>
+<h2 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">脚注是对文本的补充说明。</span><br><span class="line"></span><br><span class="line">Markdown 脚注的格式如下:</span><br><span class="line"></span><br><span class="line">[^要注明的文本]</span><br><span class="line"></span><br><span class="line">以下实例演示了脚注的用法：</span><br><span class="line"></span><br><span class="line">创建脚注格式类似这样 </span><br><span class="line"></span><br><span class="line">[^码农]。</span><br><span class="line"></span><br><span class="line">[^码农]: 程序员 -- 学的越多，秃的越快！！！</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="三、Markdown列表"><a href="#三、Markdown列表" class="headerlink" title="三、Markdown列表"></a>三、Markdown列表</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 支持有序列表和无序列表。</span><br><span class="line"> </span><br><span class="line">无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记：</span><br><span class="line"></span><br><span class="line">* 第一项</span><br><span class="line">* 第二项</span><br><span class="line">* 第三项</span><br><span class="line"></span><br><span class="line">+ 第一项</span><br><span class="line">+ 第二项</span><br><span class="line">+ 第三项</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br><span class="line"></span><br><span class="line">有序列表使用数字并加上 . 号来表示，如：</span><br><span class="line"></span><br><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br><span class="line"></span><br><span class="line">列表嵌套只需在子列表中的选项添加四个空格即可：</span><br><span class="line"></span><br><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：</p>
+<ul>
+<li>第一项<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<ol>
+<li>第一项   <ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项<ul>
+<li>第二项嵌套的第一个元素<ul>
+<li>第二项嵌套的第一项的第一个元素</li>
+</ul>
+</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第三项</li>
+</ol>
+<hr>
+<h1 id="四、Markdown区块"><a href="#四、Markdown区块" class="headerlink" title="四、Markdown区块"></a>四、Markdown区块</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 区块引用是在段落开头使用 &gt; 符号 ，然后后面紧跟一个空格符号：</span><br><span class="line"></span><br><span class="line">&gt; 区块引用</span><br><span class="line">&gt; 学的不仅是技术更是梦想</span><br><span class="line"></span><br><span class="line">另外区块是可以嵌套的，一个 &gt; 符号是最外层，两个 &gt; 符号是第一层嵌套，以此类推：</span><br><span class="line">&gt; 最外层</span><br><span class="line">&gt; &gt; 第一层嵌套</span><br><span class="line">&gt; &gt; &gt; 第二层嵌套</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>区块引用<br>学习Markdown</p>
+</blockquote>
+<blockquote>
+<p>最外层  </p>
+<blockquote>
+<p>第一层嵌套  </p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注:区块可以和列表相互嵌套使用，例如：</span><br><span class="line">1. 第一项</span><br><span class="line">    &gt; 菜鸟教程</span><br><span class="line">    &gt; 学的不仅是技术更是梦想</span><br><span class="line">2. 第二项</span><br></pre></td></tr></table></figure>
+<ol>
+<li>第一项<blockquote>
+<p>菜鸟教程<br>学习Markdown</p>
+</blockquote>
+</li>
+<li>第二项<ul>
+<li>第二项的第一个元素</li>
+<li>第二项的第二个元素</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h1 id="五、Markdown的代码"><a href="#五、Markdown的代码" class="headerlink" title="五、Markdown的代码"></a>五、Markdown的代码</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.如果是段落上的一个函数或片段的代码可以用反引号把它包起来（&#96;），例如：</span><br><span class="line"></span><br><span class="line">&#96;printf()&#96; 函数</span><br><span class="line"></span><br><span class="line">2.代码区块</span><br><span class="line">代码区块使用 4 个空格或者一个制表符（Tab 键）</span><br><span class="line"></span><br><span class="line">3.可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定）：</span><br></pre></td></tr></table></figure>
+
+<p>例如所示:<br><code>printf()</code></p>
+<pre><code>&lt;?php
+    echo &quot;1111&quot;; 
+?&gt;</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">System.out.println(a);</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="六、Markdown的链接"><a href="#六、Markdown的链接" class="headerlink" title="六、Markdown的链接"></a>六、Markdown的链接</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">链接使用方法如下：</span><br><span class="line">[链接名称](链接地址)</span><br><span class="line">或者</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">[我的博客网址](http:&#x2F;&#x2F;hplts.github.io)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">高级链接</span><br><span class="line">我们可以通过变量来设置一个链接，变量赋值在文档末尾进行：</span><br><span class="line"></span><br><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">这个链接用 runoob 作为网址变量 [Runoob][runoob]</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">  [1]: http:&#x2F;&#x2F;www.google.com&#x2F;</span><br><span class="line">  [runoob]: http:&#x2F;&#x2F;www.runoob.com&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>这是一个链接 <a href="http://hplts.github.io">我的博客网址</a></p>
+<p>或者 直接输出链接</p>
+<p><a href="http://hplts.github.io">http://hplts.github.io</a></p>
+<h1 id="七、Markdown的图片"><a href="#七、Markdown的图片" class="headerlink" title="七、Markdown的图片"></a>七、Markdown的图片</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Markdown 图片语法格式如下：</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br><span class="line">开头一个感叹号 !</span><br><span class="line">接着一个方括号，里面放上图片的替代文字</span><br><span class="line">接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 &#39;title&#39; 属性的文字。</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic.downk.cc/item/5e9ecac3c2a9a83be585549a.jpg" alt="美女图片" title="如图所示"></p>
+<hr>
+<h1 id="八、Markdown的表格"><a href="#八、Markdown的表格" class="headerlink" title="八、Markdown的表格"></a>八、Markdown的表格</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</span><br><span class="line"></span><br><span class="line">语法格式如下：</span><br><span class="line"></span><br><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line"></span><br><span class="line">2.对齐方式</span><br><span class="line"></span><br><span class="line">我们可以设置表格的对齐方式：</span><br><span class="line"></span><br><span class="line">-: 设置内容和标题栏居右对齐。</span><br><span class="line">:- 设置内容和标题栏居左对齐。</span><br><span class="line">:-: 设置内容和标题栏居中对齐。</span><br><span class="line">实例如下：</span><br><span class="line"></span><br><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<p>例如所示：</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<h1 id="九、Markdown的高级技巧"><a href="#九、Markdown的高级技巧" class="headerlink" title="九、Markdown的高级技巧"></a>九、Markdown的高级技巧</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.支持的 HTML 元素</span><br><span class="line">不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</span><br><span class="line"></span><br><span class="line">目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如：</span><br><span class="line"></span><br><span class="line">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</span><br><span class="line"></span><br><span class="line">2.转义：使用\进行转义</span><br><span class="line">Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</span><br><span class="line"></span><br><span class="line">**文本加粗** </span><br><span class="line">\*\* 正常显示星号 \*\*</span><br></pre></td></tr></table></figure>
+<h2 id="typora-画流程图、时序图-顺序图-、甘特图"><a href="#typora-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="typora 画流程图、时序图(顺序图)、甘特图"></a>typora 画流程图、时序图(顺序图)、甘特图</h2><h3 id="1、横向流程图源码格式："><a href="#1、横向流程图源码格式：" class="headerlink" title="1、横向流程图源码格式："></a>1、横向流程图源码格式：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt;|a&#x3D;2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
+<p>2、竖向流程图源码格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt; |a&#x3D;2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
+
+<p>3、标准流程图源码格式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<p>4、标准流程图源码格式（横向）：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st(right)-&gt;op(right)-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(bottom)-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<p>5、UML时序图源码样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br></pre></td></tr></table></figure>
+
+<p>6、UML时序图源码复杂样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br></pre></td></tr></table></figure>
+
+<p>7、UML标准时序图样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br&#x2F;&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br></pre></td></tr></table></figure>
+
+<p>8、甘特图样例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
