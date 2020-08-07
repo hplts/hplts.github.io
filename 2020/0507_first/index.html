@@ -100,6 +100,8 @@
 
       
       <h2 id="Servlet总结"><a href="#Servlet总结" class="headerlink" title="Servlet总结"></a>Servlet总结</h2><p>在Java Web程序中，<strong>Servlet</strong>主要负责接收用户请求 <code>HttpServletRequest</code>,在<code>doGet()</code>,<code>doPost()</code>中做相应的处理，并将回应<code>HttpServletResponse</code>反馈给用户。<strong>Servlet</strong> 可以设置初始化参数，供Servlet内部使用。一个Servlet类只会有一个实例，在它初始化时调用<code>init()</code>方法，销毁时调用<code>destroy()</code>方法<strong>。</strong>Servlet需要在web.xml中配置（MyEclipse中创建Servlet会自动配置），<strong>一个Servlet可以设置多个URL访问</strong>。<strong>Servlet不是线程安全</strong>，因此要谨慎使用类变量。</p>
+<a id="more"></a>
+
 <h2 id="阐述Servlet和CGI的区别"><a href="#阐述Servlet和CGI的区别" class="headerlink" title="阐述Servlet和CGI的区别?"></a>阐述Servlet和CGI的区别?</h2><h3 id="CGI的不足之处"><a href="#CGI的不足之处" class="headerlink" title="CGI的不足之处:"></a>CGI的不足之处:</h3><p>1，需要为每个请求启动一个操作CGI程序的系统进程。如果请求频繁，这将会带来很大的开销。</p>
 <p>2，需要为每个请求加载和运行一个CGI程序，这将带来很大的开销</p>
 <p>3，需要重复编写处理网络协议的代码以及编码，这些工作都是非常耗时的。</p>

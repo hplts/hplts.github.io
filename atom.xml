@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hplts.github.io/"/>
-  <updated>2020-08-07T13:27:34.658Z</updated>
+  <updated>2020-08-07T13:30:04.838Z</updated>
   <id>https://hplts.github.io/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://hplts.github.io/2020/0507_first/"/>
     <id>https://hplts.github.io/2020/0507_first/</id>
     <published>2020-05-07T13:22:28.000Z</published>
-    <updated>2020-08-07T13:27:34.658Z</updated>
+    <updated>2020-08-07T13:30:04.838Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;Servlet总结&quot;&gt;&lt;a href=&quot;#Servlet总结&quot; class=&quot;headerlink&quot; title=&quot;Servlet总结&quot;&gt;&lt;/a&gt;Servlet总结&lt;/h2&gt;&lt;p&gt;在Java
-        
-      
+      &lt;h2 id=&quot;Servlet总结&quot;&gt;&lt;a href=&quot;#Servlet总结&quot; class=&quot;headerlink&quot; title=&quot;Servlet总结&quot;&gt;&lt;/a&gt;Servlet总结&lt;/h2&gt;&lt;p&gt;在Java Web程序中，&lt;strong&gt;Servlet&lt;/strong&gt;主要负责接收用户请求 &lt;code&gt;HttpServletRequest&lt;/code&gt;,在&lt;code&gt;doGet()&lt;/code&gt;,&lt;code&gt;doPost()&lt;/code&gt;中做相应的处理，并将回应&lt;code&gt;HttpServletResponse&lt;/code&gt;反馈给用户。&lt;strong&gt;Servlet&lt;/strong&gt; 可以设置初始化参数，供Servlet内部使用。一个Servlet类只会有一个实例，在它初始化时调用&lt;code&gt;init()&lt;/code&gt;方法，销毁时调用&lt;code&gt;destroy()&lt;/code&gt;方法&lt;strong&gt;。&lt;/strong&gt;Servlet需要在web.xml中配置（MyEclipse中创建Servlet会自动配置），&lt;strong&gt;一个Servlet可以设置多个URL访问&lt;/strong&gt;。&lt;strong&gt;Servlet不是线程安全&lt;/strong&gt;，因此要谨慎使用类变量。&lt;/p&gt;
     
     </summary>
     
