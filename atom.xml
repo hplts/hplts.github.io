@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hplts.github.io/"/>
-  <updated>2020-08-07T13:45:41.598Z</updated>
+  <updated>2021-02-28T10:31:13.610Z</updated>
   <id>https://hplts.github.io/</id>
   
   <author>
@@ -15,6 +15,122 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springboot获取配置文件中的值</title>
+    <link href="https://hplts.github.io/2021/0125_first/"/>
+    <id>https://hplts.github.io/2021/0125_first/</id>
+    <published>2021-01-25T11:27:11.000Z</published>
+    <updated>2021-02-28T10:31:13.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;springboot获取配置文件中的值&quot;&gt;&lt;a href=&quot;#springboot获取配置文件中的值&quot; class=&quot;headerlink&quot; title=&quot;springboot获取配置文件中的值&quot;&gt;&lt;/a&gt;springboot获取配置文件中的值&lt;/h1&gt;&lt;p&gt;假设指定配置文件的路劲和名称为：config/wx.properties:&lt;/p&gt;
+&lt;p&gt;内容有：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wx.appKey&amp;#x3D;Test&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wx.appSecret&amp;#x3D;abcdefghik&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;1-PropertySource-Value注解&quot;&gt;&lt;a href=&quot;#1-PropertySource-Value注解&quot; class=&quot;headerlink&quot; title=&quot;1.@PropertySource+@Value注解&quot;&gt;&lt;/a&gt;1.@PropertySource+@Value注解&lt;/h2&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;@Component&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;@PropertySource&lt;/span&gt;(value = &amp;#123; &lt;span class=&quot;string&quot;&gt;&quot;config/wx.properties&quot;&lt;/span&gt; &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;wxConfig&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;meta&quot;&gt;@Value&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;$&amp;#123;wx.appKey&amp;#125;&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; String appKey;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;meta&quot;&gt;@Value&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;$&amp;#123;wx.appSecret&amp;#125;&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; String appSecret;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   get和set方法...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;注意：@PropertySource不支持yml文件读取。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="记录" scheme="https://hplts.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>springboot集成阿里云短信业务</title>
+    <link href="https://hplts.github.io/2021/0120_first/"/>
+    <id>https://hplts.github.io/2021/0120_first/</id>
+    <published>2021-01-20T15:10:22.000Z</published>
+    <updated>2021-02-28T10:32:02.446Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;springboot集成阿里云短信业务&quot;&gt;&lt;a href=&quot;#springboot集成阿里云短信业务&quot; class=&quot;headerlink&quot; title=&quot;springboot集成阿里云短信业务&quot;&gt;&lt;/a&gt;springboot集成阿里云短信业务&lt;/h1&gt;&lt;h2 id=&quot;了解阿里云用户权限操作&quot;&gt;&lt;a href=&quot;#了解阿里云用户权限操作&quot; class=&quot;headerlink&quot; title=&quot;了解阿里云用户权限操作&quot;&gt;&lt;/a&gt;了解阿里云用户权限操作&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1612749311652.png&quot; alt=&quot;1612749311652&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="记录" scheme="https://hplts.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>token和session和cookie的联系与区别</title>
+    <link href="https://hplts.github.io/2020/0920_first/"/>
+    <id>https://hplts.github.io/2020/0920_first/</id>
+    <published>2020-09-20T14:30:45.000Z</published>
+    <updated>2021-02-28T10:32:44.157Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;token和session和cookie的联系与区别&quot;&gt;&lt;a href=&quot;#token和session和cookie的联系与区别&quot; class=&quot;headerlink&quot; title=&quot;token和session和cookie的联系与区别&quot;&gt;&lt;/a&gt;token和session和cookie的联系与区别&lt;/h1&gt;&lt;h2 id=&quot;1-token&quot;&gt;&lt;a href=&quot;#1-token&quot; class=&quot;headerlink&quot; title=&quot;1.token&quot;&gt;&lt;/a&gt;1.token&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;令牌，是用户身份的验证方式。&lt;/p&gt;
+&lt;p&gt;最简单的token组成:uid(用户唯一的身份标识)、time（当前时间的时间戳）、sign（签名）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对Token认证的五点认识:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一个Token就是一些信息的集合；&lt;/li&gt;
+&lt;li&gt;在Token中包含足够多的信息，以便在后续请求中减少查询数据库的几率；&lt;/li&gt;
+&lt;li&gt;服务端需要对cookie和HTTP Authrorization Header进行Token信息的检查；&lt;/li&gt;
+&lt;li&gt;基于上一点，你可以用一套token认证代码来面对浏览器类客户端和非浏览器类客户端；&lt;/li&gt;
+&lt;li&gt;因为token是被签名的，所以我们可以认为一个可以解码认证通过的token是由我们系统发放的，其中带的信息是合法有效的；&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="记录" scheme="https://hplts.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mybatis的学习笔记</title>
+    <link href="https://hplts.github.io/2020/0721_first/"/>
+    <id>https://hplts.github.io/2020/0721_first/</id>
+    <published>2020-07-21T06:23:12.000Z</published>
+    <updated>2021-02-28T10:30:14.057Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;mybatis的学习笔记&quot;&gt;&lt;a href=&quot;#mybatis的学习笔记&quot; class=&quot;headerlink&quot; title=&quot;mybatis的学习笔记&quot;&gt;&lt;/a&gt;mybatis的学习笔记&lt;/h1&gt;&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;自学的&lt;a href=&quot;https://www.bilibili.com/video/BV1NE411Q7Nx?p=1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;【狂神JAVA】MyBatis&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本人配置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;jdk11 （jdk1.8以上均可）&lt;/li&gt;
+&lt;li&gt;Maven 3.6.3&lt;/li&gt;
+&lt;li&gt;MySQL 8.0 （mysql5.6以上均可）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;1-配置&quot;&gt;&lt;a href=&quot;#1-配置&quot; class=&quot;headerlink&quot; title=&quot;1. 配置&quot;&gt;&lt;/a&gt;1. 配置&lt;/h1&gt;&lt;p&gt;官网文档： &lt;a href=&quot;https://mybatis.org/mybatis-3/zh/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mybatis.org/mybatis-3/zh/getting-started.html&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="https://hplts.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="记录" scheme="https://hplts.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>J2EE基础知识总结</title>

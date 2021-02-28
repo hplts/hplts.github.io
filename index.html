@@ -75,6 +75,318 @@
     
     
     
+    <article id="post-springboot获取配置文件中的值" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/0125_first/"
+    >springboot获取配置文件中的值</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/0125_first/" class="article-date">
+  <time datetime="2021-01-25T11:27:11.000Z" itemprop="datePublished">2021-01-25</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="springboot获取配置文件中的值"><a href="#springboot获取配置文件中的值" class="headerlink" title="springboot获取配置文件中的值"></a>springboot获取配置文件中的值</h1><p>假设指定配置文件的路劲和名称为：config/wx.properties:</p>
+<p>内容有：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wx.appKey&#x3D;Test</span><br><span class="line">wx.appSecret&#x3D;abcdefghik</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-PropertySource-Value注解"><a href="#1-PropertySource-Value注解" class="headerlink" title="1.@PropertySource+@Value注解"></a>1.@PropertySource+@Value注解</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@PropertySource</span>(value = &#123; <span class="string">"config/wx.properties"</span> &#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">wxConfig</span></span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Value</span>(<span class="string">"$&#123;wx.appKey&#125;"</span>)</span><br><span class="line">   <span class="keyword">private</span> String appKey;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Value</span>(<span class="string">"$&#123;wx.appSecret&#125;"</span>)</span><br><span class="line">   <span class="keyword">private</span> String appSecret;</span><br><span class="line">   </span><br><span class="line">   </span><br><span class="line">   get和set方法...</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：@PropertySource不支持yml文件读取。</p>
+      
+      <a class="article-more-link" href="/2021/0125_first/">阅读更多...</a>
+      
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-springboot集成阿里云短信业务" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/0120_first/"
+    >springboot集成阿里云短信业务</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/0120_first/" class="article-date">
+  <time datetime="2021-01-20T15:10:22.000Z" itemprop="datePublished">2021-01-20</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="springboot集成阿里云短信业务"><a href="#springboot集成阿里云短信业务" class="headerlink" title="springboot集成阿里云短信业务"></a>springboot集成阿里云短信业务</h1><h2 id="了解阿里云用户权限操作"><a href="#了解阿里云用户权限操作" class="headerlink" title="了解阿里云用户权限操作"></a>了解阿里云用户权限操作</h2><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1612749311652.png" alt="1612749311652"></p>
+      
+      <a class="article-more-link" href="/2021/0120_first/">阅读更多...</a>
+      
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-token和session和cookie的联系与区别" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/0920_first/"
+    >token和session和cookie的联系与区别</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/0920_first/" class="article-date">
+  <time datetime="2020-09-20T14:30:45.000Z" itemprop="datePublished">2020-09-20</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="token和session和cookie的联系与区别"><a href="#token和session和cookie的联系与区别" class="headerlink" title="token和session和cookie的联系与区别"></a>token和session和cookie的联系与区别</h1><h2 id="1-token"><a href="#1-token" class="headerlink" title="1.token"></a>1.token</h2><blockquote>
+<p>令牌，是用户身份的验证方式。</p>
+<p>最简单的token组成:uid(用户唯一的身份标识)、time（当前时间的时间戳）、sign（签名）。</p>
+</blockquote>
+<p>对Token认证的五点认识:</p>
+<ul>
+<li>一个Token就是一些信息的集合；</li>
+<li>在Token中包含足够多的信息，以便在后续请求中减少查询数据库的几率；</li>
+<li>服务端需要对cookie和HTTP Authrorization Header进行Token信息的检查；</li>
+<li>基于上一点，你可以用一套token认证代码来面对浏览器类客户端和非浏览器类客户端；</li>
+<li>因为token是被签名的，所以我们可以认为一个可以解码认证通过的token是由我们系统发放的，其中带的信息是合法有效的；</li>
+</ul>
+      
+      <a class="article-more-link" href="/2020/0920_first/">阅读更多...</a>
+      
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
+    <article id="post-mybatis的学习笔记" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/0721_first/"
+    >mybatis的学习笔记</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/0721_first/" class="article-date">
+  <time datetime="2020-07-21T06:23:12.000Z" itemprop="datePublished">2020-07-21</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h1 id="mybatis的学习笔记"><a href="#mybatis的学习笔记" class="headerlink" title="mybatis的学习笔记"></a>mybatis的学习笔记</h1><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>自学的<a href="https://www.bilibili.com/video/BV1NE411Q7Nx?p=1" target="_blank" rel="noopener">【狂神JAVA】MyBatis</a></p>
+<p>本人配置</p>
+<ul>
+<li>jdk11 （jdk1.8以上均可）</li>
+<li>Maven 3.6.3</li>
+<li>MySQL 8.0 （mysql5.6以上均可）</li>
+</ul>
+<h1 id="1-配置"><a href="#1-配置" class="headerlink" title="1. 配置"></a>1. 配置</h1><p>官网文档： <a href="https://mybatis.org/mybatis-3/zh/getting-started.html" target="_blank" rel="noopener">https://mybatis.org/mybatis-3/zh/getting-started.html</a></p>
+      
+      <a class="article-more-link" href="/2020/0721_first/">阅读更多...</a>
+      
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-J2EE基础知识总结" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -523,7 +835,7 @@
     <ul class="list-inline">
       <li>
         &copy;
-        2020
+        2020-2021
         hp
       </li>
       <li>
